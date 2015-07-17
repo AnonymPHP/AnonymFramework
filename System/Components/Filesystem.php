@@ -158,10 +158,16 @@
          *
          * @param string $filePath
          * @param bool $over
+         * @throws Exception
          * @return bool
          */
         public function touch($filePath = '', $over = false)
         {
+
+            if(!is_string($filePath))
+            {
+                 throw new Exception(sprintf('%s fonksiyonunda girdiğiniz isim string olmalıdır', __FUNCTION__));
+            }
 
             if (false === $over) {
 
@@ -218,10 +224,15 @@
          *
          * @param string $filePath
          * @param int $mode
+         * @throws Exception
          * @return bool
          */
         public function chmod($filePath = '', $mode = 0777)
         {
+            if(!is_string($filePath))
+            {
+                throw new Exception(sprintf('%s fonksiyonunda girdiğiniz isim string olmalıdır', __FUNCTION__));
+            }
 
             if (true === $this->exists($filePath)) {
 
@@ -295,6 +306,11 @@
         public function reName($oldFile = '', $newName = '')
         {
 
+            if(!is_string($oldFile) || !is_string($newName))
+            {
+                throw new Exception(sprintf('%s fonksiyonunda girdiğiniz isim string olmalıdır', __FUNCTION__));
+            }
+
             foreach ($this->toIterator($oldFile) as $file) {
 
                 if (false === $this->exists($file)) {
@@ -329,10 +345,16 @@
          *
          * @param       $fileName
          * @param array $parametres
+         * @throws Exception
          * @return mixed
          */
         public function inc($fileName, $parametres = [])
         {
+
+            if(!is_string($fileName))
+            {
+                throw new Exception(sprintf('%s fonksiyonunda girdiğiniz isim string olmalıdır', __FUNCTION__));
+            }
 
             if (true === $this->exists($fileName)) {
 
