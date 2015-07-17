@@ -37,8 +37,6 @@
         public function open()
         {
 
-            $cache = new Cache();
-            $cache->set('aa','bb');
             // Application/Http/Views/index.php
             return view('index');
         }
