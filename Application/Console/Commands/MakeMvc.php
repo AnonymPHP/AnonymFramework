@@ -68,6 +68,20 @@
             return Migrate::make($filepath, $params);
         }
 
+        /**
+         * Yeni bir event dosyası oluşturur
+         *
+         * @param string $name
+         */
+        private function event($name = '')
+        {
+            $content = $this->migrate('stroge/create/event.php.dist', [
+                'name' => $name
+            ]);
+
+            $this->create(APP.'Event/Events/', $name, $content);
+        }
+
         private function create($src, $fileName = '', $content = '')
         {
             $file = Filesystem::getInstance();
