@@ -63,8 +63,15 @@
         public function getUrl()
         {
 
-            $path = $this->get('PATH_TRANSLATED');
-            $url = str_replace($this->get('DOCUMENT_ROOT'),'', $path);
+            if($path = $this->get('PATH_TRANSLATED'))
+            {
+                $url = str_replace($this->get('DOCUMENT_ROOT'),'', $path);
+            }else{
+                $script = ($this->get('PHP_SELF') !== null) ? $this->get('PHP_SELF'):$this->get('SCRIPT_NAME');
+                $script = str_replace('index.php','', $script);
+
+                $url = str_replace($script, '', $this->uri);
+            }
 
             return Security::xssProtection($url);
         }
