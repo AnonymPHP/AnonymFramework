@@ -6,6 +6,7 @@
 
     namespace Anonym;
 
+    use Anonym\Helpers\Config;
     use Exception;
     use Anonym\Event\EventCollector;
     use Anonym\Event\Event as EventDispatch;
@@ -17,15 +18,14 @@
      * Class Event
      * @package Anonym
      */
-
     class Event
     {
 
-
         /**
-         * @var array
+         * Çağrılan eventlerin listesini tutar
+         *
+         * @var EventDispatch
          */
-
         private $firing;
 
 
@@ -35,9 +35,18 @@
         private $collector;
 
 
+        /**
+         * Ön tanımlı gelen event isimlerini tutar
+         *
+         * @var array
+         */
+
+        private $list;
+
         public function __construct(EventCollector $collector = null)
         {
 
+            $this->list = Config::get('general.events');
             $this->collector = $collector;
             $this->listeners = $this->collector->getListeners();
         }
@@ -59,7 +68,17 @@
                     $eventInstance = $eventName;
                     $eventName = get_class($eventName);
                 } elseif (is_string($eventName)) {
-                    $eventName = new $eventName();
+
+                    if (strstr($eventName, "\\")) {
+                        $eventName = new $eventName();
+                    } else {
+                        if (isset($this->list[$eventName])) {
+                            $eventName = $this->list[$eventName];
+                            $eventName = new $eventName();
+                        } else {
+                            throw new Exception(sprintf('%s isimli bir ön tanımlı event bulunamadı', $eventName));
+                        }
+                    }
                 }
                 if ($this->hasListiner($eventName)) {
                     $listeners = $this->getListeners($eventName);
@@ -83,7 +102,7 @@
          * Listener'ları yürütür
          *
          * @param array $listeners
-         * @param null  $eventName
+         * @param null $eventName
          * @throws Exception
          * @return array
          */
@@ -100,7 +119,7 @@
                 } else {
 
                     throw new Exception(sprintf('%s listener sınıfı EventListenerInterface\' e sahip olmalıdır',
-                       get_class($listener)));
+                        get_class($listener)));
                 }
             }
 
@@ -136,7 +155,6 @@
          */
         public function firing()
         {
-
             return end($this->firing);
         }
     }

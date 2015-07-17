@@ -7,11 +7,28 @@
 
     use Anonym\Application;
 
+    /**
+     * Class EventCollector
+     * @package Anonym\Event
+     */
+
     class EventCollector
     {
 
+        /**
+         * Uygulama nesnesini tutar
+         *
+         * @var Application
+         */
         protected $application;
+
+        /**
+         * Dinleyicilerin listesini tutar
+         *
+         * @var array
+         */
         private $listeners;
+
 
         /**
          * Uygulamayı atar

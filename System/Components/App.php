@@ -34,6 +34,20 @@
         }
 
         /**
+         * Yeni bir ön tanımlı event ekler
+         *
+         *
+         * @param string $alias
+         * @param string $class
+         * @return bool
+         */
+        public static function event($alias = '', $class = '')
+        {
+            Config::add('general.events', [$alias => $class]);
+            return true;
+        }
+
+        /**
          * Sınıfa providers ekler
          *
          * @param array $providers
