@@ -1,0 +1,39 @@
+{
+  "name": "vahitserifsaglam1/AnonyFramework",
+  "type": "library",
+  "description": "AnonymFramework",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Vahit Şerif Sağlam",
+      "email": "vahit.serif119@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Anonym\\": "System/Components/",
+      "Anonym\\Manager\\": "Application/Manager/",
+      "Anonym\\Controllers\\": "Application/Http/Controllers/",
+      "Anonym\\Models\\": "Application/Database/Models/",
+      "Anonym\\Events\\": "Application/Event/Events/",
+      "Anonym\\Listeners\\": "Application/Event/Listeners/",
+      "Anonym\\Routes\\": "Application/Routes",
+      "Anonym\\System\\": "System/",
+      "Anonym\\Console\\": "Application/Console/",
+      "Anonym\\Database\\Migrations\\": "Application/Database/Migrations"
+    },
+    "classmap": [
+      "vendor"
+    ]
+  },
+  "require": {
+    "php": ">=5.4",
+    "phpmailer/phpmailer": "~5.2",
+    "twig/twig": "~1.0",
+    "particle/validator": "dev-master",
+    "symfony/finder": "2.7.*",
+    "symfony/console": "2.7.*",
+    "symfony/process": "2.7.*",
+    "symfony/event-dispatcher": "2.7.*"
+  }
+}

@@ -1,0 +1,39 @@
+<?php
+    /**
+     *  Bu sınıf AnonymFramework'un örnek bir controller dosyasıdır.
+     *
+     * @packpage Anonym\Controllers
+     * @author vahitserifsaglam <vahit.serif119@gmail.com>
+     */
+
+    namespace Anonym\Controllers;
+
+    use Anonym\Route\Controller;
+
+    /**
+     * Class IndexController
+     *
+     * @package Anonym\Controllers
+     */
+
+    class {{ name }} extends Controller
+    {
+        /**
+         *  Başlatıcı Fonksiyon
+         */
+        public function __construct()
+        {
+            //
+        }
+
+        /**
+         * Route tarafından Index::boot atandığı için bu tetiklenir.
+         *
+         * @return View
+         */
+
+        public function open()
+        {
+             // islemler
+        }
+    }
