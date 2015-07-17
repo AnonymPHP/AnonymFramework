@@ -1,22 +1,21 @@
 <?php
 
     /**
-     * Bu sınıf AnonymFrameworkde cache verileri depolamak için kullanılmaktadır.
      *
+     * Bu sınıf AnonymFramework' un bir parçasıdır,
      * @author vahitserifsaglam <vahit.serif119@gmail.com>
-     * @copyright 2015, Vahit Şerif Sağlam
+     *
      */
 
-    namespace Anonym;
+    namespace Anonym\Cache;
 
-    use Exception;
 
     /**
      * Class Cache
      * @package Anonym
      */
 
-    class Cache extends Filesystem
+    class FileCache extends Filesystem implements CacheInterface, CacheDriverInterface
     {
         /**
          * Zaman aşımı süresini ayarlar
@@ -43,6 +42,15 @@
         public function __construct()
         {
             parent::__construct();
+        }
+
+        /**
+         * Driver 'ın kurululabilip kurulamayacağını kontrol eder
+         *
+         * @throws Exception
+         */
+        public function checkDriver()
+        {
             if (!$this->exists($this->cacheFolder)) {
                 if (!$this->mkdir($this->cacheFolder)) {
                     throw new Exception(sprintf('%s isimli cache dosyası oluşturulurken bir hatayla karşılaşıldı'));
@@ -50,7 +58,8 @@
             }
 
             $this->chmod($this->cacheFolder, 0777);
-            parent::__construct();
+
+            return true;
         }
 
         /**
@@ -121,6 +130,23 @@
         }
 
         /**
+         * @param string $name
+         * @return bool
+         */
+
+        public function has($name = '')
+        {
+            $file = $this->cacheFileNameGenaretor($name);
+            $file = $this->inPath($file);
+
+            if($this->exists($file)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        /**
          * Girilen veriyi Çeker, eğer $json true verilirse veriyi json_decode den geçirir.
          *
          * @param string $name
@@ -130,7 +156,7 @@
          * @throws Exception
          */
 
-        public function get($name, $time = 3600, $json = false)
+        public function get($name = '', $time = 3600, $json = false)
         {
             $this->setTime($time);
             $file = $this->cacheFileNameGenaretor($name);

@@ -16,11 +16,5 @@
          */
         public function checkDriver();
 
-        /**
-         * Driver ismini döndürür
-         *
-         * @return mixed
-         */
-        public function getName();
 
     }
