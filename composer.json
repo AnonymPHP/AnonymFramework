@@ -3,6 +3,10 @@
   "type": "library",
   "description": "AnonymFramework",
   "license": "proprietary",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AnonymPHP/AnonymFramework.git"
+  },
   "authors": [
     {
       "name": "Vahit Şerif Sağlam",
