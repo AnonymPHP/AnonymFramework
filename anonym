@@ -3,7 +3,7 @@
     include 'vendor/autoload.php';
     include 'Application/Helpers/helpers.php';
     include 'System/Bootstrap/bootstrap.php';
-    $console = new \Anonym\Console\Console(1);
+    $console = new \Application\Console\Console(1);
     new \Anonym\Installation\AllConfigsLoader();
 
     error_reporting(0);

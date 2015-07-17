@@ -2,11 +2,11 @@
     /**
      *  Bu sınıf AnonymFramework'un örnek bir controller dosyasıdır.
      *
-     * @packpage Anonym\Controllers
+     * @packpage Application\Controllers
      * @author vahitserifsaglam <vahit.serif119@gmail.com>
      */
 
-    namespace Anonym\Controllers;
+    namespace Application\Controllers;
 
     use Anonym\Cache;
     use Anonym\Redis;
@@ -16,7 +16,7 @@
     /**
      * Class IndexController
      *
-     * @package Anonym\Controllers
+     * @package Application\Controllers
      */
     class Index extends Controller
     {

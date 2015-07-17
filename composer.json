@@ -17,15 +17,14 @@
   "autoload": {
     "psr-4": {
       "Anonym\\": "System/Components/",
-      "Anonym\\Manager\\": "Application/Manager/",
-      "Anonym\\Controllers\\": "Application/Http/Controllers/",
-      "Anonym\\Models\\": "Application/Database/Models/",
-      "Anonym\\Events\\": "Application/Event/Events/",
-      "Anonym\\Listeners\\": "Application/Event/Listeners/",
-      "Anonym\\Routes\\": "Application/Routes",
-      "Anonym\\System\\": "System/",
-      "Anonym\\Console\\": "Application/Console/",
-      "Anonym\\Database\\Migrations\\": "Application/Database/Migrations"
+      "Application\\Controllers\\": "Application/Http/Controllers/",
+      "Application\\Models\\": "Application/Database/Models/",
+      "Application\\Events\\": "Application/Event/Events/",
+      "Application\\Listeners\\": "Application/Event/Listeners/",
+      "Application\\Routes\\": "Application/Routes",
+      "System\\": "System/",
+      "Application\\Console\\": "Application/Console/",
+      "Application\\Database\\Migrations\\": "Application/Database/Migrations"
     },
     "classmap": [
       "vendor"

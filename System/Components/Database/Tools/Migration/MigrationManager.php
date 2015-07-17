@@ -66,7 +66,7 @@
         public function execute($name = '')
         {
 
-            $migration = "Anonym\Database\Migrations\\$name";
+            $migration = "Application\Database\Migrations\\$name";
             $migration = new $migration;
 
             $return = [

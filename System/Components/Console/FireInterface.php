@@ -4,7 +4,7 @@
      * @copyright AnonymMedya, 2015
      */
 
-    namespace Anonym\Console;
+    namespace Application\Console;
 
 
     use Symfony\Component\Console\Output\OutputInterface;
@@ -12,7 +12,7 @@
 
     /**
      * Interface FireInterface
-     * @package Anonym\Console
+     * @package Application\Console
      */
     interface FireInterface
     {

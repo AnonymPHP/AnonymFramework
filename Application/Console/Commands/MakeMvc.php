@@ -4,9 +4,9 @@
      * @copyright AnonymMedya, 2015
      */
 
-    namespace Anonym\Console\Commands;
+    namespace Application\Console\Commands;
 
-    use Anonym\Console\Command;
+    use Application\Console\Command;
     use Anonym\Filesystem;
     use Anonym\Support\Migrate;
     use Symfony\Component\Console\Output\OutputInterface;

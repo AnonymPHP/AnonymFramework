@@ -7,14 +7,14 @@
      *
      */
     
-    namespace Anonym\Routes;
+    namespace Application\Routes;
     use Anonym\Route\RouteHandlerInterface;
     use Anonym\Route\Http\ControllerManager;
     use Anonym\Http\Response;
 
     /**
      * Class {{ name }}
-     * @package Anonym\Routes
+     * @package Application\Routes
      */
 
     class {{ name }} extends ControllerManager implements RouteHandleInterface {

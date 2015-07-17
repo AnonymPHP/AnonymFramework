@@ -5,18 +5,23 @@
      *  Sınıfın başlaması için gerekli olan işlemleri yapar.
      * @author vahitserifsaglam <vahit.serif119@gmail.com>
      */
-    namespace Anonym\System;
+    namespace System;
 
     use Anonym\Application;
 
     /**
      * Class Run
-     * @package Anonym\System
+     * @package System
      */
 
     class Run
     {
 
+        /**
+         * Uygulama nesnesini tutar
+         *
+         * @var Application
+         */
         private $applicaton;
         /**
          * Sistemi yürütür.
@@ -39,6 +44,15 @@
 
         }
 
+        /**
+         * Uygulama nesnesini döndürür
+         *
+         * @return Application
+         */
+        public function getApplication()
+        {
+            return $this->application;
+        }
         /**
          *  Ayar dosyalarını yükler
          */

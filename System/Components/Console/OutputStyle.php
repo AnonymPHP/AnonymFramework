@@ -1,5 +1,5 @@
 <?php
-    namespace Anonym\Console;
+    namespace Application\Console;
 
     use Symfony\Component\Console\Style\SymfonyStyle;
     use Symfony\Component\Console\Input\InputInterface;
@@ -7,7 +7,7 @@
 
     /**
      * Class OutputStyle
-     * @package Anonym\Console
+     * @package Application\Console
      */
     class OutputStyle extends SymfonyStyle
     {

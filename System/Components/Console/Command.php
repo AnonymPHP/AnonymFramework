@@ -4,7 +4,7 @@
      * @copyright AnonymMedya, 2015
      */
 
-    namespace Anonym\Console;
+    namespace Application\Console;
     use Anonym\Application;
     use Symfony\Component\Console\Command\Command as SymfonyCommand;
     use Symfony\Component\Console\Input\InputInterface;

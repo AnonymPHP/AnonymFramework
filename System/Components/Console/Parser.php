@@ -4,7 +4,7 @@
      * @copyright AnonymMedya, 2015
      */
 
-    namespace Anonym\Console;
+    namespace Application\Console;
 
     use InvalidArgumentException;
     use Exception;

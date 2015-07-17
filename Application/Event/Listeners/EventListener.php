@@ -3,11 +3,11 @@
     /**
      *  Bu sınıfın tek amacı Onun bir listener olduğunu belirtmektir
      */
-    namespace Anonym\Listeners;
+    namespace Application\Listeners;
 
     /**
      * Class EventListener
-     * @package Anonym\Listeners
+     * @package Application\Listeners
      */
     abstract class EventListener
     {

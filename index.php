@@ -2,7 +2,7 @@
 
 
     include 'vendor/autoload.php';
-    use Anonym\System\Run;
+    use System\Run;
 
     /**
      *  @author vahitserifsaglam <vahit.serif119@gmail.com>

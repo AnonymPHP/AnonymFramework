@@ -1,6 +1,6 @@
 <?php
 
-	namespace Anonym\Routes\Access;
+	namespace Application\Routes\Access;
 
 	 use Anonym\Helpers\Access\Interfaces\HandleInterface;
 	 use Anonym\Http\Request;

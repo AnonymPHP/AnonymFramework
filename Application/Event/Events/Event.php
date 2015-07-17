@@ -3,11 +3,11 @@
 	/**
 	 *  Bu sınıfın tek amacı bir event olduğunu belirtmektir.
 	 */
-	 namespace Anonym\Events;
+	 namespace Application\Events;
 
 	 /**
 	  * Class Event
-	  * @package Anonym\Events
+	  * @package Application\Events
 	  */
 	 abstract class Event
 	 {

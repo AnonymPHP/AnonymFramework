@@ -18,7 +18,7 @@
     use Anonym\Installation\AllConfigsLoader;
     use Anonym\Installation\AliasAndProviders;
     use Anonym\Installation\ErrorConfigs;
-    use Anonym\System\SystemManager;
+    use System\SystemManager;
 
     /**
      * @class Application

@@ -4,15 +4,15 @@
      * @copyright AnonymMedya, 2015
      */
 
-    namespace Anonym\Console;
+    namespace Application\Console;
 
-    use Anonym\Console\Commands\MakeMvc;
-    use Anonym\Console\Commands\Migration;
-    use Anonym\Console\Commands\MakeBackup;
+    use Application\Console\Commands\MakeMvc;
+    use Application\Console\Commands\Migration;
+    use Application\Console\Commands\MakeBackup;
 
     /**
      * Class System
-     * @package Anonym\Console
+     * @package Application\Console
      */
     abstract class System
     {

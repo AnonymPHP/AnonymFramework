@@ -7,10 +7,10 @@
     /**
      * Girilen Event's değerine göre event'i parçalar
      *
-     * @param \Anonym\Events\Event $event
+     * @param \Application\Events\Event $event
      * @return mixed
      */
-    function event(\Anonym\Events\Event $event)
+    function event(\Application\Events\Event $event)
     {
         return EventDispatcher::fire($event);
     }

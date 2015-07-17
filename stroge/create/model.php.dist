@@ -4,7 +4,7 @@
      * @copyright AnonymMedya, 2015
      */
 
-    namespace Anonym\Models;
+    namespace Application\Models;
 
 
     use Anonym\Facade\Orm;

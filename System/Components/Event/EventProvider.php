@@ -27,14 +27,14 @@
 			*/
 		  protected $events = [
 
-				'Anonym\Events\Header' => [
-					 'Anonym\Listeners\HeaderListener'
+				'Application\Events\Header' => [
+					 'Application\Listeners\HeaderListener'
 				],
-				'Anonym\Events\Kategori' => [
-					 'Anonym\Listeners\KategoriListener'
+				'Application\Events\Kategori' => [
+					 'Application\Listeners\KategoriListener'
 				],
-				'Anonym\Events\Ders' => [
-					 'Anonym\Listeners\DersListener'
+				'Application\Events\Ders' => [
+					 'Application\Listeners\DersListener'
 				]
 		  ];
 

@@ -4,11 +4,11 @@
      * @copyright AnonymMedya, 2015
      */
 
-    namespace Anonym\Console\Commands;
+    namespace Application\Console\Commands;
 
 
-    use Anonym\Console\Command;
-    use Anonym\Console\HandleInterface;
+    use Application\Console\Command;
+    use Application\Console\HandleInterface;
     use Anonym\Database\Base;
     use Anonym\Database\Tools\Backup\Backup;
     use Anonym\Database\Tools\Backup\Load;

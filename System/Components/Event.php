@@ -9,7 +9,7 @@
     use Anonym\Helpers\Config;
     use Exception;
     use Anonym\Event\EventCollector;
-    use Anonym\Event\Event as EventDispatch;
+    use Application\Events\Event as EventDispatch;
     use Anonym\Event\EventListener;
     use InvalidArgumentException;
 

@@ -2,18 +2,18 @@
     /**
      *  Bu sınıf AnonymFramework'un örnek bir controller dosyasıdır.
      *
-     * @packpage Anonym\Controllers
+     * @packpage Application\Controllers
      * @author vahitserifsaglam <vahit.serif119@gmail.com>
      */
 
-    namespace Anonym\Controllers;
+    namespace Application\Controllers;
 
     use Anonym\Route\Controller;
 
     /**
      * Class IndexController
      *
-     * @package Anonym\Controllers
+     * @package Application\Controllers
      */
 
     class {{ name }} extends Controller
