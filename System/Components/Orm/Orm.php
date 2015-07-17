@@ -21,17 +21,88 @@
     class Orm
     {
 
+        /**
+         * Where sorgularını depolar
+         *
+         * @var array
+         */
         private $where;
+
+        /**
+         * OrWhere Sorgularını toplar
+         *
+         * @var array
+         */
         private $orWhere;
+
+        /**
+         * Veritabanına eklenecek verileri deoplar
+         *
+         * @var array
+         */
         private $set;
+
+        /**
+         * Veritabanından seçilecek tabloları depolar
+         *
+         * @var array
+         */
         private $select;
+
+        /**
+         * Limit sorgusunu depolar
+         *
+         * @var array
+         */
         private $limit;
+
+        /**
+         * Veritabanı grup sorgusunu depolar
+         *
+         * @var string
+         */
         private $group;
+
+        /**
+         * Veritabanı sıralama sorgusu depolar
+         *
+         * @var string
+         */
         private $order;
+
+        /**
+         * Sayfalama için şuanda bulunan sayfayı depolar
+         *
+         * @var int
+         */
         private $page;
+
+        /**
+         * Sıralamanın hangi tipte olacağını depolar
+         *
+         * @var string
+         */
         private $orderType;
+
+        /**
+         * Veritabanında hangi sayfanın seçildiğini deolar
+         *
+         * @var string
+         */
         private $table;
+
+        /**
+         * Veritabanı nesnesini depolar
+         *
+         * @var Base
+         */
         private $db;
+
+        /**
+         * Veritabanı join sorgularını depolar
+         *
+         * @var string
+         */
         private $join;
 
         /**
