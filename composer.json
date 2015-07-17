@@ -2,7 +2,7 @@
   "name": "anonym-php/anonymframework",
   "type": "library",
   "description": "AnonymFramework, New Professional PHP Framework",
-  "license": "proprietary",
+  "license": "mit",
   "repository": {
     "type": "git",
     "url": "git://github.com/AnonymPHP/AnonymFramework.git"
