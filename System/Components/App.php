@@ -20,7 +20,6 @@
     class App
     {
 
-
         /**
          * Sınıfa facede ekler
          *
