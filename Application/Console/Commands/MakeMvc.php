@@ -20,14 +20,14 @@
          *
          * @var string
          */
-        protected $signature = 'make:mvc { type? } { name? }';
+        protected $signature = 'make:system { type? } { name? }';
 
         /**
          * Komut açıklaması
          *
          * @var string
          */
-        protected $description = 'İçerik ve bazı şeyler oluşturur';
+        protected $description = 'Route, Event, Listener, Controller, Model, View gibi dosyaları oluşturur';
 
         /**
          * Komut adı
@@ -73,13 +73,27 @@
          *
          * @param string $name
          */
-        private function event($name = '')
+        public function event($name = '')
         {
             $content = $this->migrate('stroge/create/event.php.dist', [
                 'name' => $name
             ]);
 
             $this->create(APP.'Event/Events/', $name, $content);
+        }
+
+        /**
+         * Yeni bir event listener dosyası oluşturur
+         *
+         * @param string $name
+         */
+        public function listener($name = '')
+        {
+            $content = $this->migrate('stroge/create/listener.php.dist', [
+                'name' => $name
+            ]);
+
+            $this->create(APP.'Event/Listeners/', $name, $content);
         }
 
         /**
