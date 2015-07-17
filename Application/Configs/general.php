@@ -20,7 +20,7 @@
             'Event' => \Anonym\Event::class,
             'Route' => \Anonym\Route\RouteCollector::class,
             'Session' => \Anonym\Session::class,
-            'Request' => \Anonym\Request::class,
+            'Request' => \Anonym\Http\Request::class,
         ],
         /**
          *  Bu Provider's kısmı Laravel'de ServiceProvider olarak bilinen olay yerine kullanılır
