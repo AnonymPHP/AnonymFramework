@@ -51,13 +51,14 @@
             if (is_callable([$this, $command])) {
                 $this->$command($param);
             } else {
-                $this->error('%s adında bir komut bulunamadı', $command);
+                $this->error(sprintf('%s adında bir komut bulunamadı', $command));
             }
 
         }
 
         /**
          * İÇeriği dosyaya yazar
+         *
          * @param $src
          * @param $fileName
          * @param $content
@@ -68,7 +69,7 @@
             if (!$this->file->exists($src)) {
                 $this->file->mkdir($src);
             }
-            $this->file->chmod($src, 0777);
+            $this->file->chmod($fileName, 0777);
 
             if ($this->file->isWriteable($fileName)) {
                 $this->file->write($fileName, $content);

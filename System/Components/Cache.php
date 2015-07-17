@@ -42,15 +42,14 @@
 
         public function __construct()
         {
-
+            parent::__construct();
             if (!$this->exists($this->cacheFolder)) {
-                $this->mkdir($this->cacheFolder);
+                if (!$this->mkdir($this->cacheFolder)) {
+                    throw new Exception(sprintf('%s isimli cache dosyası oluşturulurken bir hatayla karşılaşıldı'));
+                }
             }
 
-            if ($this->cacheFolder) {
-                $this->chmod($this->cacheFolder, 0744);
-            }
-
+            $this->chmod($this->cacheFolder, 0777);
             parent::__construct();
         }
 
@@ -63,7 +62,8 @@
         private function inPath($path)
         {
 
-            return $this->cacheFolder . '/' . $path;
+            $path =  $this->cacheFolder . '/' . $path;
+            return $path;
         }
 
         /**
@@ -123,15 +123,16 @@
         /**
          * Girilen veriyi Çeker, eğer $json true verilirse veriyi json_decode den geçirir.
          *
-         * @param      $name
+         * @param string $name
+         * @param int $time
          * @param bool $json
          * @return bool|mixed|string
          * @throws Exception
          */
 
-        public function get($name, $json = false)
+        public function get($name, $time = 3600, $json = false)
         {
-
+            $this->setTime($time);
             $file = $this->cacheFileNameGenaretor($name);
             $file = $this->inPath($file);
             if ($this->exists($file)) {
@@ -167,14 +168,17 @@
 
             $file = $this->cacheFileNameGenaretor($name);
             $file = $this->inPath($file);
+
+            var_dump($file);
             if (!$this->exists($file)) {
-                $this->create($file);
+                $this->touch($file);
             }
 
             if ($json) {
                 $content = json_encode($content);
             }
 
+            $this->chmod($file, 0777);
             $this->write($file, $content);
 
             return true;

@@ -8,6 +8,10 @@
     class Filesystem
     {
 
+        public function __construct()
+        {
+
+        }
 
         /**
          * @param mixed $files
@@ -256,26 +260,24 @@
         /**
          * Girilen $dir değişkenine göre yeni bir dosya oluşturur
          *
-         * @param string $dir
+         * @param string|array $dirs
          * @param int $mode
          * @throws Exception
          * @return bool
          */
-        public function mkdir($dir = '', $mode = 0777)
+        public function mkdir($dirs = '', $mode = 0777)
         {
+            foreach ($this->toIterator($dirs) as $dir) {
 
-            foreach ($this->toIterator($dir) as $dirs) {
-
-                if (is_dir($dirs)) {
+                if (is_dir($dir)) {
                     continue;
                 }
 
                 if (true !== mkdir($dir, $mode, true)) {
-
                     $error = error_get_last();
-                    throw new Exception(sprintf(
-                        'Dosya oluşturma sırasında bir hata oluştu, hata : %s', $error['message']
-                    ));
+
+                    $message = isset($error['message']) ? $error['message'] : 'Mesaj Bulunamadı';
+                    return false;
                 }
 
                 return true;

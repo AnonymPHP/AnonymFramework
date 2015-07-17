@@ -8,14 +8,10 @@
 
     namespace Anonym\Controllers;
 
-    use Anonym\Database\Base;
-    use Anonym\Database\Tools\Backup\Backup;
-    use Anonym\Database\Tools\TablePrint;
-    use Anonym\MemCache\MemCache;
+    use Anonym\Cache;
     use Anonym\Redis;
     use Anonym\Route\Controller;
     use Anonym\View;
-    use Anonym\Database\Tools\Backup\Load;
 
     /**
      * Class IndexController
@@ -41,6 +37,8 @@
         public function open()
         {
 
+            $cache = new Cache();
+            $cache->set('aa','bb');
             // Application/Http/Views/index.php
             return view('index');
         }
