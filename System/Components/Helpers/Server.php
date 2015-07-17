@@ -32,9 +32,13 @@
            'protocol'  => 'SERVER_PROTOCOL'
         ];
 
+        /**
+         * 
+         *
+         * @return string
+         */
         public function getMethod()
         {
-
             return $this->method;
         }
 
@@ -58,13 +62,7 @@
          */
         public function getUrl()
         {
-
-            if (!isset($_GET['url']) || !$_GET['url'] || $_GET['url'] == '') {
-                $_GET['url'] = '/';
-            }
-            $this->url = $_GET['url'];
-
-            return Security::xssProtection($this->url);
+            return Security::xssProtection($this->uri);
         }
 
         /**

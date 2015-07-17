@@ -134,7 +134,7 @@
         }
 
         /**
-         * Determine if the given configuration option exists.
+         * Dizi olarak erişilirken itemin olup olmadığına bakılır
          *
          * @param  string $key
          * @return bool
@@ -145,7 +145,7 @@
         }
 
         /**
-         * Get a configuration option.
+         * Dizi olarak erişilirken Veri çekmekte kullanılır
          *
          * @param  string $key
          * @return mixed
@@ -156,7 +156,7 @@
         }
 
         /**
-         * Set a configuration option.
+         * Dizi olarak erişilirken veri eklemede kullanılır
          *
          * @param  string $key
          * @param  mixed $value
@@ -168,7 +168,7 @@
         }
 
         /**
-         * Unset a configuration option.
+         * Array olarak erişilirken veri unset edildiğinde yapılır
          *
          * @param  string $key
          * @return void

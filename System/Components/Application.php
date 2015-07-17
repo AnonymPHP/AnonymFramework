@@ -11,6 +11,7 @@
 
     namespace Anonym;
 
+    use Anonym\Helpers\Config;
     use Anonym\Helpers\Server;
     use Anonym\Patterns\Singleton;
     use Anonym\Security\TypeHint;
@@ -19,12 +20,13 @@
     use Anonym\Installation\AliasAndProviders;
     use Anonym\Installation\ErrorConfigs;
     use System\SystemManager;
+    use ArrayAccess;
 
     /**
      * @class Application
      *
      */
-    class Application
+    class Application implements ArrayAccess
     {
 
         use Server;
@@ -70,10 +72,19 @@
             define('FRAMEWORK_NAME', $name);
             define('FRAMEWORK_VERSION', $version);
 
-
             $this->runBootstraps();
         }
 
+
+        /**
+         * Facade takma adlarını döndürür
+         *
+         * @return mixed
+         */
+        public function getAlias()
+        {
+            return Config::get('general.alias');
+        }
 
         /**
          * Başlatıcı sınıfları yürütür
@@ -121,28 +132,16 @@
         /**
          * Uygulamayı Yürütür
          *
-         *
-         * @throws Exception
          */
         public function run()
         {
-
-            $route = ROUTE . 'routes.php';
-
-            if (file_exists($route)) {
-
-                require($route);
-                $make = $this->singleton('Anonym\Route\Router');
-                $make->run();
-            } else {
-
-                throw new Exception(sprintf('%s yolunda olması gerek röta dosyanız bulunamadı, lütfen oluşturun',
-                    $route));
-            }
+            $make = $this->singleton('Anonym\Route\Router');
+            $make->run();
         }
 
         /**
          * Önbelleğe alınmış ayar dosyasını döndürür
+         *
          * @return string
          */
         public function getCachedConfig()
@@ -151,7 +150,61 @@
         }
 
         /**
+         * Dizi olarak erişilirken itemin olup olmadığına bakılır
+         *
+         * @param  string $key
+         * @return bool
+         */
+        public function offsetExists($key)
+        {
+            $alais = $this->getAlias();
+
+            if (isset($alias[$key])) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        /**
+         * Dizi olarak erişilirken Veri çekmekte kullanılır
+         *
+         * @param  string $key
+         * @return mixed
+         */
+        public function offsetGet($key)
+        {
+            $alias = $this->getAlias();
+            $facade = $alias[$key];
+            return $this->singleton($facade);
+        }
+
+        /**
+         * Dizi olarak erişilirken veri eklemede kullanılır
+         *
+         * @param  string $key
+         * @param  mixed $value
+         * @return void
+         */
+        public function offsetSet($key, $value)
+        {
+            Config::set(sprintf('general.alias.%s', $key), $value);
+        }
+
+        /**
+         * Array olarak erişilirken veri unset edildiğinde yapılır
+         *
+         * @param  string $key
+         * @return void
+         */
+        public function offsetUnset($key)
+        {
+            Config::set(sprintf('general.alias.%s', $key), null);
+        }
+
+        /**
          * Girilen fonksiyonu çağırır
+         *
          * @param string $class
          * @param string $method
          * @param array $params
