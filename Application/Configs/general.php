@@ -80,5 +80,13 @@
         'route' => [
             'delimiter' => '/',
             'miss' => '/404'
+        ],
+
+        /**
+         * Bu kısma ön tanımlı olarak tanımlamak istediğiniz eventleri girebilirsiniz
+         * ayrıca buradaki eventleri App::event fonksiyonu ilede ekleyebilirsiniz
+         */
+        'events' => [
+
         ]
     ];
