@@ -82,7 +82,16 @@
             $this->create(APP.'Event/Events/', $name, $content);
         }
 
-        private function create($src, $fileName = '', $content = '')
+        /**
+         * Dosyayı oluşturur ve içeriği dosyaya aktarır
+         *
+         * @param string $src
+         * @param string $fileName
+         * @param string $content
+         * @throws \Exception
+         */
+
+        private function create($src = '', $fileName = '', $content = '')
         {
             $file = Filesystem::getInstance();
             $path = $src . $fileName . '.php';
@@ -93,9 +102,11 @@
                 $file->mkdir($src);
             }
 
+            $file->chmod($src, 0777);
             // eğer dosya yoksa oluşturuyoruz
             if (!$file->exists($path)) {
                 $file->touch($path);
+                $file->chmod($path, 0777);
                 if ($file->isWriteable($path)) {
                     $file->write($path, $content);
                     $this->info(sprintf('%s isimli dosya %s yolunda başarıyla oluşturuldu.', $fileName, $src));
@@ -112,6 +123,7 @@
 
         /**
          * Kontorller oluşturur
+         *
          * @param string $name
          */
         public function controller($name = '')
