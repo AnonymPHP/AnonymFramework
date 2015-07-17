@@ -37,6 +37,11 @@
         private $filter;
         private $configs;
 
+
+        /**
+         * Başlatıcı sınıf
+         */
+
         public function __construct()
         {
             $this->listener = Singleton::make('Anonym\Route\RouteListener');
@@ -58,7 +63,12 @@
             return $this->collector->getCollections();
         }
 
-
+        /**
+         * $name ile girilen filter 'ı arar
+         *
+         * @param string $name
+         * @return mixed
+         */
         public function getFilter($name = '')
         {
             return $this->filter[$name];
@@ -103,8 +113,6 @@
             $run = $this->runCollections($collections);
             if ($run !== true) {
                 $url = $this->configs['miss'];
-
-
                 if (is_string($url)) {
                     $url = substr($url, 1, strlen($url));
                     Redirect::to($url);
@@ -124,10 +132,13 @@
          */
         private function runCollections(array $collections = [])
         {
+
+            $url = ($this->getUrl() === '') ? '/':$this->getUrl();
+
             foreach ($collections as $col) {
                 $delimeter = $this->configs['delimiter'];
                 $action = str_replace($delimeter, " ", $col['action']);
-                $url = str_replace($delimeter, " ", $this->getUrl());
+                $url = str_replace($delimeter, " ", $url);
                 $regex = $this->regexChecker($action, $url);
                 if (false === $regex) {
                     continue;

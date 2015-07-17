@@ -23,7 +23,7 @@
             if (is_string($controller)) {
                 list($controller, $method) = $this->parseControllerString($controller);
 
-                $controller = "Anonym\\Controllers\\" . $controller;
+                $controller = "Application\\Controllers\\" . $controller;
                 $controller = new $controller();
             } else {
                 $method = "handle";

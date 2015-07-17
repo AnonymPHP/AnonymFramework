@@ -15,12 +15,12 @@
     use Anonym\Helpers\Server;
     use Anonym\Patterns\Singleton;
     use Anonym\Security\TypeHint;
-    use Exception;
     use Anonym\Installation\AllConfigsLoader;
     use Anonym\Installation\AliasAndProviders;
     use Anonym\Installation\ErrorConfigs;
     use System\SystemManager;
     use ArrayAccess;
+    use Anonym\Route\Router;
 
     /**
      * @class Application
@@ -135,7 +135,7 @@
          */
         public function run()
         {
-            $make = $this->singleton('Anonym\Route\Router');
+            $make = $this->singleton(Router::class);
             $make->run();
         }
 

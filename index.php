@@ -1,5 +1,6 @@
 <?php
 
+
     /**
      * @author vahitserifsaglam <vahit.serif119@gmail.com>
      * @copyright 2015, AnonymFramework
@@ -8,7 +9,15 @@
      *
      */
 
-    include 'System/run.php';
+    $app = include 'System/run.php';
+
+    /**
+     *
+     * Uygulamayı Yürütür
+     *
+     */
+
+    $app->run();
 
     /**
      * The MIT License (MIT)

@@ -1,5 +1,6 @@
 <?php
 
+    use Anonym\Application;
     /**
      * Composer Autoloader'ın başlatılması
      *
@@ -11,7 +12,7 @@
      * Sabitlerin yüklenmesi
      *
      */
-    include SYSTEM . 'bootstrap.php';
+    include __DIR__. '/bootstrap.php';
 
     /**
      *  Yardımcı fonksiyonların yüklenmesi
@@ -38,11 +39,9 @@
     include ROUTE . 'routes.php';
 
     /**
-     *
-     *  Uygulamayı Yürütür
-     *
+     *  Uygulamanın örneğini geri döndürür
      */
 
-    $app->run();
+    return $app;
 
 

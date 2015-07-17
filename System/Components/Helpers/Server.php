@@ -21,19 +21,19 @@
          *  Özel arama terimleri
          */
         public $server_filters = [
-           'useragent' => 'HTTP_USER_AGENT',
-           'referer'   => 'HTTP_REFERER',
-           'host'      => 'HTTP_HOST',
-           'reditect'  => 'REDIRECT_URL',
-           'serverip'  => 'SERVER_ADDR',
-           'userip'    => 'REMOTE_ADDR',
-           'uri'       => 'REQUEST_URI',
-           'method'    => 'REQUEST_METHOD',
-           'protocol'  => 'SERVER_PROTOCOL'
+            'useragent' => 'HTTP_USER_AGENT',
+            'referer' => 'HTTP_REFERER',
+            'host' => 'HTTP_HOST',
+            'reditect' => 'REDIRECT_URL',
+            'serverip' => 'SERVER_ADDR',
+            'userip' => 'REMOTE_ADDR',
+            'uri' => 'REQUEST_URI',
+            'method' => 'REQUEST_METHOD',
+            'protocol' => 'SERVER_PROTOCOL'
         ];
 
         /**
-         * 
+         *
          *
          * @return string
          */
@@ -62,7 +62,11 @@
          */
         public function getUrl()
         {
-            return Security::xssProtection($this->uri);
+
+            $path = $this->get('PATH_TRANSLATED');
+            $url = str_replace($this->get('DOCUMENT_ROOT'),'', $path);
+
+            return Security::xssProtection($url);
         }
 
         /**
