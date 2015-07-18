@@ -27,7 +27,7 @@
         }
 
         /**
-         * Route tarafından Index::boot atandığı için bu tetiklenir.
+         * Route tarafından {{ name }}::boot atandığı için bu tetiklenir.
          *
          * @return View
          */
