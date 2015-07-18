@@ -6,13 +6,22 @@
 
     use Anonym\Support\Accessors;
 
+    /**
+     * Class CallableDispatcher
+     * @package Anonym\Route\Http\Dispatchers
+     */
+
     class CallableDispatcher
     {
-        protected $content;
-        use Accessors;
 
+        /**
+         * Çağrılabilir fonkisonu yürütür
+         *
+         * @param callable|null $call
+         * @param array $params
+         */
         public function __construct(callable $call = null, array $params = [])
         {
-            $this->setContent(call_user_func_array($call, $params));
+            call_user_func_array($call, $params);
         }
     }

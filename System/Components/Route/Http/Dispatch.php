@@ -114,10 +114,10 @@
                 switch ($method) {
 
                     case self::CALLABLE_METHOD:
-                        $this->response($this->callableDispatcher());
+                        $this->callableDispatcher();
                         break;
                     case self::CONTROLLER_METHOD:
-                        $this->response($this->controllerDispatcher());
+                        $this->controllerDispatcher();
                         break;
                     default:
                         throw new Exception('Geçersiz bir yapı girdiniz');
@@ -152,34 +152,24 @@
         private function callableDispatcher()
         {
 
-            return (new CallableDispatcher($this->dispatchCallable, $this->getParams()))->getContent();
+            return new CallableDispatcher($this->dispatchCallable, $this->getParams());
         }
 
+
+        /**
+         * controller olarak oluşturulan sistemi parçalar
+         *
+         * @return ControllerDispatcher
+         */
         private function controllerDispatcher()
         {
 
-            return (new ControllerDispatcher($this->dispatchController, $this->getParams()))->getContent();
-        }
-
-        private function response($response = '')
-        {
-
-            // eğer düz bir metinse
-            if (is_string($response)) {
-                $response = response($response);
-            }
-            // eğer view objesi döndüyse response e döndür
-            if ($response instanceof ShouldBeView) {
-                $response = response($response->execute());
-            }
-            // response içeriğini yazdır
-            if ($response instanceof ShouldBeResponse) {
-                $response->execute();
-            }
+            return new ControllerDispatcher($this->dispatchController, $this->getParams());
         }
 
         /**
          * giriş yetkisinin olup olmadığını kontrol ediyoruz
+         *
          * @return bool
          */
         private function accessChecker()

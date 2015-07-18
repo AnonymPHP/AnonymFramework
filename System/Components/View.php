@@ -77,9 +77,8 @@
                 $this->loadFooterFiles();
             }
 
-            return ob_get_clean();
+            return true;
         }
-
 
         /**
          * Girilen dosyayı yüklemeye çalışır

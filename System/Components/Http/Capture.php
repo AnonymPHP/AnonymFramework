@@ -44,9 +44,12 @@
          * İçeriği tanımlar
          *
          * @param string $content
+         * @return bool
          */
         public static function setContent($content = ''){
             static::$content = null;
+
+            return true;
         }
 
         /**
@@ -55,6 +58,6 @@
          */
         public static function clean()
         {
-            static::setContent(null);
+            return static::setContent(null);
         }
     }

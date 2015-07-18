@@ -86,7 +86,7 @@
                 $content .= $this->rendeFooterFiles();
             }
 
-             Capture::setContent($content);
+             return Capture::setContent($content);
         }
 
         /**
