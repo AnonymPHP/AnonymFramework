@@ -16,7 +16,6 @@
   ],
   "autoload": {
     "psr-4": {
-      "Anonym\\": "System/Components/",
       "Application\\Controllers\\": "Application/Http/Controllers/",
       "Application\\Models\\": "Application/Database/Models/",
       "Application\\Events\\": "Application/Event/Events/",
@@ -29,16 +28,5 @@
     "classmap": [
       "vendor"
     ]
-  },
-  "require": {
-    "php": ">=5.4",
-    "phpmailer/phpmailer": "~5.2",
-    "twig/twig": "~1.0",
-    "particle/validator": "dev-master",
-    "symfony/finder": "2.7.*",
-    "symfony/console": "2.7.*",
-    "symfony/process": "2.7.*",
-    "anonym-php/anonym-assets":"dev-master",
-    "symfony/event-dispatcher": "2.7.*"
   }
 }

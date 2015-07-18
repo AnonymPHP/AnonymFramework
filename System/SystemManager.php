@@ -29,7 +29,7 @@
              *   |  ****************
              */
             App::miss(function (Request $request) {
-                response(view('404'))->execute();
+                response(view('404'))->send();
             });
 
             /**
@@ -62,9 +62,7 @@
                 new ErrorLog($errno, $errstr, $errfile, $errline);
             });
 
-
         }
-
     }
 
 
