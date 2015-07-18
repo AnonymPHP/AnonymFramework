@@ -8,8 +8,7 @@
 
     namespace Application\Controllers;
 
-    use Anonym\Cache;
-    use Anonym\Redis;
+
     use Anonym\Route\Controller;
     use Anonym\View;
 

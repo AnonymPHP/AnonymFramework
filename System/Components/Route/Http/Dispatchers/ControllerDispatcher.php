@@ -11,6 +11,8 @@
     class ControllerDispatcher
     {
 
+        use Accessors;
+        private $content;
         /**
          * @param null $controller
          * @param array $params
@@ -27,7 +29,7 @@
                 $method = "handle";
             }
 
-           call_user_func_array([$controller, $method], $params);
+            $this->setContent(call_user_func_array([$controller, $method], $params));
         }
 
         /**

@@ -66,12 +66,9 @@
             $this->debug['files'][] = $fileName;
 
             if (true === $this->autoload) {
-
                 $this->loadHeaderFiles();
             }
-
             $this->loadFile($fileName, $variables);
-
             if (true === $this->autoload) {
 
                 $this->loadFooterFiles();

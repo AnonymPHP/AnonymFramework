@@ -137,6 +137,7 @@
         {
             $make = $this->singleton(Router::class);
             $make->run();
+            response()->send();
         }
 
         /**

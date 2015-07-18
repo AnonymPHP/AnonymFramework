@@ -19,7 +19,7 @@
      * Yeni bir view Objesi döndürür.
      *
      * @param string $file Döndürülecek View Sınıfına atanacak include dosya adı
-     * @param array  $parametres View sınıfına girilecek parametreler
+     * @param array $parametres View sınıfına girilecek parametreler
      * @return \Anonym\View
      */
     function view($file = '', array $parametres = [])
@@ -43,13 +43,13 @@
     /**
      * Yeni bir response objesi döndürür
      *
-     * @param string  $content Gösterilecek içerik
+     * @param string $content Gösterilecek içerik
      * @param integer $statusCode İstekçiye gönderilecek durum kodu
      * @return \Anonym\Http\Response
      */
-    function response($content = '', $statusCode = 200)
+    function response($content = null, $statusCode = 200)
     {
-        return Singleton::make('\Anonym\Http\Response', [$content, $statusCode]);
+        return Singleton::make(\Anonym\Http\Response::class, [$content, $statusCode]);
     }
 
     /**
@@ -61,7 +61,7 @@
      */
     function session($get = null, $set = null)
     {
-        $session = Singleton::make('Anonym\Session');
+        $session = Singleton::make(\Anonym\Session::class);
         if ($get !== null && $set === null) {
             return $session->get($get);
         } elseif ($get !== null && $set !== null) {
@@ -80,7 +80,7 @@
      */
     function cookie($get = null, $set = null)
     {
-        $cookie = Singleton::make('Anonym\Cookie');
+        $cookie = Singleton::make( \Anonym\Cookie::class );
         if ($get !== null && $set === null) {
             return $cookie->get($get);
         } elseif ($get !== null && $set !== null) {
@@ -98,10 +98,9 @@
      */
     function forever($name, $value = '')
     {
-        if(is_string($name) && is_string($value))
-        {
+        if (is_string($name) && is_string($value)) {
             return cookie()->forever($name, $value);
-        }else{
+        } else {
             throw new InvalidArgumentException('Cookie ismi veya değeri sadece string değeri alabilir');
         }
     }

@@ -118,10 +118,10 @@
                 switch ($method) {
 
                     case self::CALLABLE_METHOD:
-                        $this->callableDispatcher();
+                        $this->response($this->callableDispatcher());
                         break;
                     case self::CONTROLLER_METHOD:
-                        $this->controllerDispatcher();
+                        $this->response($this->controllerDispatcher());
                         break;
                     default:
                         throw new Exception('Geçersiz bir yapı girdiniz');
@@ -130,6 +130,22 @@
             }
         }
 
+        /**
+         * @param null $response
+         */
+        private function response($response = null)
+        {
+            if($response instanceof ShouldBeView)
+            {
+                $response->execute();
+            }
+        }
+
+        /**
+         * Parametreleri döndürür
+         *
+         * @return null
+         */
         public function getParams()
         {
 
@@ -156,7 +172,7 @@
         private function callableDispatcher()
         {
 
-            return new CallableDispatcher($this->dispatchCallable, $this->getParams());
+            return  (new CallableDispatcher($this->dispatchCallable, $this->getParams()))->getContent();
         }
 
 
@@ -168,7 +184,7 @@
         private function controllerDispatcher()
         {
 
-            return new ControllerDispatcher($this->dispatchController, $this->getParams());
+            return  (new ControllerDispatcher($this->dispatchController, $this->getParams()))->getContent();
         }
 
         /**

@@ -1,6 +1,6 @@
 <?php
 
-
+    ini_set('display_errors', 'On');
     /**
      * @author vahitserifsaglam <vahit.serif119@gmail.com>
      * @copyright 2015, AnonymFramework

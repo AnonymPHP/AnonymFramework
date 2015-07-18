@@ -33,6 +33,7 @@
          */
         public static function getContent()
         {
+
             if (null !== static::$content) {
                 return static::$content;
             }else{

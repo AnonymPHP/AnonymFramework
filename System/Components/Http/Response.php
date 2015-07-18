@@ -305,6 +305,16 @@
         }
 
         /**
+         *  İçeriği gönderir
+         */
+        public function sendContent()
+        {
+
+            $content = (null !== $this->content) ? $this->content: Capture::getContent();
+            echo $content;
+
+        }
+        /**
          * Çıktıyı Gönderiri
          *
          * @throws HttpResponseException
@@ -312,13 +322,10 @@
 
         public function send()
         {
-            $content = (null !== $this->content) ? $this->content: Capture::getContent();
-
             if (!headers_sent()) {
 
                 $this->sendHeaders();
                 $this->sendContent();
-                echo $content;
 
             } else {
 
@@ -337,7 +344,6 @@
         {
 
             $this->statusCode = 404;
-
             return $this;
         }
 

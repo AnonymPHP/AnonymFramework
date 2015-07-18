@@ -14,6 +14,8 @@
     class CallableDispatcher
     {
 
+        private $content;
+        use Accessors;
         /**
          * Çağrılabilir fonkisonu yürütür
          *
@@ -22,6 +24,6 @@
          */
         public function __construct(callable $call = null, array $params = [])
         {
-            call_user_func_array($call, $params);
+            $this->setContent(call_user_func_array($call, $params));
         }
     }
