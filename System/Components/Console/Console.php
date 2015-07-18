@@ -4,9 +4,9 @@
      * @copyright AnonymMedya, 2015
      */
 
-    namespace Application\Console;
+    namespace Anonym\Console;
 
-    use Anonym\Application;
+    use Anonym\Anonym;
     use Symfony\Component\Console\Application as SymfonyConsole;
     use Symfony\Component\Console\Output\BufferedOutput;
     use Symfony\Component\Console\Output\OutputInterface;
@@ -28,7 +28,6 @@
 
         /**
          * Sınıfı başlatır ve bazı atamaları gerçekleştirir
-         * @param Application $app
          * @param int $version
          */
         public function __construct($version = 1)
@@ -90,7 +89,7 @@
         }
 
         /**
-         * Get the default input definitions for the applications.
+         * Get the default input definitions for the Anonyms.
          *
          * This is used to add the --env option to every available command.
          *

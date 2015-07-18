@@ -7,8 +7,8 @@
     namespace Application\Console\Commands;
 
 
-    use Application\Console\Command;
-    use Application\Console\HandleInterface;
+    use Anonym\Console\Command;
+    use Anonym\Console\HandleInterface;
     use Anonym\Database\Tools\Migration\MigrationManager;
     use Anonym\Filesystem;
     use Anonym\Support\Migrate;

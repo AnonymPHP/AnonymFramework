@@ -4,13 +4,13 @@
      * @copyright AnonymMedya, 2015
      */
 
-    namespace Application\Console;
+    namespace Anonym\Console;
 
     use Application\Console\System;
 
     /**
      * Class CommandsManager
-     * @package Application\Console
+     * @package Anonym\Console
      */
     class GetCommands extends System
     {

@@ -6,7 +6,7 @@
 
     namespace Application\Console\Commands;
 
-    use Application\Console\Command;
+    use Anonym\Console\Command;
     use Anonym\Filesystem;
     use Anonym\Support\Migrate;
     use Symfony\Component\Console\Output\OutputInterface;
