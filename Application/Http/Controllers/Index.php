@@ -10,7 +10,6 @@
 
 
     use Anonym\Route\Controller;
-    use Anonym\View;
 
     /**
      * Class IndexController
