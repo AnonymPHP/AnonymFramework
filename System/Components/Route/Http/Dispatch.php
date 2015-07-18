@@ -67,6 +67,7 @@
         public function setBefore(callable $before = null)
         {
             $this->before = $before;
+
             return $this;
         }
 
@@ -109,7 +110,10 @@
 
             $method = $this->method;
 
-            if ($this->beforeChecker() && $this->accessChecker()) {
+            if ($this->beforeChecker() && $this->accessChecker(
+                    new AccessManagerDispatcher($this->access, $this->next, $this->role)
+                )
+            ) {
 
                 switch ($method) {
 
@@ -169,28 +173,12 @@
 
         /**
          * giriş yetkisinin olup olmadığını kontrol ediyoruz
-         *
+         * @param AccessManagerDispatcher
          * @return bool
          */
-        private function accessChecker()
+        private function accessChecker(AccessManagerDispatcher $managerDispatcher)
         {
-
-            $access = $this->access;
-            if (null === $access) {
-                return true;
-            }
-            $next = $this->next;
-            $request = new Request();
-            $role = $this->role;
-            $handle = call_user_func_array([$access, 'handle'], [$request, $next, $role]);
-            if ($handle) {
-                return true;
-            } else {
-
-                if ($access instanceof Terminate) {
-                    call_user_func_array([$access, 'terminate'], [$request]);
-                }
-            }
+            return $managerDispatcher->dispatch();
         }
 
         /**
