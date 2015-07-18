@@ -14,6 +14,11 @@
       "homepage":"http://www.gemframework.com"
     }
   ],
+
+  "require": {
+    "php": ">=5.4",
+    "anonym-php/anonym-library":"dev-master"
+  },
   "autoload": {
     "psr-4": {
       "Application\\Controllers\\": "Application/Http/Controllers/",
