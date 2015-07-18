@@ -13,6 +13,11 @@
     use Anonym\Route\AccessManager\Interfaces\Handle;
     use Anonym\Route\AccessManager\Interfaces\Terminate;
 
+    /**
+     * Class AccessManagerDispatcher
+     * @package Anonym\Route\Http
+     */
+
     class AccessManagerDispatcher
     {
 

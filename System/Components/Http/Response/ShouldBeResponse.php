@@ -17,5 +17,5 @@
          *
          * @return mixed
          */
-        public function execute();
+        public function send();
     }

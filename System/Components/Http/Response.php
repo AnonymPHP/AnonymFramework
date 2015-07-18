@@ -83,7 +83,18 @@
            510 => 'Not Extended',                                                // RFC2774
            511 => 'Network Authentication Required',                             // RFC6585
         ];
-        private $content = '';
+        /**
+         * İçeriği tutar
+         *
+         * @var null|string
+         */
+        private $content = null;
+
+        /**
+         * Durum Kodunu tutar
+         *
+         * @var int
+         */
         private $statusCode = 200;
         private $AnonymFrameworkHeaders = [
 
@@ -197,20 +208,14 @@
          * @return $this
          */
 
-        public function setContent($content = '')
+        public function setContent($content = null)
         {
-
-            if ($content instanceof ShouldBeView) {
-                $content = $content->execute();
-            }
-
             $this->content = $content;
-
             return $this;
         }
 
 
-        public function json($content = '', $statusCode = 200)
+        public function json($content = null, $statusCode = 200)
         {
 
             return new JsonResponse($content, $statusCode);
@@ -230,7 +235,13 @@
             return $this;
         }
 
-
+        /**
+         * Header kodunu oluşturur
+         *
+         * @param $key
+         * @param string $value
+         * @return string
+         */
         private function generateHeaderString($key, $value = '')
         {
 
@@ -254,8 +265,8 @@
         }
 
         /**
-         * Cookieleri atar
-
+         * Cookieleri kullanır
+         *
          */
         private function useCookies()
         {
@@ -269,7 +280,6 @@
 
         /**
          * Protocol version ve code atamasını yapar
-
          */
         private function setProtocolAndCode()
         {
@@ -285,20 +295,31 @@
         }
 
         /**
+         * Başlıkları gönderir
+         */
+        private function sendHeaders(){
+
+            $this->setProtocolAndCode();
+            $this->useCookies();
+            $this->runHeaders();
+        }
+
+        /**
          * Çıktıyı Gönderiri
          *
          * @throws HttpResponseException
          */
 
-        public function execute()
+        public function send()
         {
+            $content = (null !== $this->content) ? $this->content: Capture::getContent();
 
-            $this->setProtocolAndCode();
-            $this->useCookies();
             if (!headers_sent()) {
 
-                $this->runHeaders();
-                echo $this->content;
+                $this->sendHeaders();
+                $this->sendContent();
+                echo $content;
+
             } else {
 
                 throw new HttpResponseException(
