@@ -13,7 +13,6 @@
          * O örnek kullanılacaktır
          *
          */
-
         'alias' => [
             'Auth' => \Anonym\Auth::class,
             'Cookie' => \Anonym\Cookie::class,
