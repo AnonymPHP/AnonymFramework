@@ -24,7 +24,7 @@
     "symfony/process": "2.7.*",
     "anonym-php/anonym-assets": "dev-master",
     "symfony/event-dispatcher": "2.7.*",
-    "anonym-php/anonym-library": "dev-master",
+    "anonym-php/anonym-library": "dev-master"
   },
   "autoload": {
     "psr-4": {
@@ -36,9 +36,6 @@
       "System\\": "System/",
       "Application\\Console\\": "Application/Console/",
       "Application\\Database\\Migrations\\": "Application/Database/Migrations"
-    },
-    "classmap": [
-      "vendor"
-    ]
+    }
   }
 }
