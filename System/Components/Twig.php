@@ -8,6 +8,7 @@
     namespace Anonym;
 
     use Anonym\Helpers\Config;
+    use Anonym\Http\Capture;
     use Anonym\View\ShouldBeView;
     use Anonym\View\ViewManager;
     use Twig_Loader_Filesystem;
@@ -85,7 +86,7 @@
                 $content .= $this->rendeFooterFiles();
             }
 
-            return $content;
+             Capture::setContent($content);
         }
 
         /**
