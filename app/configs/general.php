@@ -25,7 +25,8 @@ return [
     'alias' => [
         'Cookie' => \Anonym\Components\Cookie\Cookie::class,
         'Session' => \Anonym\Components\Session\Session::class,
-        'Crypt' => \Anonym\Components\Crypt\Crypter::class
+        'Crypt' => \Anonym\Components\Crypt\Crypter::class,
+        'Event' => \Anonym\Components\Event\EventDispatcher::class
      ],
      /**
       * | ****************
