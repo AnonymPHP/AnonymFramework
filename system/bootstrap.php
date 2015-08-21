@@ -70,6 +70,12 @@ define('LANGUAGE', RESOURCE . 'views/');
 
 
 /**
+ * |----------------------------
+ * |the constant for database files
+ * |----------------------------
+ */
+define('DATABASE', APP. 'database/');
+/**
  *
  * AnonymFramework Application
  *
