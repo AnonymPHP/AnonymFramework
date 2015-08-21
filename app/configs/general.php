@@ -37,6 +37,6 @@ return [
      * | *****************
      */
     'providers' => [
-
+        \Anonym\Providers\EventProvider::class
     ],
 ];
