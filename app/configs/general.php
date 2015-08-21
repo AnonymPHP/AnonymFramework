@@ -22,21 +22,21 @@ return [
      * | providers  => the providers
      * |*********************************
      */
-    'alias' => [
-        'Cookie' => \Anonym\Components\Cookie\Cookie::class,
+    'alias'     => [
+        'Cookie'  => \Anonym\Components\Cookie\Cookie::class,
         'Session' => \Anonym\Components\Session\Session::class,
-        'Crypt' => \Anonym\Components\Crypt\Crypter::class,
-        'Event' => \Anonym\Components\Event\EventDispatcher::class,
-        'Route' => \Anonym\Components\Route\RouteCollector::class
-     ],
-     /**
-      * | ****************
-      * |
-      * | the both of them must be an array
-      * |
-      * | *****************
-      */
-     'providers' => [
+        'Crypt'   => \Anonym\Components\Crypt\Crypter::class,
+        'Event'   => \Anonym\Components\Event\EventDispatcher::class,
+        'Route'   => \Anonym\Components\Route\RouteCollector::class
+    ],
+    /**
+     * | ****************
+     * |
+     * | the both of them must be an array
+     * |
+     * | *****************
+     */
+    'providers' => [
 
-],
+    ],
 ];
