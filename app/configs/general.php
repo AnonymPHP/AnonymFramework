@@ -26,7 +26,8 @@ return [
         'Cookie' => \Anonym\Components\Cookie\Cookie::class,
         'Session' => \Anonym\Components\Session\Session::class,
         'Crypt' => \Anonym\Components\Crypt\Crypter::class,
-        'Event' => \Anonym\Components\Event\EventDispatcher::class
+        'Event' => \Anonym\Components\Event\EventDispatcher::class,
+        'Route' => \Anonym\Components\Route\RouteCollector::class
      ],
      /**
       * | ****************
