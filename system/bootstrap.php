@@ -8,6 +8,7 @@
  * Thanks for using
  */
 
+include '../vendor/autoload.php';
 /**
  *
  *  the constant for application dir
@@ -23,6 +24,12 @@ define('APP', 'app/');
 
 define('CONFIG', APP . 'configs/');
 
+/**
+ *
+ *  the constant for system dir
+ *
+ */
+define('SYSTEM', 'system/');
 
 /**
  *
