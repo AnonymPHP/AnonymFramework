@@ -8,7 +8,8 @@
  * Thanks for using
  */
 
-include '../vendor/autoload.php';
+include dirname(__DIR__). '/vendor/autoload.php';
+
 /**
  *
  *  the constant for application dir
