@@ -8,14 +8,16 @@
  * Thanks for using
  */
 
-include dirname(__DIR__). '/vendor/autoload.php';
+include dirname(__DIR__) . '/vendor/autoload.php';
+
+define('BASE', dirname(__DIR__) . '/');
 
 /**
  *
  *  the constant for application dir
  *
  */
-define('APP', 'app/');
+define('APP', BASE . 'app/');
 
 /**
  *
@@ -30,7 +32,19 @@ define('CONFIG', APP . 'configs/');
  *  the constant for system dir
  *
  */
-define('SYSTEM', 'system/');
+define('SYSTEM', BASE . 'system/');
+
+/**
+ *  CONSTANT for resoruces
+ */
+define('RESOURCE', BASE . 'resources/');
+
+
+/**
+ * the constant for public files
+ */
+define('PUBLIC', BASE . 'public/');
+
 
 /**
  *
