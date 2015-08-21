@@ -16,4 +16,9 @@ use Anonym\Components\Route\Controller;
 class Test extends Controller
 {
 
+    public function method()
+    {
+        echo 'hello world';
+    }
+
 }
