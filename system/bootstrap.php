@@ -74,7 +74,20 @@ define('LANGUAGE', RESOURCE . 'views/');
  * |the constant for database files
  * |----------------------------
  */
-define('DATABASE', APP. 'database/');
+define('DATABASE', APP . 'database/');
+
+/**
+ * |----------------------------
+ * |the constant for routes.php
+ * |----------------------------
+ */
+define('HTTP', APP . 'http/');
+/**
+ * |----------------------------
+ * |the constant for routes.php
+ * |----------------------------
+ */
+define('ROUTE_PHP', HTTP . 'routes.php');
 /**
  *
  * AnonymFramework Application
