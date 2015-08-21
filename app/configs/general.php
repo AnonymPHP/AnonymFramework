@@ -11,19 +11,20 @@
 
 return [
 
-     /**
-      * |*********************************
-      * |
-      * | Anonym Framework General configs;
-      * | ---------------------------
-      * | variables;
-      * |
-      * | alias => the alias for facade classes
-      * | providers  => the providers
-      * |*********************************
-      */
-     'alias' => [
-
+    /**
+     * |*********************************
+     * |
+     * | Anonym Framework General configs;
+     * | ---------------------------
+     * | variables;
+     * |
+     * | alias => the alias for facade classes
+     * | providers  => the providers
+     * |*********************************
+     */
+    'alias' => [
+        'Cookie' => \Anonym\Components\Cookie\Cookie::class
+        'Session'
      ],
      /**
       * | ****************
@@ -34,5 +35,5 @@ return [
       */
      'providers' => [
 
-     ],
+],
 ];
