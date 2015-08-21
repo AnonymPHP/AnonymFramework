@@ -10,8 +10,25 @@
 
 return [
 
+    /**
+     * | ****************
+     * |
+     * | the configs for filesystem
+     * |
+     * | *****************
+     */
     'filesystem' => [
 
+        /**
+         * | ****************
+         * |
+         * | the configs of local filesystem driver
+         * |
+         * | *****************
+         */
+        'local' => [
+            'root' => BASE
+        ]
     ],
 
     /**
