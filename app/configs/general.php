@@ -23,8 +23,8 @@ return [
      * |*********************************
      */
     'alias' => [
-        'Cookie' => \Anonym\Components\Cookie\Cookie::class
-        'Session'
+        'Cookie' => \Anonym\Components\Cookie\Cookie::class,
+        'Session' => Anonym\Components\Session\Session::class
      ],
      /**
       * | ****************
