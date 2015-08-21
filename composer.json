@@ -16,26 +16,11 @@
   ],
   "minimum-stability": "dev",
   "require-dev": {
-    "php": ">=5.4",
-    "phpmailer/phpmailer": "~5.2",
-    "twig/twig": "~1.0",
-    "symfony/finder": "2.7.*",
-    "symfony/console": "2.7.*",
-    "symfony/process": "2.7.*",
-    "anonym-php/anonym-assets": "dev-master",
-    "symfony/event-dispatcher": "2.7.*",
-    "anonym-php/anonym-library": "dev-master"
+    "php": ">=5.4"
   },
   "autoload": {
     "psr-4": {
-      "Application\\Controllers\\": "Application/Http/Controllers/",
-      "Application\\Models\\": "Application/Database/Models/",
-      "Application\\Events\\": "Application/Event/Events/",
-      "Application\\Listeners\\": "Application/Event/Listeners/",
-      "Application\\Routes\\": "Application/Routes",
-      "System\\": "System/",
-      "Application\\Console\\": "Application/Console/",
-      "Application\\Database\\Migrations\\": "Application/Database/Migrations"
+
     }
   }
 }
