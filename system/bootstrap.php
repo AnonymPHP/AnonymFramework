@@ -51,8 +51,14 @@ define('RESOURCE', BASE . 'resources/');
  * |the constant for public files
  * |----------------------------
  */
-define('PUBLIC', BASE . 'public/');
+define('PUBLIC_FILES', BASE . 'public/');
 
+/**
+ * |----------------------------
+ * |the constant for upload files
+ * |----------------------------
+ */
+define('UPLOAD', PUBLIC_FILES . 'uploads/');
 
 /**
  *
