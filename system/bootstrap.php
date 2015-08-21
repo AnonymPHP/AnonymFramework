@@ -60,6 +60,15 @@ define('PUBLIC_FILES', BASE . 'public/');
  */
 define('UPLOAD', PUBLIC_FILES . 'uploads/');
 
+
+/**
+ * |----------------------------
+ * |the constant for language files
+ * |----------------------------
+ */
+define('LANGUAGE', RESOURCE . 'views/');
+
+
 /**
  *
  * AnonymFramework Application
