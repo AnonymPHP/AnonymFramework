@@ -33,6 +33,10 @@ return [
          */
         'driver' => 'file',
 
+        'file' => [
+            'ext' => '.cache',
+            'folder' => RESOURCE . 'cache'
+        ],
 
     ]
 ];
