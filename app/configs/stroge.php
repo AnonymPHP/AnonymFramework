@@ -12,6 +12,27 @@ return [
 
     'filesystem' => [
 
+    ],
+
+    /**
+     * | ****************
+     * |
+     * | the configs of cache class
+     * |
+     * | *****************
+     */
+    'cache' => [
+
+        /**
+         * | ****************
+         * |
+         * | driver can be = file,memcache, redis, predis,apc, zend, xcache, array
+         * | if driver has a special config, you must be give it
+         * |
+         * | *****************
+         */
+        'driver' => 'file',
+
 
     ]
 ];
