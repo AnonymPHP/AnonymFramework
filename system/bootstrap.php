@@ -10,38 +10,46 @@
 
 include dirname(__DIR__) . '/vendor/autoload.php';
 
+/**
+ * |----------------------------
+ * |the constant for base files
+ * |----------------------------
+ */
 define('BASE', dirname(__DIR__) . '/');
 
 /**
- *
- *  the constant for application dir
- *
+ * |----------------------------
+ * |the constant for application files
+ * |----------------------------
  */
 define('APP', BASE . 'app/');
 
 /**
- *
- * the constant for config dir
- *
+ * |----------------------------
+ * |the constant for config files
+ * |----------------------------
  */
-
 define('CONFIG', APP . 'configs/');
 
 /**
- *
- *  the constant for system dir
- *
+ * |----------------------------
+ * |the constant for system files
+ * |----------------------------
  */
 define('SYSTEM', BASE . 'system/');
 
 /**
- *  CONSTANT for resoruces
+ * |----------------------------
+ * |the constant for resource files
+ * |----------------------------
  */
 define('RESOURCE', BASE . 'resources/');
 
 
 /**
- * the constant for public files
+ * |----------------------------
+ * |the constant for public files
+ * |----------------------------
  */
 define('PUBLIC', BASE . 'public/');
 
@@ -51,5 +59,5 @@ define('PUBLIC', BASE . 'public/');
  * AnonymFramework Application
  *
  */
-$app = new \Anonym\Bootstrap\Bootstrap('AnonymFramework', 2);
+$app = new \Anonym\Bootstrap\Bootstrap('AnonymPHP', 2);
 return $app;
