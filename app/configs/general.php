@@ -11,13 +11,28 @@
 
 return [
 
-   
+     /**
+      * |*********************************
+      * |
+      * | Anonym Framework General configs;
+      * | ---------------------------
+      * | variables;
+      * |
+      * | alias => the alias for facade classes
+      * | providers  => the providers
+      * |*********************************
+      */
      'alias' => [
 
      ],
-
+     /**
+      * | ****************
+      * |
+      * | the both of them must be an array
+      * |
+      * | *****************
+      */
      'providers' => [
 
      ],
-
 ];
