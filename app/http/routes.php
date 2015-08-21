@@ -8,6 +8,3 @@
  * Thanks for using
  */
 
-use Anonym\Facades\Route;
-
-Route::get('/', 'Test:method');
