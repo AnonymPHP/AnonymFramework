@@ -10,6 +10,6 @@
  */
 
 
-include 'system/bootstrap.php';
+ $app = include 'system/bootstrap.php';
 
 
