@@ -22,3 +22,12 @@ define('APP', 'app/');
  */
 
 define('CONFIG', APP . 'configs/');
+
+
+/**
+ *
+ * AnonymFramework Application
+ *
+ */
+$app = new \Anonym\Bootstrap\Bootstrap('AnonymFramework', 2);
+return $app;
