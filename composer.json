@@ -16,7 +16,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": ">=5.5.9"
+    "php": ">=5.5.9",
     "anonym-php/anonym-library" : "~1.2@dev"
   },
   "autoload": {
