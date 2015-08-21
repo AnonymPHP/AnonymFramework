@@ -78,7 +78,7 @@ define('DATABASE', APP . 'database/');
 
 /**
  * |----------------------------
- * |the constant for routes.php
+ * |the constant for http files
  * |----------------------------
  */
 define('HTTP', APP . 'http/');
