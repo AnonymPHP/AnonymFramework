@@ -10,5 +10,3 @@
  */
 
  $app = include 'system/bootstrap.php';
-
-
