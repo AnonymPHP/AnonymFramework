@@ -7,3 +7,5 @@
  *
  * Thanks for using
  */
+
+use Anonym\Facades\Route;
