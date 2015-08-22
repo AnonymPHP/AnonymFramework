@@ -8,4 +8,13 @@
  * Thanks for using
  */
 
- use Anonym\Facades\Route;
+namespace Anonym\Controllers;
+
+
+use Anonym\Components\Route\Controller;
+
+class Test extends Controller
+{
+
+
+}
