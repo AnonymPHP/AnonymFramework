@@ -10,16 +10,69 @@
 
 return [
 
+    /**
+     * | ****************
+     * |
+     * | selected database connection
+     * |
+     * | *****************
+     */
     'selected'    => 'defualt',  // selected connection, has to be in connections
 
     'connections' =>
         [
+
+
             'default' => [
+
+
+                /**
+                 * | ****************
+                 * |
+                 * | the variable of database host name
+                 * |
+                 * | *****************
+                 */
                 'host'     => 'localhost',
+
+                /**
+                 * | ****************
+                 * |
+                 * | the variable of database name
+                 * |
+                 * | *****************
+                 */
                 'db'       => 'test',
+
+
+                /**
+                 * | ****************
+                 * |
+                 * | the variable of database username
+                 * |
+                 * | *****************
+                 */
                 'username' => 'root',
+
+
+                /**
+                 * | ****************
+                 * |
+                 * | the variable of database password
+                 * |
+                 * | *****************
+                 */
                 'password' => 123456,
-                'driver'   => 'pdo' // or can be mysqli
+
+                /**
+                 * | ****************
+                 * |
+                 * | driver can be pdo or mysqli
+                 * |
+                 * | *****************
+                 */
+
+                'driver'   => 'pdo'
             ]
         ]
 
