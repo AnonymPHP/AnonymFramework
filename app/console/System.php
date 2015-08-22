@@ -8,7 +8,7 @@
  * Thanks for using
  */
 
-namespace Anonym\Console;
+namespace Console;
 
 
 class System
