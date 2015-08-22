@@ -15,7 +15,10 @@ return [
     'connections' =>
         [
             'default' => [
-
+                'host'     => 'localhost',
+                'db'       => 'test',
+                'username' => 'root',
+                'password' => 123456
             ]
         ]
 
