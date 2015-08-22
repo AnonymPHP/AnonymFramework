@@ -10,10 +10,55 @@
 
 return [
 
+    /**
+     * | ****************
+     * |
+     * | the extension type of view files
+     * |
+     * | *****************
+     */
     'ext' => '.php',
+
+    /**
+     * | ****************
+     * |
+     * | the root dir of view files
+     * |
+     * | *****************
+     */
     'root' => VIEW,
 
+    /**
+     * | ****************
+     * |
+     * | the the root dir of language files
+     * |
+     * | *****************
+     */
+    'language' => LANGUAGE,
 
-    'language' => LANGUAGE
+       /**
+        * | ****************
+        * |
+        * | the files of header
+        * |
+        * | *****************
+        */
+    'header' => [
+
+    ],
+
+    /**
+     * | ****************
+     * |
+     * | the files of footer
+     * |
+     * | *****************
+     */
+    'footer' => [
+
+    ],
+
+
 
 ];
