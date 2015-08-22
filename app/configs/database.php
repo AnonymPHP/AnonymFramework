@@ -18,7 +18,8 @@ return [
                 'host'     => 'localhost',
                 'db'       => 'test',
                 'username' => 'root',
-                'password' => 123456
+                'password' => 123456,
+                'driver'   => 'pdo' // or can be mysqli
             ]
         ]
 
