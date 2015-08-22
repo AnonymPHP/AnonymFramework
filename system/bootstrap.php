@@ -93,6 +93,27 @@ define('HTTP', APP . 'http/');
  * |----------------------------
  */
 define('ROUTE_PHP', HTTP . 'routes.php');
+
+/**
+ * |----------------------------
+ * |the constant of migrations
+ * |----------------------------
+ */
+define('MIGRATION', DATABASE. 'migrations/');
+
+/**
+ * |----------------------------
+ * |the constant of migrations namespace
+ * |----------------------------
+ */
+define('MIGRATION_NAMESPACE', 'Anonym\\Database\\Migrations\\');
+
+/**
+ * |----------------------------
+ * |the constant of backups
+ * |----------------------------
+ */
+define('BACKUP', DATABASE. 'backups/');
 /**
  *
  * AnonymFramework Application
