@@ -24,7 +24,7 @@
       "Anonym\\Controllers\\": "app/http/controllers/",
       "Anonym\\Models\\": "app/models/",
       "Anonym\\Database\\Migrations\\": "app/database/migrations/",
-      "Anonym\\Console\\": "app/console/"
+      "Console\\": "app/console/"
     }
   }
 }
