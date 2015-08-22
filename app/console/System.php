@@ -15,8 +15,33 @@ class System
 {
 
     /**
-     * @var
+     * the repository of console commands
+     *
+     * @var array
      */
     protected $commands;
+
+    /**
+     * return the registered commands
+     *
+     * @return array
+     */
+    public function getCommands()
+    {
+        return $this->commands;
+    }
+
+    /**
+     * register the commands
+     *
+     * @param array $commands
+     * @return System
+     */
+    public function setCommands($commands)
+    {
+        $this->commands = $commands;
+        return $this;
+    }
+
 
 }
