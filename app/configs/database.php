@@ -17,7 +17,7 @@ return [
      * |
      * | *****************
      */
-    'selected'    => 'defualt',  // selected connection, has to be in connections
+    'connection'    => 'defualt',  // selected connection, has to be in connections
 
     'connections' =>
         [
