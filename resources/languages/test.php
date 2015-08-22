@@ -7,13 +7,3 @@
  *
  * Thanks for using
  */
-
-return [
-
-    'ext' => '.php',
-    'root' => VIEW,
-
-
-    'language' => LANGUAGE
-
-];

@@ -66,9 +66,14 @@ define('UPLOAD', PUBLIC_FILES . 'uploads/');
  * |the constant for language files
  * |----------------------------
  */
+define('LANGUAGE', RESOURCE . 'languages/');
+
+/**
+ * |----------------------------
+ * |the constant for language files
+ * |----------------------------
+ */
 define('LANGUAGE', RESOURCE . 'views/');
-
-
 /**
  * |----------------------------
  * |the constant for database files
