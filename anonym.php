@@ -9,4 +9,8 @@
  */
 
 $app = include 'system/bootstrap.php';
-var_dump($app);
+
+$console = new \Anonym\Components\Console\Console(1);
+
+// run the console
+$console->run();
