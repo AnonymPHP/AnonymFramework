@@ -11,7 +11,12 @@
 namespace Anonym\Console;
 
 
-class Commands
+class System
 {
+
+    /**
+     * @var
+     */
+    protected $commands;
 
 }
