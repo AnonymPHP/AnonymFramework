@@ -73,7 +73,7 @@ define('LANGUAGE', RESOURCE . 'languages/');
  * |the constant for language files
  * |----------------------------
  */
-define('LANGUAGE', RESOURCE . 'views/');
+define('VIEW', RESOURCE . 'views/');
 /**
  * |----------------------------
  * |the constant for database files
