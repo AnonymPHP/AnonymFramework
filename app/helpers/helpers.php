@@ -9,7 +9,7 @@
  */
 
 use Anonym\Support\Arr;
-
+use Anonym\Facades\View;
 
 if (!function_exists('value')) {
     /**
@@ -77,6 +77,6 @@ if(!function_exists('view'))
 {
     function view($file = '', $parameters = [])
     {
-
+        return View::make($file, $parameters);
     }
 }
