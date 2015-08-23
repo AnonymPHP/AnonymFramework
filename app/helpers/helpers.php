@@ -70,7 +70,13 @@ if(!function_exists('first'))
         }else{
             return false;
         }
+    }
+}
+
+if(!function_exists('view'))
+{
+    function view($file = '', $parameters = [])
+    {
 
     }
-
 }
