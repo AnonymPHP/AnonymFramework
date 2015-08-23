@@ -50,4 +50,22 @@ if (!function_exists('data_get')) {
 if(!function_exists('first'))
 {
 
+
+    function first($target)
+    {
+        // target must be an array
+        if(!is_array($target))
+        {
+            $target = (array) $target;
+        }
+
+        // target is required to have a value.
+        if (count($target)) {
+            return array_values($target)[0];
+        }else{
+            return false;
+        }
+
+    }
+
 }
