@@ -51,6 +51,12 @@ if(!function_exists('first'))
 {
 
 
+    /**
+     * get a first value in an array
+     *
+     * @param mixed $target
+     * @return mixed
+     */
     function first($target)
     {
         // target must be an array
@@ -58,7 +64,6 @@ if(!function_exists('first'))
         {
             $target = (array) $target;
         }
-
         // target is required to have a value.
         if (count($target)) {
             return array_values($target)[0];
