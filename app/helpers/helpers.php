@@ -46,3 +46,8 @@ if (!function_exists('data_get')) {
     }
 }
 
+
+if(!function_exists('first'))
+{
+
+}
