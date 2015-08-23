@@ -8,5 +8,4 @@
  * Thanks for using
  */
 
-
 $app = include 'system/bootstrap.php';
