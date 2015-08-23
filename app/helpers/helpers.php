@@ -44,6 +44,5 @@ if (!function_exists('data_get')) {
 
         Arr::get($target, $keys, $default);
     }
-
 }
 
