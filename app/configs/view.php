@@ -10,6 +10,49 @@
 
 return [
 
+
+    /**
+     * | ****************
+     * |
+     * | driver can be file, twig, smarty or blade
+     * |
+     * | *****************
+     */
+    'driver' => 'file',
+
+    /**
+     * | ****************
+     * |
+     * | this configs used for twig driver
+     * |
+     * | *****************
+     */
+    'twig' => [
+
+    ],
+
+    /**
+     * | ****************
+     * |
+     * | this configs used for smarty driver
+     * |
+     * | *****************
+     */
+    'smarty' => [
+
+    ],
+
+    /**
+     * | ****************
+     * |
+     * | this configs used for blade driver
+     * |
+     * | *****************
+     */
+    'blade' => [
+
+    ],
+
     /**
      * | ****************
      * |
