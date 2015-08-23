@@ -1,5 +1,4 @@
 <?php
-
 /**
  * This file belongs to the AnoynmFramework
  *
@@ -9,5 +8,5 @@
  * Thanks for using
  */
 
- $app = include 'system/bootstrap.php';
 
+$app = include 'system/bootstrap.php';
