@@ -40,5 +40,6 @@ return [
         \Anonym\Providers\EventProvider::class,
         \Anonym\Providers\DatabaseProvider::class,
         \Anonym\Providers\RouteProvider::class,
+        \Anonym\Providers\ErrorSenderProvider::class
     ],
 ];

@@ -16,5 +16,9 @@ use Anonym\Components\Route\Controller;
 class Test extends Controller
 {
 
+    public function hello($param)
+    {
+        echo $param;
+    }
 
 }
