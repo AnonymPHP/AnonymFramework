@@ -39,7 +39,18 @@ return [
     'providers' => [
         \Anonym\Providers\EventProvider::class,
         \Anonym\Providers\DatabaseProvider::class,
-        \Anonym\Providers\RouteProvider::class,
-        \Anonym\Providers\ErrorSenderProvider::class
+        \Anonym\Providers\RouteProvider::class
     ],
+
+
+    /**
+     * | ****************
+     * |
+     * | this configs for helpers functions file
+     * |
+     * | *****************
+     */
+    'helpers' => [
+
+    ]
 ];
