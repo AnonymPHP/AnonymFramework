@@ -62,5 +62,14 @@ return [
              * | *****************
              */
         ]
-    ]
+    ],
+
+    /**
+     * | ****************
+     * |
+     * | this config for hint string,integer,float types.
+     * |
+     * | *****************
+     */
+    'type_hint' => false
 ];
