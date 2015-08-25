@@ -11,8 +11,7 @@
 namespace Anonym\Models;
 
 
-use Anonym\Components\Element\Facade\Element;
-
+use Anonym\Facades\Element;
 /**
  * Class TestModel
  * @package Anonym\Models
