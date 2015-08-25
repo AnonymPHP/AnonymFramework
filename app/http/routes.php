@@ -9,5 +9,3 @@
  */
 
  use Anonym\Facades\Route;
-
- Route::get('/', 'Test:hello');

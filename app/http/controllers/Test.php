@@ -12,13 +12,14 @@ namespace Anonym\Controllers;
 
 
 use Anonym\Components\Route\Controller;
+use Anonym\Components\HttpClient\Request;
 
 class Test extends Controller
 {
 
-    public function hello($param)
+    public function hello(Request $request, $param)
     {
-        echo $param;
+        print_r(func_get_args());
     }
 
 }
