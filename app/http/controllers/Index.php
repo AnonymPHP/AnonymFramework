@@ -12,7 +12,7 @@ namespace Anonym\Controllers;
 
 
 use Anonym\Components\Route\Controller;
-use Anonym\Components\HttpClient\Request;
+use Anonym\Models\User;
 
 /**
  * Class Index
@@ -28,7 +28,8 @@ class Index extends Controller
      */
     public function boot()
     {
-
+        $get = User::where('username', 'password')->read();
+        print_r($get->fetch());
     }
 
 }
