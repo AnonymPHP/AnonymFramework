@@ -12,7 +12,6 @@ namespace Anonym\Controllers;
 
 
 use Anonym\Components\Route\Controller;
-use Anonym\Models\User;
 
 /**
  * Class Index
