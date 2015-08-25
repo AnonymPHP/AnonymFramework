@@ -38,7 +38,6 @@ return [
      */
     'providers' => [
         \Anonym\Providers\EventProvider::class,
-        \Anonym\Providers\DatabaseProvider::class,
         \Anonym\Providers\RouteProvider::class
     ],
 
