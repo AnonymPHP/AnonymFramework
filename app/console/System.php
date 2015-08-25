@@ -10,7 +10,10 @@
 
 namespace Console;
 
-
+/**
+ * Class System
+ * @package Console
+ */
 class System
 {
 
