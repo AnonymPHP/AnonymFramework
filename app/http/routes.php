@@ -8,4 +8,5 @@
  * Thanks for using
  */
 
- use Anonym\Facades\Route;
+use Anonym\Facades\Route;
+
