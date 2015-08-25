@@ -10,9 +10,18 @@
 
 return [
 
-    'csrf' => [
-        'status' => true, // make it false, if you dont want use it
-        'field_name'=> '_token' // this string will be look in posts
-    ]
+    /**
+     * | ****************
+     * |
+     * | this configs for csrf token
+     * |
+     * | *****************
+     */
+    'csrf'     => [
+        'status'     => true, // make it false, if you dont want use it
+        'field_name' => '_token' // this string will be look in posts
+    ],
+    'firewall' => [
 
+    ]
 ];
