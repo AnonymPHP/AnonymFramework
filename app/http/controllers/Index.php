@@ -28,8 +28,8 @@ class Index extends Controller
      */
     public function boot()
     {
-        $get = User::find(1)->read();
-        print_r($get->rowCount());
+
+        return view('index');
     }
 
 }
