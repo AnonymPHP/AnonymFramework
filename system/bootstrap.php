@@ -96,24 +96,32 @@ define('ROUTE_PHP', HTTP . 'routes.php');
 
 /**
  * |----------------------------
- * |the constant of migrations
+ * |the constant for migration files
  * |----------------------------
  */
 define('MIGRATION', DATABASE. 'migrations/');
 
 /**
  * |----------------------------
- * |the constant of migrations namespace
+ * |the constant for migrations namespace
  * |----------------------------
  */
 define('MIGRATION_NAMESPACE', 'Anonym\\Database\\Migrations\\');
 
 /**
  * |----------------------------
- * |the constant of backups
+ * |the constant for backups files
  * |----------------------------
  */
 define('BACKUP', DATABASE. 'backups/');
+
+/**
+ * |----------------------------
+ * |the constant for asset files
+ * |----------------------------
+ */
+define('ASSETS', PUBLIC_FILES. 'assets/');
+
 /**
  *
  * AnonymFramework Application
