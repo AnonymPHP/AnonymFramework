@@ -21,7 +21,30 @@ return [
         'status'     => true, // make it false, if you dont want use it
         'field_name' => '_token' // this string will be look in posts
     ],
+
+    /**
+     * | ****************
+     * |
+     * | this configs for some firewall
+     * |
+     * | *****************
+     */
     'firewall' => [
 
+        /**
+         * | ****************
+         * |
+         * | this configs for ip block
+         * | parameters must be an ip address
+         * |
+         * | *****************
+         */
+        'ip_firewall' => [
+
+        ],
+
+        'full_firewall' => [
+
+        ]
     ]
 ];
