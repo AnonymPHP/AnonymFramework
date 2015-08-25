@@ -14,12 +14,21 @@ namespace Anonym\Controllers;
 use Anonym\Components\Route\Controller;
 use Anonym\Components\HttpClient\Request;
 
-class Test extends Controller
+/**
+ * Class Index
+ * @package Anonym\Controllers
+ */
+class Index extends Controller
 {
 
-    public function hello(Request $request, $param)
+    /**
+     *
+     * start the controller
+     *
+     */
+    public function boot()
     {
-        print_r(func_get_args());
+
     }
 
 }

@@ -17,7 +17,7 @@ use Anonym\Components\Facade\Element;
  * Class TestModel
  * @package Anonym\Models
  */
-class TestModel extends Element
+class User extends Element
 {
 
 }

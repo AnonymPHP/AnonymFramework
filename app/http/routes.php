@@ -10,3 +10,4 @@
 
 use Anonym\Facades\Route;
 
+Route::get('/', 'Index:boot');
