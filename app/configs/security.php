@@ -31,20 +31,36 @@ return [
      */
     'firewall' => [
 
+        'status' => true, // if status === true, process the firewall
         /**
          * | ****************
          * |
-         * | this configs for ip block
-         * | parameters must be an ip address
+         * | this configs for ip firewall
+         * |
          * |
          * | *****************
          */
         'ip_firewall' => [
 
+            /**
+             * | ****************
+             * |
+             * | blocked ip addresses must be in here
+             * |
+             * | *****************
+             */
+
         ],
 
         'full_firewall' => [
 
+            /**
+             * | ****************
+             * |
+             * | allowed useragent, host, enconding, parameters must be in here
+             * |
+             * | *****************
+             */
         ]
     ]
 ];
