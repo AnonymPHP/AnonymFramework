@@ -17,7 +17,7 @@ return [
      * |
      * | *****************
      */
-    'connection'    => 'defualt',  // selected connection, has to be in connections
+    'connection'  => 'defualt',  // selected connection, has to be in connections
 
     'connections' =>
         [
@@ -30,7 +30,6 @@ return [
                  * | *****************
                  */
                 'host'     => 'localhost',
-
                 /**
                  * | ****************
                  * |
@@ -39,7 +38,6 @@ return [
                  * | *****************
                  */
                 'db'       => 'test',
-
                 /**
                  * | ****************
                  * |
@@ -48,7 +46,6 @@ return [
                  * | *****************
                  */
                 'username' => 'root',
-
                 /**
                  * | ****************
                  * |
@@ -57,7 +54,6 @@ return [
                  * | *****************
                  */
                 'password' => 123456,
-
                 /**
                  * | ****************
                  * |
@@ -68,7 +64,40 @@ return [
 
                 'driver'   => 'pdo'
             ]
+        ],
+    /**
+     * | ****************
+     * |
+     * | this configs for Authentication.
+     * |
+     * | *****************
+     */
+
+    'tables'      => [
+
+        /**
+         * | ****************
+         * |
+         * | this configs for Login Process.
+         * |
+         * | *****************
+         */
+        'login'    => [
+            'username',
+            'password'
+        ],
+        /**
+         * | ****************
+         * |
+         * | this configs for Register Process
+         * |
+         * | *****************
+         */
+        'register' => [
+            //
         ]
+
+    ]
 
 
 ];
