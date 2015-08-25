@@ -51,6 +51,6 @@ return [
      * | *****************
      */
     'helpers' => [
-
+        APP . 'helpers/helpers.php'
     ]
 ];
