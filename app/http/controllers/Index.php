@@ -27,7 +27,7 @@ class Index extends Controller
      */
     public function boot()
     {
-
+        print_r($_SERVER);
         return view('index');
     }
 
