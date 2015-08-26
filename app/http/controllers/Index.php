@@ -12,6 +12,7 @@ namespace Anonym\Controllers;
 
 
 use Anonym\Components\Route\Controller;
+use Anonym\Patterns\Singleton;
 
 /**
  * Class Index
@@ -27,7 +28,7 @@ class Index extends Controller
      */
     public function boot()
     {
-        print_r($_SERVER);
+
         return view('index');
     }
 
