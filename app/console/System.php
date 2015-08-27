@@ -22,6 +22,9 @@ class System
      *
      * @var array
      */
-    protected $commands;
+    protected $commands =
+        [
+
+        ];
 
 }
