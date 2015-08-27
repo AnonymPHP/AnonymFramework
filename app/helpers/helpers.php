@@ -212,3 +212,25 @@ if (!function_exists('put')) {
     }
 }
 
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('any')) {
+
+    /**
+     * Works with route collector. this function add a new put route
+     *
+     * @param string $uri
+     * @param array|string $action
+     * @return mixed
+     */
+    function any($uri, $action)
+    {
+        return Route::any($uri, $action);
+    }
+}
+
