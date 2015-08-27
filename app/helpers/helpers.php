@@ -176,7 +176,7 @@ if (!function_exists('post')) {
      * Works with route collector. this function add a new post route
      *
      * @param string $uri
-     * @param array|string $action
+     * @param array|string|\Closure $action
      * @return mixed
      */
     function post($uri, $action)
@@ -199,7 +199,7 @@ if (!function_exists('put')) {
      * Works with route collector. this function add a new put route
      *
      * @param string $uri
-     * @param array|string|\Closur $action
+     * @param array|string|\Closure $action
      * @return mixed
      */
     function put($uri, $action)
