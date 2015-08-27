@@ -22,7 +22,7 @@
   "autoload": {
     "psr-4": {
       "Anonym\\": "app/",
-      "Console\\": "app/console/"
+      "Console\\": "console/"
     }
   }
 }
