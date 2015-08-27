@@ -106,7 +106,7 @@ define('MIGRATION', DATABASE. 'Migrations/');
  * |the constant for migrations namespace
  * |----------------------------
  */
-define('MIGRATION_NAMESPACE', 'Anonym\Database\Migrations\\');
+define('MIGRATION_NAMESPACE', 'App\Database\Migrations\\');
 
 /**
  * |----------------------------
