@@ -307,7 +307,7 @@ if (!function_exists('match')) {
 if (!function_exists('patch')) {
 
     /**
-     * Works with route collector. this function add a new options route
+     * Works with route collector. this function add a new patch route
      *
      * @param string $uri
      * @param array|string $action
