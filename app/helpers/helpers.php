@@ -73,8 +73,23 @@ if(!function_exists('first'))
     }
 }
 
+/**
+ * | **********************
+ * |
+ * | checks if there is the same function
+ * |
+ * | **************************
+ */
 if(!function_exists('view'))
 {
+
+    /**
+     * create and return a new view object
+     *
+     * @param string $file the file name
+     * @param array $parameters the paramaters to be sent
+     * @return mixed
+     */
     function view($file = '', $parameters = [])
     {
         return View::make($file, $parameters);
