@@ -22,14 +22,14 @@ define('BASE', dirname(__DIR__) . '/');
  * |the constant for application files
  * |----------------------------
  */
-define('APP', BASE . 'app/');
+define('APP', BASE . 'App/');
 
 /**
  * |----------------------------
  * |the constant for config files
  * |----------------------------
  */
-define('CONFIG', APP . 'configs/');
+define('CONFIG', 'configs/');
 
 /**
  * |----------------------------
