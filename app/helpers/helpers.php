@@ -296,3 +296,25 @@ if (!function_exists('match')) {
         Route::match($methods, $uri, $action);
     }
 }
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('patch')) {
+
+    /**
+     * Works with route collector. this function add a new options route
+     *
+     * @param string $uri
+     * @param array|string $action
+     * @return mixed
+     */
+    function patch($uri, $action)
+    {
+        return Route::patch($uri, $action);
+    }
+}
