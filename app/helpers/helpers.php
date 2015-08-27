@@ -166,3 +166,25 @@ if (!function_exists('get')) {
         return Route::get($uri, $action);
     }
 }
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('post')) {
+
+    /**
+     * Works with route collector. this function add a new get route
+     *
+     * @param string $uri
+     * @param array|string $action
+     * @return mixed
+     */
+    function post($uri, $action)
+    {
+        return Route::post($uri, $action);
+    }
+}
