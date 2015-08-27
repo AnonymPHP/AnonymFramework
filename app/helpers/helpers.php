@@ -10,6 +10,7 @@
 
 use Anonym\Support\Arr;
 use Anonym\Facades\View;
+use Anonym\Facades\Config;
 
 if (!function_exists('value')) {
     /**
@@ -76,7 +77,7 @@ if(!function_exists('first'))
 /**
  * | **********************
  * |
- * | checks if there is the same function
+ * | checks if there is or not the same function
  * |
  * | **************************
  */
@@ -94,4 +95,28 @@ if(!function_exists('view'))
     {
         return View::make($file, $parameters);
     }
+}
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if(!function_exists('config'))
+{
+
+    /**
+     * work with config files
+     *
+     * @param string $name the name of config
+     * @param mixed $set   if it is not equal, these values will be set the config file
+     * @return mixed
+     */
+     function config($name,  $set = null)
+     {
+         return null === $set ? Config::get($name) : Config::set($name, $set);
+     }
+
 }
