@@ -79,14 +79,14 @@ define('VIEW', RESOURCE . 'views/');
  * |the constant for database files
  * |----------------------------
  */
-define('DATABASE', APP . 'database/');
+define('DATABASE', APP . 'Database/');
 
 /**
  * |----------------------------
  * |the constant for http files
  * |----------------------------
  */
-define('HTTP', APP . 'http/');
+define('HTTP', APP . 'Http/');
 /**
  * |----------------------------
  * |the constant for routes.php
@@ -99,7 +99,7 @@ define('ROUTE_PHP', HTTP . 'routes.php');
  * |the constant for migration files
  * |----------------------------
  */
-define('MIGRATION', DATABASE. 'migrations/');
+define('MIGRATION', DATABASE. 'Migrations/');
 
 /**
  * |----------------------------
@@ -113,7 +113,7 @@ define('MIGRATION_NAMESPACE', 'Anonym\Database\Migrations\\');
  * |the constant for backups files
  * |----------------------------
  */
-define('BACKUP', DATABASE. 'backups/');
+define('BACKUP', DATABASE. 'Backups/');
 
 /**
  * |----------------------------
