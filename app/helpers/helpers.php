@@ -11,6 +11,7 @@
 use Anonym\Support\Arr;
 use Anonym\Facades\View;
 use Anonym\Facades\Config;
+use Anonym\Facades\Route;
 
 if (!function_exists('value')) {
     /**
@@ -119,4 +120,26 @@ if(!function_exists('config'))
          return null === $set ? Config::get($name) : Config::set($name, $set);
      }
 
+}
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('get')) {
+
+    /**
+     * Works with route collector. this function add a new get route
+     *
+     * @param string $uri
+     * @param array|string $action
+     * @return mixed
+     */
+    function get($uri, $action)
+    {
+        return Route::get($uri, $action);
+    }
 }
