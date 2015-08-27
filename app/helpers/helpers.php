@@ -222,7 +222,7 @@ if (!function_exists('put')) {
 if (!function_exists('any')) {
 
     /**
-     * Works with route collector. this function add a new put route
+     * Works with route collector. this function add a new any route
      *
      * @param string $uri
      * @param array|string $action
