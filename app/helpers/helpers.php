@@ -281,7 +281,7 @@ if (!function_exists('delete')) {
  * |
  * | **************************
  */
-if (!function_exists('delete')) {
+if (!function_exists('match')) {
 
     /**
      * Register a new route with the given verbs.
