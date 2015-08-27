@@ -131,7 +131,7 @@ if (!function_exists('get')) {
      * Works with route collector. this function add a new get route
      *
      * @param string $uri
-     * @param array|string $action
+     * @param array|string|\Closure $action
      * @return mixed
      */
     function get($uri, $action)
