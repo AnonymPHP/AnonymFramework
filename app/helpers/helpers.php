@@ -49,8 +49,7 @@ if (!function_exists('data_get')) {
 }
 
 
-if(!function_exists('first'))
-{
+if (!function_exists('first')) {
 
 
     /**
@@ -62,14 +61,13 @@ if(!function_exists('first'))
     function first($target)
     {
         // target must be an array
-        if(!is_array($target))
-        {
-            $target = (array) $target;
+        if (!is_array($target)) {
+            $target = (array)$target;
         }
         // target is required to have a value.
         if (count($target)) {
             return array_values($target)[0];
-        }else{
+        } else {
             return false;
         }
     }
@@ -82,8 +80,7 @@ if(!function_exists('first'))
  * |
  * | **************************
  */
-if(!function_exists('view'))
-{
+if (!function_exists('view')) {
 
     /**
      * create and return a new view object
@@ -105,20 +102,19 @@ if(!function_exists('view'))
  * |
  * | **************************
  */
-if(!function_exists('config'))
-{
+if (!function_exists('config')) {
 
     /**
      * work with config files
      *
      * @param string $name the name of config
-     * @param mixed $set   if it is not equal, these values will be set the config file
+     * @param mixed $set if it is not equal, these values will be set the config file
      * @return mixed
      */
-     function config($name,  $set = null)
-     {
-         return null === $set ? Config::get($name) : Config::set($name, $set);
-     }
+    function config($name, $set = null)
+    {
+        return null === $set ? Config::get($name) : Config::set($name, $set);
+    }
 
 }
 
@@ -278,3 +274,25 @@ if (!function_exists('delete')) {
     }
 }
 
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('delete')) {
+
+    /**
+     * Register a new route with the given verbs.
+     *
+     * @param  array|string $methods
+     * @param  string $uri
+     * @param  \Closure|array|string $action
+     * @return $this
+     */
+    function match($methods, $uri, $action)
+    {
+        Route::match($methods, $uri, $action);
+    }
+}
