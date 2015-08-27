@@ -177,7 +177,7 @@ if (!function_exists('get')) {
 if (!function_exists('post')) {
 
     /**
-     * Works with route collector. this function add a new get route
+     * Works with route collector. this function add a new post route
      *
      * @param string $uri
      * @param array|string $action
@@ -200,7 +200,7 @@ if (!function_exists('post')) {
 if (!function_exists('put')) {
 
     /**
-     * Works with route collector. this function add a new get route
+     * Works with route collector. this function add a new put route
      *
      * @param string $uri
      * @param array|string $action
@@ -211,3 +211,4 @@ if (!function_exists('put')) {
         return Route::put($uri, $action);
     }
 }
+
