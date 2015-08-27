@@ -244,7 +244,7 @@ if (!function_exists('any')) {
 if (!function_exists('options')) {
 
     /**
-     * Works with route collector. this function add a new any route
+     * Works with route collector. this function add a new options route
      *
      * @param string $uri
      * @param array|string $action
