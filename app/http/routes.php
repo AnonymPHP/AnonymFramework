@@ -8,8 +8,4 @@
  * Thanks for using
  */
 
-use Anonym\Facades\Route;
-
-Route::get('/', 'Index:boot');
-
-Route::get('/test/bin/', 'Index:boot');
+get('/', 'Index:boot');

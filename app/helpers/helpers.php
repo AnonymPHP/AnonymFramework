@@ -265,7 +265,7 @@ if (!function_exists('delete')) {
      * Works with route collector. this function add a new options route
      *
      * @param string $uri
-     * @param array|string $action
+     * @param array|string|\Closure $action
      * @return mixed
      */
     function delete($uri, $action)
