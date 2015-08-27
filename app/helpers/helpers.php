@@ -234,3 +234,25 @@ if (!function_exists('any')) {
     }
 }
 
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('options')) {
+
+    /**
+     * Works with route collector. this function add a new any route
+     *
+     * @param string $uri
+     * @param array|string $action
+     * @return mixed
+     */
+    function options($uri, $action)
+    {
+        return Route::options($uri, $action);
+    }
+}
+
