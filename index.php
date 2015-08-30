@@ -8,4 +8,5 @@
  * Thanks for using
  */
 
+ini_set('display_errors', 'On');
 $app = include 'system/bootstrap.php';
