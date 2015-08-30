@@ -23,12 +23,12 @@ return [
      * |*********************************
      */
     'alias' => [
-        'Cookie' => \Anonym\Components\Cookie\Cookie::class,
-        'Session' => \Anonym\Components\Session\Session::class,
-        'Crypt' => \Anonym\Components\Crypt\Crypter::class,
-        'Event' => \Anonym\Components\Event\EventDispatcher::class,
-        'Route' => \Anonym\Components\Route\RouteCollector::class,
-        'App' => \Anonym\Bootstrap\Container::class,
+        'cookie' => \Anonym\Components\Cookie\Cookie::class,
+        'session' => \Anonym\Components\Session\Session::class,
+        'crypt' => \Anonym\Components\Crypt\Crypter::class,
+        'event' => \Anonym\Components\Event\EventDispatcher::class,
+        'route' => \Anonym\Components\Route\RouteCollector::class,
+        'app' => \Anonym\Bootstrap\Container::class,
     ],
     /**
      * | ****************
