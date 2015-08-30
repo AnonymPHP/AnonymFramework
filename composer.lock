@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4327b130e48a46eff7046819922f5fe4",
+    "hash": "daec1e4079c452e4b20ede41e663381c",
     "packages": [
         {
             "name": "anonym-php/anonym-assets",
@@ -154,15 +154,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AnonymPHP/Anonym-Console.git",
-                "reference": "f29035b0add82d8a29d26c15fa348beabc9c1ff2"
+                "reference": "5de5b042262a121de0ed63518235e8f0f176a763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AnonymPHP/Anonym-Console/zipball/f29035b0add82d8a29d26c15fa348beabc9c1ff2",
-                "reference": "f29035b0add82d8a29d26c15fa348beabc9c1ff2",
+                "url": "https://api.github.com/repos/AnonymPHP/Anonym-Console/zipball/5de5b042262a121de0ed63518235e8f0f176a763",
+                "reference": "5de5b042262a121de0ed63518235e8f0f176a763",
                 "shasum": ""
             },
             "require": {
+                "anonym-php/cron": "~1.2@dev",
                 "php": ">=5.4.0",
                 "symfony/console": "2.7.*"
             },
@@ -193,7 +194,7 @@
             "keywords": [
                 "console"
             ],
-            "time": "2015-08-10 12:03:45"
+            "time": "2015-08-28 20:24:33"
         },
         {
             "name": "anonym-php/anonym-cookie",
@@ -592,12 +593,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AnonymPHP/Anonym-Library.git",
-                "reference": "b0e57be34d67d32a2e95c9fbe60496c727faff6b"
+                "reference": "92990eabbd3b520f3d8d849cd78be1b19e6301a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AnonymPHP/Anonym-Library/zipball/b0e57be34d67d32a2e95c9fbe60496c727faff6b",
-                "reference": "b0e57be34d67d32a2e95c9fbe60496c727faff6b",
+                "url": "https://api.github.com/repos/AnonymPHP/Anonym-Library/zipball/92990eabbd3b520f3d8d849cd78be1b19e6301a6",
+                "reference": "92990eabbd3b520f3d8d849cd78be1b19e6301a6",
                 "shasum": ""
             },
             "require": {
@@ -641,7 +642,7 @@
             ],
             "description": "AnonymFramework, New Professional PHP Framework System Libraries",
             "homepage": "http://gemframework.com",
-            "time": "2015-08-27 07:22:43"
+            "time": "2015-08-30 11:19:48"
         },
         {
             "name": "anonym-php/anonym-route",
@@ -883,6 +884,58 @@
                 "session"
             ],
             "time": "2015-08-23 02:36:58"
+        },
+        {
+            "name": "anonym-php/cron",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AnonymPHP/Cron.git",
+                "reference": "4fa2c2b619e962d1d19d2c80913d3e723eadbc1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AnonymPHP/Cron/zipball/4fa2c2b619e962d1d19d2c80913d3e723eadbc1d",
+                "reference": "4fa2c2b619e962d1d19d2c80913d3e723eadbc1d",
+                "shasum": ""
+            },
+            "require": {
+                "anonym-php/anonym-console": "~1.2@dev",
+                "mtdowling/cron-expression": "~1.0",
+                "nesbot/carbon": "~1.19",
+                "php": ">=5.4",
+                "symfony/process": "~2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anonym\\Components\\Cron\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vahit Şerif Sağlam",
+                    "email": "vahit.serif119@gmail.com",
+                    "homepage": "http://www.gemframework.com"
+                }
+            ],
+            "description": "AnonymFramework CronTab Component",
+            "homepage": "https://gemframework.com",
+            "keywords": [
+                "anonym-php",
+                "cron",
+                "crontab"
+            ],
+            "time": "2015-08-30 09:45:28"
         },
         {
             "name": "aws/aws-sdk-php",
@@ -1528,6 +1581,50 @@
             "time": "2015-01-05 21:19:54"
         },
         {
+            "name": "mtdowling/cron-expression",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mtdowling/cron-expression.git",
+                "reference": "fd92e883195e5dfa77720b1868cf084b08be4412"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mtdowling/cron-expression/zipball/fd92e883195e5dfa77720b1868cf084b08be4412",
+                "reference": "fd92e883195e5dfa77720b1868cf084b08be4412",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Cron": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due",
+            "keywords": [
+                "cron",
+                "schedule"
+            ],
+            "time": "2015-01-11 23:07:46"
+        },
+        {
             "name": "mtdowling/jmespath.php",
             "version": "2.2.0",
             "source": {
@@ -1581,6 +1678,53 @@
                 "jsonpath"
             ],
             "time": "2015-05-27 17:21:31"
+        },
+        {
+            "name": "nesbot/carbon",
+            "version": "1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/briannesbitt/Carbon.git",
+                "reference": "bfd3eaba109c9a2405c92174c8e17f20c2b9caf3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bfd3eaba109c9a2405c92174c8e17f20c2b9caf3",
+                "reference": "bfd3eaba109c9a2405c92174c8e17f20c2b9caf3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/translation": "~2.6|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Carbon": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Nesbitt",
+                    "email": "brian@nesbot.com",
+                    "homepage": "http://nesbot.com"
+                }
+            ],
+            "description": "A simple API extension for DateTime.",
+            "homepage": "http://carbon.nesbot.com",
+            "keywords": [
+                "date",
+                "datetime",
+                "time"
+            ],
+            "time": "2015-06-25 04:19:39"
         },
         {
             "name": "predis/predis",
@@ -1800,12 +1944,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "3ba86e8d913583ea59d9b5980d2f08dae2a778a5"
+                "reference": "31a7162fbaebf5639a4c673ab41b9f1df7be27b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/3ba86e8d913583ea59d9b5980d2f08dae2a778a5",
-                "reference": "3ba86e8d913583ea59d9b5980d2f08dae2a778a5",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/31a7162fbaebf5639a4c673ab41b9f1df7be27b3",
+                "reference": "31a7162fbaebf5639a4c673ab41b9f1df7be27b3",
                 "shasum": ""
             },
             "require": {
@@ -1847,7 +1991,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-08-23 17:58:27"
+            "time": "2015-08-27 17:26:49"
         },
         {
             "name": "symfony/console",
@@ -1855,12 +1999,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "e7e676ed30c837fc442ec36274b16e8a51377249"
+                "reference": "6b92fadacd2d8be82aca84cabea076fafdcff299"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/e7e676ed30c837fc442ec36274b16e8a51377249",
-                "reference": "e7e676ed30c837fc442ec36274b16e8a51377249",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/6b92fadacd2d8be82aca84cabea076fafdcff299",
+                "reference": "6b92fadacd2d8be82aca84cabea076fafdcff299",
                 "shasum": ""
             },
             "require": {
@@ -1904,7 +2048,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-08-27 06:45:45"
+            "time": "2015-08-27 21:38:40"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2012,6 +2156,116 @@
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
             "time": "2015-08-26 17:56:37"
+        },
+        {
+            "name": "symfony/process",
+            "version": "2.8.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Process.git",
+                "reference": "fc18e378d05c6b81bcac39338bf334e053186efa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/fc18e378d05c6b81bcac39338bf334e053186efa",
+                "reference": "fc18e378d05c6b81bcac39338bf334e053186efa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7|~3.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-08-27 06:53:13"
+        },
+        {
+            "name": "symfony/translation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Translation.git",
+                "reference": "015a2666b4fd47ff9e7d33132c1f32469cd4c65a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/015a2666b4fd47ff9e7d33132c1f32469cd4c65a",
+                "reference": "015a2666b4fd47ff9e7d33132c1f32469cd4c65a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "conflict": {
+                "symfony/config": "<2.8"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~2.8|~3.0",
+                "symfony/intl": "~2.8|~3.0",
+                "symfony/phpunit-bridge": "~2.8|~3.0",
+                "symfony/yaml": "~2.8|~3.0"
+            },
+            "suggest": {
+                "psr/log": "To use logging capability in translator",
+                "symfony/config": "",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Translation Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-08-27 21:39:09"
         },
         {
             "name": "twig/twig",
