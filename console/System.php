@@ -10,6 +10,8 @@
 
 namespace Console;
 use Anonym\Components\Cron\Cron as Schedule;
+use Anonym\Components\Cron\EventReposity;
+use Anonym\Components\Cron\Task\Task;
 use Console\Commands\Migration;
 /**
  * Class System
@@ -38,6 +40,9 @@ class System
      */
     public function schedule(Schedule $schedule)
     {
+        $schedule->event(function(){
+            Task::exec('echo foo')->daily();
+        });
 
     }
 }
