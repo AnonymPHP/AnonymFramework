@@ -8,7 +8,7 @@
  * Thanks for using
  */
 
-namespace Anonym\Controllers;
+namespace App\Http\Controllers;
 
 
 use Anonym\Components\Route\Controller;
@@ -28,7 +28,6 @@ class Index extends Controller
      */
     public function boot()
     {
-
         return view('index');
     }
 

@@ -10,6 +10,7 @@
 
 namespace Console;
 
+use Console\Commands\Migration;
 /**
  * Class System
  * @package Console
@@ -24,7 +25,7 @@ class System
      */
     protected $commands =
         [
-
+            Migration::class
         ];
 
 }

@@ -55,7 +55,6 @@ return [
                  * | *****************
                  */
                 'password' => '',
-
                 /**
                  * | ****************
                  * |
@@ -84,7 +83,7 @@ return [
          * |
          * | *****************
          */
-        'login'    => [
+        'login'          => [
             'username',
             'password'
         ],
@@ -95,9 +94,24 @@ return [
          * |
          * | *****************
          */
-        'register' => [
+        'register'       => [
             //
-        ]
+        ],
+        /**
+         * | ****************
+         * |
+         * | this configs for Authentication Process
+         * |
+         * | *****************
+         */
+        'authentication' =>
+            [
+                'column' => 'role',
+                'roles'  => [
+                    'user'  => 0,
+                    'admin' => 1
+                ]
+            ]
 
     ]
 
