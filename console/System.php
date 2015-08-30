@@ -41,7 +41,7 @@ class System
     public function schedule(Schedule $schedule)
     {
         $schedule->event(function(){
-            Task::exec('echo foo')->daily();
+            return Task::exec('echo foo')->daily();
         });
 
     }
