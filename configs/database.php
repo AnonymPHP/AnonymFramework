@@ -17,7 +17,7 @@ return [
      * |
      * | *****************
      */
-    'connection'  => 'defualt',  // selected connection, has to be in connections
+    'connection'  => 'default',  // selected connection, has to be in connections
 
     'connections' =>
         [
