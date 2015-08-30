@@ -9,7 +9,7 @@
  */
 
 namespace Console;
-
+use Anonym\Components\Cron\Cron as Schedule;
 use Console\Commands\Migration;
 /**
  * Class System
@@ -28,4 +28,16 @@ class System
             Migration::class
         ];
 
+
+    /**
+     * add the schedule commands
+     *
+     *
+     * @param Schedule $schedule
+     *
+     */
+    public function schedule(Schedule $schedule)
+    {
+
+    }
 }
