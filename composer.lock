@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "daec1e4079c452e4b20ede41e663381c",
+    "hash": "5e26a3410e927d07ae43dc0780626b88",
     "packages": [
         {
             "name": "anonym-php/anonym-assets",
@@ -154,12 +154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AnonymPHP/Anonym-Console.git",
-                "reference": "5de5b042262a121de0ed63518235e8f0f176a763"
+                "reference": "e3e2bd9d905f3032d8704f4e9e47ca16f10531ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AnonymPHP/Anonym-Console/zipball/5de5b042262a121de0ed63518235e8f0f176a763",
-                "reference": "5de5b042262a121de0ed63518235e8f0f176a763",
+                "url": "https://api.github.com/repos/AnonymPHP/Anonym-Console/zipball/e3e2bd9d905f3032d8704f4e9e47ca16f10531ae",
+                "reference": "e3e2bd9d905f3032d8704f4e9e47ca16f10531ae",
                 "shasum": ""
             },
             "require": {
@@ -194,7 +194,7 @@
             "keywords": [
                 "console"
             ],
-            "time": "2015-08-28 20:24:33"
+            "time": "2015-08-30 11:40:29"
         },
         {
             "name": "anonym-php/anonym-cookie",
@@ -593,12 +593,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AnonymPHP/Anonym-Library.git",
-                "reference": "92990eabbd3b520f3d8d849cd78be1b19e6301a6"
+                "reference": "8669a46037974c7d0b2aaea75f86e4fb63f8735e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AnonymPHP/Anonym-Library/zipball/92990eabbd3b520f3d8d849cd78be1b19e6301a6",
-                "reference": "92990eabbd3b520f3d8d849cd78be1b19e6301a6",
+                "url": "https://api.github.com/repos/AnonymPHP/Anonym-Library/zipball/8669a46037974c7d0b2aaea75f86e4fb63f8735e",
+                "reference": "8669a46037974c7d0b2aaea75f86e4fb63f8735e",
                 "shasum": ""
             },
             "require": {
@@ -642,7 +642,7 @@
             ],
             "description": "AnonymFramework, New Professional PHP Framework System Libraries",
             "homepage": "http://gemframework.com",
-            "time": "2015-08-30 11:19:48"
+            "time": "2015-08-31 05:22:18"
         },
         {
             "name": "anonym-php/anonym-route",
