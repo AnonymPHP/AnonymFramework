@@ -11,6 +11,13 @@
 return [
 
 
+    /**
+     * | ****************
+     * |
+     * | if you input this true, database connection will start in database connection constructor
+     * |
+     * | *****************
+     */
     'autostart' => true,
 
     /**
