@@ -21,6 +21,15 @@ class System extends Kernel
 {
 
     /**
+     * create a new instance
+     *
+     * @param int $version
+     */
+    public function __construct($version = 1)
+    {
+        parent::__construct($version);
+    }
+    /**
      * the repository of console commands
      *
      * @var array
@@ -41,8 +50,7 @@ class System extends Kernel
     public function schedule(Schedule $schedule)
     {
         $schedule->event(function(){
-            return Task::exec('echo foo')->daily();
+            return Task::console('make:migration create Test')->everyMinute();
         });
-
     }
 }
