@@ -841,12 +841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AnonymPHP/Anonym-View.git",
-                "reference": "542c05113964b26e2eb84e535767d1a288139b0a"
+                "reference": "0f2da1b540cd94e1826f6f04c39077b211667b59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AnonymPHP/Anonym-View/zipball/542c05113964b26e2eb84e535767d1a288139b0a",
-                "reference": "542c05113964b26e2eb84e535767d1a288139b0a",
+                "url": "https://api.github.com/repos/AnonymPHP/Anonym-View/zipball/0f2da1b540cd94e1826f6f04c39077b211667b59",
+                "reference": "0f2da1b540cd94e1826f6f04c39077b211667b59",
                 "shasum": ""
             },
             "require": {
@@ -883,7 +883,7 @@
             "keywords": [
                 "session"
             ],
-            "time": "2015-08-23 02:36:58"
+            "time": "2015-08-31 05:34:04"
         },
         {
             "name": "anonym-php/cron",

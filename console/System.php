@@ -10,14 +10,14 @@
 
 namespace Console;
 use Anonym\Components\Cron\Cron as Schedule;
-use Anonym\Components\Cron\EventReposity;
+use Anonym\Components\Console\Kernel;
 use Anonym\Components\Cron\Task\Task;
 use Console\Commands\Migration;
 /**
  * Class System
  * @package Console
  */
-class System
+class System extends Kernel
 {
 
     /**
