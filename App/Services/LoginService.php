@@ -11,6 +11,7 @@
 
 namespace App\Services;
 use Anonym\Bootstrap\ServiceProvider;
+use Anonym\Facades\Config;
 
 class LoginService  extends ServiceProvider
 {
@@ -29,7 +30,6 @@ class LoginService  extends ServiceProvider
      */
     public function register()
     {
-
-
+        Config::set('database.tables.login', $this->login);
     }
 }
