@@ -15,6 +15,10 @@ namespace App\Services;
 use Anonym\Bootstrap\ServiceProvider;
 use Anonym\Facades\Config;
 
+/**
+ * Class RegisterServicer
+ * @package App\Services
+ */
 class RegisterServicer extends ServiceProvider
 {
     /**
