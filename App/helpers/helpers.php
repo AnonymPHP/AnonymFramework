@@ -12,6 +12,7 @@ use Anonym\Support\Arr;
 use Anonym\Facades\View;
 use Anonym\Facades\Config;
 use Anonym\Facades\Route;
+use Anonym\Facades\Session;
 
 if (!function_exists('value')) {
     /**
