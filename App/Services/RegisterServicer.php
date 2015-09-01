@@ -13,6 +13,7 @@ namespace App\Services;
 
 
 use Anonym\Bootstrap\ServiceProvider;
+use Anonym\Facades\Config;
 
 class RegisterServicer extends ServiceProvider
 {
@@ -22,6 +23,7 @@ class RegisterServicer extends ServiceProvider
      * @var array
      */
     protected $register = [];
+
     /**
      * register the provider
      *
@@ -29,5 +31,6 @@ class RegisterServicer extends ServiceProvider
      */
     public function register()
     {
+        Config::set('database.tables.register', $this->register);
     }
 }
