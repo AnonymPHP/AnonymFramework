@@ -122,7 +122,7 @@ class Migration extends AnonymCommand implements HandleInterface
      */
     public function create($name = '')
     {
-        $content = $this->migrate('resources/migrations/migration.php.dist', ['name' => $name]);
+        $content = $this->migrate(RESOURCE.'migrations/migration.php.dist', ['name' => $name]);
 
         $fileName = FacadeMigration::createName($name);
         if (!$this->filesystem->exists($fileName)) {
