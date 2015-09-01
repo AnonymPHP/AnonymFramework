@@ -122,17 +122,13 @@ return [
         /**
          * | ****************
          * |
-         * | this configs for Authentication Process
+         * | this configs for Authentication
          * |
          * | *****************
          */
         'authentication' =>
             [
-                'column' => 'role',
-                'roles'  => [
-                    'user'  => 0,
-                    'admin' => 1
-                ]
+
             ]
 
     ]
