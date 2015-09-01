@@ -38,6 +38,19 @@ class LoginService  extends ServiceProvider
     ];
 
     /**
+     * parameters for role security
+     *
+     * @var array
+     */
+    protected $role = [
+        'column' => 'role',
+        'roles' => [
+            'user' => 0,
+            'password' => 1
+        ]
+    ];
+
+    /**
      * register the provider
      *
      * @return mixed
@@ -46,5 +59,6 @@ class LoginService  extends ServiceProvider
     {
         Config::set('database.tables.login', $this->login);
         Config::set('database.tables.select', $this->select);
+        Config::set('database.tables.authentication', $this->role);
     }
 }
