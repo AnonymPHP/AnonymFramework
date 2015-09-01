@@ -70,6 +70,27 @@ class Migration extends AnonymCommand implements HandleInterface
     }
 
 
+    /**
+     * Dosyayı silmeye yarar
+     * @param string $name
+     */
+    public function forget($name = '')
+    {
+        $filePath = FacadeMigration::createName($name);
+        if ($this->filesystem->exists($filePath)) {
+            $this->filesystem->delete($filePath);
+            $this->info(sprintf('%s migration succesfully removed in %s', $name, $filePath));
+        } else {
+            $this->error(sprintf('%s migration could not removed in %s, file not exists', $name,
+                $filePath));
+        }
+    }
+
+    /**
+     * deploy the migration
+     *
+     * @param string $name
+     */
     public function deploy($name = '')
     {
         $response = FacadeMigration::run($name);
