@@ -15,4 +15,13 @@ use Anonym\Bootstrap\ServiceProvider;
 class LoginService  extends ServiceProvider
 {
 
+    /**
+     * register the provider
+     *
+     * @return mixed
+     */
+    public function register()
+    {
+
+    }
 }
