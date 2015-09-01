@@ -334,7 +334,7 @@ if (!function_exists('session')) {
  * |
  * | **************************
  */
-if (!function_exists('session')) {
+if (!function_exists('cookie')) {
 
     /**
      * works with session facade,
@@ -344,14 +344,14 @@ if (!function_exists('session')) {
      * @param null $set if it is not null return Session::set
      * @return mixed
      */
-    function session($get = null, $set = null)
+    function cookie($get = null, $set = null)
     {
         if ($get !== null && $set === null) {
-            return Session::get($get);
+            return Cookie::get($get);
         } elseif ($get !== null && $set !== null) {
-            return Session::set($get, $set);
+            return Cookie::set($get, $set);
         } else {
-            return App::make('session');
+            return App::make('cookie');
         }
     }
 }
