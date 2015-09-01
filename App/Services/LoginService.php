@@ -16,12 +16,20 @@ class LoginService  extends ServiceProvider
 {
 
     /**
+     * parameters for login
+     *
+     * @var array
+     */
+    protected $login = ['username', 'password'];
+
+    /**
      * register the provider
      *
      * @return mixed
      */
     public function register()
     {
+
 
     }
 }
