@@ -10,9 +10,9 @@
 
 
 namespace App\Services;
+use Anonym\Bootstrap\ServiceProvider;
 
-
-class LoginService
+class LoginService  extends ServiceProvider
 {
 
 }
