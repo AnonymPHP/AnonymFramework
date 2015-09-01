@@ -51,10 +51,6 @@ class System extends Kernel
      */
     public function schedule(Schedule $schedule)
     {
-        $schedule->event(function () {
-            $name = uniqid();
-
-            return Task::console('migration create '.$name);
-        });
+        
     }
 }

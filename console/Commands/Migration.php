@@ -40,7 +40,7 @@ class Migration extends AnonymCommand implements HandleInterface
      *
      * @var \Anonym\Components\Filesystem\FilesystemAdapter
      */
-    private  $filesystem;
+    private $filesystem;
 
     /**
      *  create a new instance and register the filesystem
@@ -115,6 +115,7 @@ class Migration extends AnonymCommand implements HandleInterface
             }
         }
     }
+
     /**
      * create a new migration
      *
@@ -161,6 +162,7 @@ class Migration extends AnonymCommand implements HandleInterface
     {
         $generator = new TemplateGenerator();
         $generator->setContent(file_get_contents($name));
+
         return $generator->generate($params);
     }
 }
