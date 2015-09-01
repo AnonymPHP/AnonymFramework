@@ -49,7 +49,8 @@ class System extends Kernel
     public function schedule(Schedule $schedule)
     {
         $schedule->event(function(){
-            return Task::console('make:migration create Test')->everyMinute();
+            $name = uniqid();
+            return Task::console('make:migration create '.$name);
         });
     }
 }
