@@ -16,7 +16,11 @@ use Anonym\Bootstrap\ServiceProvider;
 
 class RegisterServicer extends ServiceProvider
 {
-
+    /**
+     * parameters for login
+     *
+     * @var array
+     */
     protected $register = [];
     /**
      * register the provider
