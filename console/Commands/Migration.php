@@ -7,6 +7,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Anonym\Facades\Migration as FacadeMigration;
 use Anonym\Components\Console\HandleInterface;
+use Anonym\Facades\App;
 use Anonym\Facades\Stroge;
 
 /**
@@ -77,6 +78,7 @@ class Migration extends AnonymCommand implements HandleInterface
     public function create($name = '')
     {
         $content = $this->migrate('resources/migrations/migration.php.dist', ['name' => $name]);
+
         $fileName = FacadeMigration::createName($name);
         if (!$this->filesystem->exists($fileName)) {
             touch($fileName);
