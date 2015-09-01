@@ -9,10 +9,12 @@
  */
 
 namespace Console;
+
 use Anonym\Components\Cron\Cron as Schedule;
 use Anonym\Components\Console\Kernel;
 use Anonym\Components\Cron\Task\Task;
 use Console\Commands\Migration;
+
 /**
  * Class System
  * @package Console
@@ -28,6 +30,7 @@ class System extends Kernel
     {
         parent::__construct($version);
     }
+
     /**
      * the repository of console commands
      *
@@ -35,7 +38,7 @@ class System extends Kernel
      */
     protected $commands =
         [
-            Migration::class
+            Migration::class,
         ];
 
 
@@ -48,6 +51,10 @@ class System extends Kernel
      */
     public function schedule(Schedule $schedule)
     {
+        $schedule->event(function () {
+            $name = uniqid();
 
+            return Task::console('migration create '.$name);
+        });
     }
 }

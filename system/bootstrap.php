@@ -17,6 +17,7 @@ include dirname(__DIR__) . '/vendor/autoload.php';
  */
 define('BASE', dirname(__DIR__) . '/');
 
+
 /**
  * |----------------------------
  * |the constant for application files
@@ -29,7 +30,7 @@ define('APP', BASE . 'App/');
  * |the constant for config files
  * |----------------------------
  */
-define('CONFIG', 'configs/');
+define('CONFIG', BASE. 'configs/');
 
 /**
  * |----------------------------
@@ -58,7 +59,7 @@ define('PUBLIC_FILES', BASE . 'public/');
  * |the constant for upload files
  * |----------------------------
  */
-define('UPLOAD', PUBLIC_FILES . 'uploads/');
+define('UPLOAD', BASE. PUBLIC_FILES . 'uploads/');
 
 
 /**
