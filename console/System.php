@@ -19,7 +19,6 @@ use Console\Commands\Migration;
  */
 class System extends Kernel
 {
-
     /**
      * create a new instance
      *
