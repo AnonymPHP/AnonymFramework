@@ -8,10 +8,8 @@
  * Thanks for using
  */
 
-error_reporting(0);
-ini_set('display_errors', 'On');
 
 $app = include 'system/bootstrap.php';
-$console = new \Anonym\Components\Console\Console(1);
+$console = new \Console\System(1);
 // run the console
 $console->run();

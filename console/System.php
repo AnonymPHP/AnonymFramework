@@ -10,16 +10,24 @@
 
 namespace Console;
 use Anonym\Components\Cron\Cron as Schedule;
-use Anonym\Components\Cron\EventReposity;
+use Anonym\Components\Console\Kernel;
 use Anonym\Components\Cron\Task\Task;
 use Console\Commands\Migration;
 /**
  * Class System
  * @package Console
  */
-class System
+class System extends Kernel
 {
-
+    /**
+     * create a new instance
+     *
+     * @param int $version
+     */
+    public function __construct($version = 1)
+    {
+        parent::__construct($version);
+    }
     /**
      * the repository of console commands
      *
@@ -41,8 +49,7 @@ class System
     public function schedule(Schedule $schedule)
     {
         $schedule->event(function(){
-            return Task::exec('echo foo')->daily();
+            return Task::console('make:migration create Test')->everyMinute();
         });
-
     }
 }

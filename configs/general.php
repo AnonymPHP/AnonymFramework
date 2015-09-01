@@ -22,13 +22,14 @@ return [
      * | providers  => the providers
      * |*********************************
      */
-    'alias' => [
-        'cookie' => \Anonym\Components\Cookie\Cookie::class,
+    'alias'     => [
+        'cookie'  => \Anonym\Components\Cookie\Cookie::class,
         'session' => \Anonym\Components\Session\Session::class,
-        'crypt' => \Anonym\Components\Crypt\Crypter::class,
-        'event' => \Anonym\Components\Event\EventDispatcher::class,
-        'route' => \Anonym\Components\Route\RouteCollector::class,
-        'app' => \Anonym\Bootstrap\Container::class,
+        'crypt'   => \Anonym\Components\Crypt\Crypter::class,
+        'event'   => \Anonym\Components\Event\EventDispatcher::class,
+        'route'   => \Anonym\Components\Route\RouteCollector::class,
+        'app'     => \Anonym\Bootstrap\Container::class,
+        'config'  => \Anonym\Components\Config\Reposity::class
     ],
     /**
      * | ****************
@@ -48,7 +49,7 @@ return [
      * |
      * | *****************
      */
-    'helpers' => [
-        APP.'helpers/helpers.php',
+    'helpers'   => [
+        APP . 'helpers/helpers.php',
     ],
 ];
