@@ -19,7 +19,7 @@ use Anonym\Facades\Config;
  * Class RegisterServicer
  * @package App\Services
  */
-class RegisterServicer extends ServiceProvider
+class RegisterService extends ServiceProvider
 {
     /**
      * parameters for login
