@@ -14,9 +14,10 @@ namespace App\Services;
 
 use Anonym\Bootstrap\ServiceProvider;
 
-class RegisterService extends ServiceProvider
+class RegisterServicer extends ServiceProvider
 {
 
+    protected $register = [];
     /**
      * register the provider
      *
@@ -24,6 +25,5 @@ class RegisterService extends ServiceProvider
      */
     public function register()
     {
-
     }
 }
