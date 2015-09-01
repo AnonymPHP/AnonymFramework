@@ -14,6 +14,7 @@ use Anonym\Facades\Config;
 use Anonym\Facades\Route;
 use Anonym\Facades\Session;
 use Anonym\Facades\App;
+use Anonym\Facades\Cookie;
 
 if (!function_exists('value')) {
     /**
