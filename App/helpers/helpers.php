@@ -13,6 +13,7 @@ use Anonym\Facades\View;
 use Anonym\Facades\Config;
 use Anonym\Facades\Route;
 use Anonym\Facades\Session;
+use Anonym\Facades\App;
 
 if (!function_exists('value')) {
     /**
@@ -317,11 +318,11 @@ if (!function_exists('session')) {
     function session($get = null, $set = null)
     {
         if ($get !== null && $set === null) {
-            return $sessgion->et($get);
+            return Session::get($get);
         } elseif ($get !== null && $set !== null) {
-            return $session->set($get, $set);
+            return Session::set($get, $set);
         } else {
-            return $session;
+            return App::make('session');
         }
     }
 }
