@@ -12,7 +12,9 @@
 namespace App\Services;
 
 
-class RegisterService
+use Anonym\Bootstrap\ServiceProvider;
+
+class RegisterService extends ServiceProvider
 {
 
 }
