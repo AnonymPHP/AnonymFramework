@@ -8,7 +8,6 @@
  * Thanks for using
  */
 
-include dirname(__DIR__) . '/vendor/autoload.php';
 
 /**
  * |----------------------------
@@ -124,9 +123,18 @@ define('BACKUP', DATABASE. 'Backups/');
 define('ASSETS', PUBLIC_FILES. 'assets/');
 
 /**
- *
- * AnonymFramework Application
- *
+ * |----------------------------
+ * | include the autoloader
+ * |----------------------------
  */
+
+include BASE . 'vendor/autoload.php';
+
+/**
+ * |----------------------------
+ * | create an application
+ * |----------------------------
+ */
+
 $app = new \Anonym\Bootstrap\Bootstrap('AnonymPHP', 2);
 return $app;
