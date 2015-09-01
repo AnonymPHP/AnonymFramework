@@ -326,3 +326,32 @@ if (!function_exists('session')) {
         }
     }
 }
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('session')) {
+
+    /**
+     * works with session facade,
+     * does session get or set process
+     *
+     * @param null $get the name of get, if set is null, return the Session::get
+     * @param null $set if it is not null return Session::set
+     * @return mixed
+     */
+    function session($get = null, $set = null)
+    {
+        if ($get !== null && $set === null) {
+            return Session::get($get);
+        } elseif ($get !== null && $set !== null) {
+            return Session::set($get, $set);
+        } else {
+            return App::make('session');
+        }
+    }
+}
