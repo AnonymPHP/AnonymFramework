@@ -36,6 +36,13 @@ return [
          *
          */
         'exceptions' => true,
+
+        /**
+         *
+         *  Save Logs in App/logs/error.log
+         */
+
+        'log' => true,
     ]
 
 ];
