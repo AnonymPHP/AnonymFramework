@@ -21,4 +21,27 @@ use Anonym\Components\Console\Command;
 class MakeEvent extends Command
 {
 
+    /**
+     * the signature of command
+     *
+     * @var string
+     */
+    protected $signature = 'make:event {name}';
+
+
+    /**
+     * the description of command
+     *
+     * @var string
+     */
+    protected $description = 'create an event';
+
+    /**
+     * create an event instance
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
 }
