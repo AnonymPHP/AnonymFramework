@@ -405,4 +405,25 @@ if (!function_exists('event')) {
     }
 }
 
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('listen')) {
 
+    /**
+     * add a new event
+     *
+     * @param string $name
+     * @param Closure|null $callback
+     * @return mixed
+     */
+    function listen($name, Closure $callback = null)
+    {
+        return Event::listen($name, $callback);
+    }
+
+}
