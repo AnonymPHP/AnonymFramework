@@ -17,4 +17,13 @@ use Anonym\Bootstrap\ServiceProvider;
 class EventService extends ServiceProvider
 {
 
+    /**
+     * register the provider
+     *
+     * @return mixed
+     */
+    public function register()
+    {
+
+    }
 }
