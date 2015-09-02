@@ -15,6 +15,10 @@ namespace App\Services;
 use Anonym\Bootstrap\ServiceProvider;
 use Anonym\Components\Event\EventCollector;
 
+/**
+ * Class EventService
+ * @package App\Services
+ */
 class EventService extends ServiceProvider
 {
 
