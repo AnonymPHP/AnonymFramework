@@ -41,7 +41,6 @@ return [
     'providers' => [
         \App\Services\LoginService::class,
         \App\Services\RegisterService::class,
-        \Anonym\Providers\EventProvider::class,
         \Anonym\Providers\RouteProvider::class,
 
     ],
