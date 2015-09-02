@@ -357,20 +357,28 @@ if (!function_exists('cookie')) {
     }
 }
 
-
 /**
- * set cookie with very long time value
- *
- * @param string $name
- * @param string $value
- * @return Cookie
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
  */
-function forever($name, $value = '')
-{
-    if(is_string($name) && is_string($value))
+if(function_exists('forever')) {
+    /**
+     * set cookie with very long time value
+     *
+     * @param string $name
+     * @param string $value
+     * @return Cookie
+     */
+    function forever($name, $value = '')
     {
-        return cookie()->forever($name, $value);
-    }else{
-        throw new InvalidArgumentException('Cookie name or value must be a string');
+        if (is_string($name) && is_string($value)) {
+            return cookie()->forever($name, $value);
+        } else {
+            throw new InvalidArgumentException('Cookie name or value must be a string');
+        }
     }
 }
+
