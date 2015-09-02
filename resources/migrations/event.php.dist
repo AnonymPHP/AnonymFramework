@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Events;
+
+use Anonym\Components\Event\Event;
+
+class {{ name }} extends Event{
+
+     /**
+      * Create a new instance
+      *
+      *  @return void
+      */
+     public function __construct(){
+
+        // do nothing
+
+     }
+}
