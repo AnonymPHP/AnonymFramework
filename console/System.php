@@ -12,7 +12,7 @@ namespace Console;
 
 use Anonym\Components\Cron\Cron as Schedule;
 use Anonym\Components\Console\Kernel;
-use Anonym\Components\Cron\Task\Task;
+use Console\Commands\MakeEvent;
 use Console\Commands\Migration;
 
 /**
@@ -39,6 +39,7 @@ class System extends Kernel
     protected $commands =
         [
             Migration::class,
+            MakeEvent::class
         ];
 
 
