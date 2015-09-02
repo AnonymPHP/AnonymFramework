@@ -14,6 +14,7 @@ namespace App\Services;
 
 use Anonym\Bootstrap\ServiceProvider;
 use Anonym\Components\Event\EventCollector;
+use Anonym\Facades\Config;
 
 /**
  * Class EventService
@@ -38,7 +39,8 @@ class EventService extends ServiceProvider
      */
     public function register()
     {
-        EventCollector::setListeners($this->events);
+        $events = Config::get('event.events');
+        EventCollector::setListeners(array_merge($this->events, $events));
         include APP.'events.php';
     }
 }
