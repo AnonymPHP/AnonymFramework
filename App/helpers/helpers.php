@@ -392,9 +392,15 @@ if (function_exists('forever')) {
  */
 if (function_exists('event')) {
 
+    /**
+     * execute the event
+     *
+     * @param mixed $event
+     * @param array $parameters
+     * @return mixed
+     */
     function event($event, array $parameters = [])
     {
-
+        return Event::fire($event, $parameters);
     }
-
 }
