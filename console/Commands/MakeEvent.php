@@ -13,12 +13,13 @@ namespace Console\Commands;
 
 
 use Anonym\Components\Console\Command;
+use Anonym\Components\Console\HandleInterface;
 
 /**
  * Class MakeEvent
  * @package Console\Commands
  */
-class MakeEvent extends Command
+class MakeEvent extends Command implements HandleInterface
 {
 
     /**
