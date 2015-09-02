@@ -39,6 +39,7 @@ return [
      * | *****************
      */
     'providers' => [
+        \App\Services\EventService::class,
         \App\Services\LoginService::class,
         \App\Services\RegisterService::class,
         \Anonym\Providers\RouteProvider::class,
