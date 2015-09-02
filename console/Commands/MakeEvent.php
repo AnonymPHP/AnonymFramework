@@ -62,12 +62,12 @@ class MakeEvent extends Command implements HandleInterface
         $generator = new TemplateGenerator($content);
         $name = $this->argument('name');
 
-        $path = APP.'Events/'.$name.'.php';
+        $path = APP. 'Events/'.$name.'.php';
         $generated = $generator->generate(['name' => $name]);
 
-        if (!Stroge::exists($path)) {
-            Stroge::create($path);
-            Stroge::put($path, $generated);
+        if (!file_exists($path)) {
+            touch($path);
+            file_put_contents($path, $generated);
             $this->info(sprintf('%s created succesfully to %s', $name, $path));
         } else {
             $this->error(sprintf('%s Event already exists', $name));
