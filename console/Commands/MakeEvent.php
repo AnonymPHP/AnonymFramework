@@ -14,6 +14,8 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
+use Anonym\Facades\Stroge;
+use Anonym\Support\TemplateGenerator;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 
@@ -55,6 +57,20 @@ class MakeEvent extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
+        $content = file_get_contents(RESOURCE.'migrations/event.php.dist');
 
+        $generator = new TemplateGenerator($content);
+        $name = $this->argument('name');
+
+        $path = APP.'Events/'.$name.'.php';
+        $generated = $generator->generate(['name' => $name]);
+
+        if (!Stroge::exists($path)) {
+            Stroge::create($path);
+            Stroge::put($path, $generated);
+            $this->info(sprintf('%s created succesfully to %s', $name, $path));
+        } else {
+            $this->error(sprintf('%s Event already exists', $name));
+        }
     }
 }
