@@ -365,7 +365,7 @@ if (!function_exists('cookie')) {
  * |
  * | **************************
  */
-if (function_exists('forever')) {
+if (!function_exists('forever')) {
     /**
      * set cookie with very long time value
      *
@@ -390,7 +390,7 @@ if (function_exists('forever')) {
  * |
  * | **************************
  */
-if (function_exists('event')) {
+if (!function_exists('event')) {
 
     /**
      * execute the event
@@ -404,3 +404,5 @@ if (function_exists('event')) {
         return Event::fire($event, $parameters);
     }
 }
+
+
