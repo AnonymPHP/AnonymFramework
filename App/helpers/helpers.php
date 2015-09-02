@@ -15,6 +15,7 @@ use Anonym\Facades\Route;
 use Anonym\Facades\Session;
 use Anonym\Facades\App;
 use Anonym\Facades\Cookie;
+use Anonym\Facades\Event;
 
 if (!function_exists('value')) {
     /**
@@ -364,7 +365,7 @@ if (!function_exists('cookie')) {
  * |
  * | **************************
  */
-if(function_exists('forever')) {
+if (function_exists('forever')) {
     /**
      * set cookie with very long time value
      *
@@ -382,3 +383,18 @@ if(function_exists('forever')) {
     }
 }
 
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (function_exists('event')) {
+
+    function event($event, array $parameters = [])
+    {
+
+    }
+
+}
