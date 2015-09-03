@@ -55,4 +55,13 @@ return [
     'helpers' => [
         APP.'helpers/helpers.php',
     ],
+
+    /**
+     * | ****************
+     * |
+     * | if you input 1, it's mean framework running on server, else mean running on console
+     * |
+     * | *****************
+     */
+    'server' => 1
 ];
