@@ -15,6 +15,10 @@ namespace App\Services;
 use Anonym\Bootstrap\ServiceProvider;
 use Anonym\Components\Route\AccessBag;
 
+/**
+ * Class MiddlewareService
+ * @package App\Services
+ */
 class MiddlewareService extends ServiceProvider
 {
 
