@@ -20,6 +20,11 @@ use Anonym\Components\Event\EventLister as Listener;
  */
 class {{ name }} extends Listener{
 
+     /**
+      * Create a new instance
+      *
+      *  @return void
+      */
       public function __construct(){
 
            // do nothing
@@ -36,5 +41,4 @@ class {{ name }} extends Listener{
 
 
         }
-
 }
