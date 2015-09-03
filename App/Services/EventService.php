@@ -7,10 +7,7 @@
  *
  * Thanks for using
  */
-
-
 namespace App\Services;
-
 
 use Anonym\Bootstrap\ServiceProvider;
 use Anonym\Components\Event\EventCollector;
@@ -22,14 +19,12 @@ use Anonym\Facades\Config;
  */
 class EventService extends ServiceProvider
 {
-
     /**
      * the list of events
      *
      * @var array
      */
     protected $events = [
-
     ];
 
     /**
