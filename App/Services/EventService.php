@@ -26,9 +26,7 @@ class EventService extends ServiceProvider
      * @var array
      */
     protected $events = [
-        TestEvent::class => [
-            TestListener::class
-        ]
+
     ];
 
     /**
