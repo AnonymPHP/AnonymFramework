@@ -15,6 +15,7 @@ use Anonym\Components\Console\Kernel;
 use Console\Commands\MakeListener;
 use Console\Commands\MakeEvent;
 use Console\Commands\Migration;
+
 /**
  * Class System
  * @package Console
@@ -37,10 +38,10 @@ class System extends Kernel
      * @var array
      */
     protected $commands = [
-            Migration::class,
-            MakeEvent::class,
-        MakeListener::class
-        ];
+        Migration::class,
+        MakeEvent::class,
+        MakeListener::class,
+    ];
 
 
     /**
@@ -52,6 +53,6 @@ class System extends Kernel
      */
     public function schedule(Schedule $schedule)
     {
-        
+
     }
 }
