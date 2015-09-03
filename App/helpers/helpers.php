@@ -443,8 +443,36 @@ if (!function_exists('firing')) {
      * @see Event::firing
      * @return mixed
      */
-    function firing(){
+    function firing()
+    {
         return Event::firing();
+    }
+
+}
+
+if (!function_exists('getallheaders')) {
+
+    /**
+     * fetch all http headers
+     *
+     * @return array
+     */
+    function getallheaders()
+    {
+        $headers = [];
+        if (isset($_SERVER)) {
+
+            foreach ($_SERVER as $name => $value) {
+                if (substr($name, 0, 5) == 'HTTP_') {
+                    $headers[str_replace(' ', '-',
+                        ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+                }
+            }
+
+
+        }
+
+        return $headers;
     }
 
 }
