@@ -14,8 +14,7 @@
  * |the constant for base files
  * |----------------------------
  */
-define('BASE', dirname(__DIR__) . '/');
-
+define('BASE', getcwd() . '/');
 
 /**
  * |----------------------------

@@ -427,3 +427,24 @@ if (!function_exists('listen')) {
     }
 
 }
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('firing')) {
+
+    /**
+     * call the Event::firing
+     *
+     * @see Event::firing
+     * @return mixed
+     */
+    function firing(){
+        return Event::firing();
+    }
+
+}
