@@ -450,6 +450,14 @@ if (!function_exists('firing')) {
 
 }
 
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
 if (!function_exists('getallheaders')) {
 
     /**
