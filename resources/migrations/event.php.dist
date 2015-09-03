@@ -1,9 +1,22 @@
 <?php
 
+/**
+ * This file belongs to the AnoynmFramework
+ *
+ * @author vahitserifsaglam <vahit.serif119@gmail.com>
+ * @see http://gemframework.com
+ *
+ * Thanks for using
+ */
+
 namespace App\Events;
 
 use Anonym\Components\Event\Event;
 
+/**
+ * Class {{ name }}
+ * @packageApp\Events
+ */
 class {{ name }} extends Event{
 
      /**
