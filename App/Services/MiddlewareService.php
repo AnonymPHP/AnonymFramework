@@ -12,7 +12,9 @@
 namespace App\Services;
 
 
-class MiddlewareService
+use Anonym\Bootstrap\ServiceProvider;
+
+class MiddlewareService extends ServiceProvider
 {
 
 }
