@@ -34,7 +34,6 @@ class {{ name }} extends Listener{
        /**
         * handle the event instance
         *
-        * @param Event $event
         * @return mixed
         */
         public function handle(){
