@@ -10,7 +10,7 @@
  */
 
 namespace App\Listeners;
-use Anonym\Components\Event\EventLister as Listener;
+use Anonym\Components\Event\EventListener as Listener;
 
 /**
  * the abstract class of event listener
