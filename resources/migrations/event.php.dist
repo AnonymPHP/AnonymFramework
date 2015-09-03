@@ -15,7 +15,7 @@ use Anonym\Components\Event\Event;
 
 /**
  * Class {{ name }}
- * @packageApp\Events
+ * @package App\Events
  */
 class {{ name }} extends Event{
 
