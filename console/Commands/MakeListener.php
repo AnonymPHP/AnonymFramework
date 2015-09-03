@@ -11,13 +11,11 @@
 
 namespace Console\Commands;
 
-
-use Anonym\Components\Console\Command;
-use Anonym\Components\Console\HandleInterface;
-use Anonym\Facades\Stroge;
-use Anonym\Support\TemplateGenerator;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
+use Anonym\Components\Console\HandleInterface;
+use Anonym\Components\Console\Command;
+use Anonym\Support\TemplateGenerator;
 
 /**
  * Class Listener
