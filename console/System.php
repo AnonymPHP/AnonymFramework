@@ -12,9 +12,9 @@ namespace Console;
 
 use Anonym\Components\Cron\Cron as Schedule;
 use Anonym\Components\Console\Kernel;
+use Console\Commands\MakeListener;
 use Console\Commands\MakeEvent;
 use Console\Commands\Migration;
-
 /**
  * Class System
  * @package Console
@@ -36,10 +36,10 @@ class System extends Kernel
      *
      * @var array
      */
-    protected $commands =
-        [
+    protected $commands = [
             Migration::class,
-            MakeEvent::class
+            MakeEvent::class,
+        MakeListener::class
         ];
 
 
