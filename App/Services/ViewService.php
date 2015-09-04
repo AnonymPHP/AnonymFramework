@@ -21,4 +21,12 @@ use Anonym\Bootstrap\ServiceProvider;
 class ViewService extends ServiceProvider
 {
 
+    /**
+     * register the provider
+     *
+     * @return mixed
+     */
+    public function register()
+    {
+    }
 }
