@@ -460,7 +460,6 @@ if (!function_exists('firing')) {
  */
 if (!function_exists('getallheaders')) {
 
-    Config::set('general.server', 0);
     /**
      * fetch all http headers
      *
