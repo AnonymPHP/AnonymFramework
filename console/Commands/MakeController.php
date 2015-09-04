@@ -57,7 +57,7 @@ class MakeController extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-        $content = file_get_contents(RESOURCE.'migrations/event.php.dist');
+        $content = file_get_contents(RESOURCE.'migrations/controller.php.dist');
 
         $generator = new TemplateGenerator($content);
         $name = $this->argument('name');
