@@ -99,6 +99,29 @@ if (!function_exists('view')) {
     }
 }
 
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('assign')) {
+
+    /**
+     * add a parameter to view bag
+     *
+     * @param string $name
+     * @param string $value
+     * @return mixed
+     */
+    function assign($name = '', $value = '')
+    {
+        return View::assign($name, $value);
+    }
+}
+
 /**
  * | **********************
  * |
