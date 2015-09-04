@@ -484,3 +484,25 @@ if (!function_exists('getallheaders')) {
     }
 
 }
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('response')) {
+
+    /**
+     * return the a response object
+     *
+     * @param string $content
+     * @param int $statusCode
+     * @return mixed
+     */
+    function response($content = '', $statusCode = 200){
+        return App::make('http.response')->setContent($content)->setStatusCode($statusCode);
+    }
+
+}
