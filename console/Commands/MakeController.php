@@ -62,15 +62,14 @@ class MakeController extends Command implements HandleInterface
         $generator = new TemplateGenerator($content);
         $name = $this->argument('name');
 
-        $path = 'Events/'.$name.'.php';
+        $path = 'App/Http/Controllers/'.$name.'.php';
         $generated = $generator->generate(['name' => $name]);
-
-        if (Stroge::exists($path)) {
+        if (!Stroge::exists($path)) {
             Stroge::create($path);
             Stroge::put($path, $generated);
             $this->info(sprintf('%s created succesfully to %s', $name, $path));
         } else {
-            $this->error(sprintf('%s Event already exists', $name));
+            $this->error(sprintf('%s Controller already exists', $name));
         }
     }
 }

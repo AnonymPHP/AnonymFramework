@@ -12,6 +12,7 @@ namespace Console;
 
 use Anonym\Components\Cron\Cron as Schedule;
 use Anonym\Components\Console\Kernel;
+use Console\Commands\MakeController;
 use Console\Commands\MakeListener;
 use Console\Commands\MakeEvent;
 use Console\Commands\Migration;
@@ -41,6 +42,7 @@ class System extends Kernel
         Migration::class,
         MakeEvent::class,
         MakeListener::class,
+        MakeController::class,
     ];
 
 
