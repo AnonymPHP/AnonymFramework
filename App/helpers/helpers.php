@@ -477,7 +477,6 @@ if (!function_exists('getallheaders')) {
                 }
             }
 
-
         }
 
         return $headers;
