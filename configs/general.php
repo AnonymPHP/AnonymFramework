@@ -29,6 +29,7 @@ return [
         'event' => \Anonym\Components\Event\EventDispatcher::class,
         'route' => \Anonym\Components\Route\RouteCollector::class,
         'app' => \Anonym\Container\Container::class,
+        'guard' => \Anonym\Components\Security\Authentication\Guard::class,
         'redirect' => \Anonym\Components\HttpClient\Redirect::class,
         'config' => \Anonym\Components\Config\Reposity::class,
     ],
