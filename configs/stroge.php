@@ -27,10 +27,9 @@ return [
          * | *****************
          */
         'local' => [
-            'root' => BASE
-        ]
+            'root' => BASE,
+        ],
     ],
-
     /**
      * | ****************
      * |
@@ -49,11 +48,10 @@ return [
          * | *****************
          */
         'driver' => 'file',
-
         'file' => [
             'ext' => '.cache',
-            'folder' => RESOURCE . 'cache'
+            'folder' => RESOURCE.'cache',
         ],
 
-    ]
+    ],
 ];
