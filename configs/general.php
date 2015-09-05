@@ -43,6 +43,7 @@ return [
         \App\Services\LoginService::class,
         \App\Services\RegisterService::class,
         \App\Services\MiddlewareService::class,
+        \App\Services\ViewService::class,
         \Anonym\Providers\RouteProvider::class,
 
     ],
