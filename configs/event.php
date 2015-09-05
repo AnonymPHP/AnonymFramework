@@ -10,8 +10,8 @@
  */
 
 return [
-  
-     'events' => [
 
-     ],
+    'events' => [
+
+    ],
 ];
