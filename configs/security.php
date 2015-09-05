@@ -17,11 +17,10 @@ return [
      * |
      * | *****************
      */
-    'csrf'     => [
-        'status'     => true, // make it false, if you dont want use it
+    'csrf' => [
+        'status' => true, // make it false, if you dont want use it
         'field_name' => '_token' // this string will be look in posts
     ],
-
     /**
      * | ****************
      * |
@@ -51,7 +50,6 @@ return [
              */
 
         ],
-
         'full_firewall' => [
 
             /**
@@ -61,9 +59,8 @@ return [
              * |
              * | *****************
              */
-        ]
+        ],
     ],
-
     /**
      * | ****************
      * |
@@ -71,5 +68,5 @@ return [
      * |
      * | *****************
      */
-    'type_hint' => false
+    'type_hint' => false,
 ];
