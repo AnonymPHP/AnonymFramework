@@ -19,7 +19,6 @@ return [
      * | *****************
      */
     'autostart' => true,
-
     /**
      * | ****************
      * |
@@ -27,7 +26,7 @@ return [
      * |
      * | *****************
      */
-    'connection'  => 'default',  // selected connection, has to be in connections
+    'connection' => 'default',  // selected connection, has to be in connections
 
     'connections' =>
         [
@@ -39,7 +38,7 @@ return [
                  * |
                  * | *****************
                  */
-                'host'     => 'localhost',
+                'host' => 'localhost',
                 /**
                  * | ****************
                  * |
@@ -47,7 +46,7 @@ return [
                  * |
                  * | *****************
                  */
-                'db'       => 'test',
+                'db' => 'test',
                 /**
                  * | ****************
                  * |
@@ -73,8 +72,8 @@ return [
                  * | *****************
                  */
 
-                'driver'   => 'pdo'
-            ]
+                'driver' => 'pdo',
+            ],
         ],
     /**
      * | ****************
@@ -84,7 +83,7 @@ return [
      * | *****************
      */
 
-    'tables'      => [
+    'tables' => [
 
         /**
          * | ****************
@@ -93,10 +92,9 @@ return [
          * |
          * | *****************
          */
-        'login'          => [
+        'login' => [
 
         ],
-
         /**
          * | ****************
          * |
@@ -104,10 +102,9 @@ return [
          * |
          * | *****************
          */
-        'register'       => [
+        'register' => [
             //
         ],
-
         /**
          * | ****************
          * |
@@ -118,7 +115,6 @@ return [
         'select' => [
 
         ],
-
         /**
          * | ****************
          * |
@@ -129,9 +125,9 @@ return [
         'authentication' =>
             [
 
-            ]
+            ],
 
-    ]
+    ],
 
 
 ];
