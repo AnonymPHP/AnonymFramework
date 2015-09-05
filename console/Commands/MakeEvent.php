@@ -62,7 +62,7 @@ class MakeEvent extends Command implements HandleInterface
         $generator = new TemplateGenerator($content);
         $name = $this->argument('name');
 
-        $path = APP. 'Events/'.$name.'.php';
+        $path = APP.'Events/'.$name.'.php';
         $generated = $generator->generate(['name' => $name]);
 
         if (!file_exists($path)) {
