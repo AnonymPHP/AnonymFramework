@@ -57,7 +57,7 @@ define('PUBLIC_FILES', BASE . 'public/');
  * |the constant for upload files
  * |----------------------------
  */
-define('UPLOAD', BASE. PUBLIC_FILES . 'uploads/');
+define('UPLOAD',  PUBLIC_FILES . 'uploads/');
 
 
 /**
