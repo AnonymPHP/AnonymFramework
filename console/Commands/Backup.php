@@ -77,7 +77,7 @@ class Backup extends Command implements HandleInterface
             $confirm = sprintf('Your %s backup file will be remove, do you accept?[yes|no]', $name);
         }
         if ($this->confirm($confirm, true)) {
-            $return = $this->load->forget($name);
+            $return = BackupLoader::forget($name);
             foreach ($return as $key => $response) {
                 if (true === $response) {
                     $this->info(sprintf('%s backup successfully removed', $key));
