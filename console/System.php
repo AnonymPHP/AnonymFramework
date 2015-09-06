@@ -17,6 +17,7 @@ use Console\Commands\MakeListener;
 use Console\Commands\MakeModel;
 use Console\Commands\MakeEvent;
 use Console\Commands\Migration;
+use Console\Commands\Backup;
 
 /**
  * Class System
@@ -44,7 +45,8 @@ class System extends Kernel
         MakeEvent::class,
         MakeListener::class,
         MakeController::class,
-        MakeModel::class
+        MakeModel::class,
+        Backup::class
     ];
 
 
