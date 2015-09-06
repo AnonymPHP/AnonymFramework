@@ -16,6 +16,8 @@ use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
+use Anonym\Support\TemplateGenerator;
+use Anonym\Facades\Stroge;
 
 class MakeModel extends Command implements HandleInterface
 {
