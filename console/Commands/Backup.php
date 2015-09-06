@@ -18,6 +18,11 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Anonym\Facades\BackupLoader;
 use Anonym\Facades\Backup as BackupFacade;
+
+/**
+ * Class Backup
+ * @package Console\Commands
+ */
 class Backup extends Command implements HandleInterface
 {
 
