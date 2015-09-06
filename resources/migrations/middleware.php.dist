@@ -16,10 +16,10 @@ use Anonym\Components\Route\MiddlewareInterface;
 use Anonym\Components\Route\TerminateInterface;
 
 /**
- * Class UserAuth
+ * Class {{ name }}
  * @package App\Http\Middleware
  */
-class UserAuth implements MiddlewareInterface, TerminateInterface
+class {{ name }} implements MiddlewareInterface, TerminateInterface
 {
 
     /**
