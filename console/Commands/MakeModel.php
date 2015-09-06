@@ -19,6 +19,10 @@ use Symfony\Component\Console\Input\InputInterface;
 use Anonym\Support\TemplateGenerator;
 use Anonym\Facades\Stroge;
 
+/**
+ * Class MakeModel
+ * @package Console\Commands
+ */
 class MakeModel extends Command implements HandleInterface
 {
 
