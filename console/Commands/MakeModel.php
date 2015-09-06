@@ -12,7 +12,10 @@
 namespace Console\Commands;
 
 
-class MakeModel
+use Anonym\Components\Console\Command;
+use Anonym\Components\Console\HandleInterface;
+
+class MakeModel extends Command implements HandleInterface
 {
 
 }
