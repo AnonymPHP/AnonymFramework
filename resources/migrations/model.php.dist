@@ -14,7 +14,7 @@ namespace App\Models;
 use Anonym\Facades\Element;
 
 /**
- * Class User
+ * Class {{ name }}
  * @package App\Models
  */
-class User extends Element {}
+class {{ name }}  extends Element {}
