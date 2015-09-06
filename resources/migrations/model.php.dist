@@ -1,0 +1,20 @@
+/**
+ * This file belongs to the AnoynmFramework
+ *
+ * @author vahitserifsaglam <vahit.serif119@gmail.com>
+ * @see http://gemframework.com
+ *
+ * Thanks for using
+ */
+
+
+namespace App\Models;
+
+
+use Anonym\Facades\Element;
+
+/**
+ * Class User
+ * @package App\Models
+ */
+class User extends Element {}
