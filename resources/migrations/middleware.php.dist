@@ -1,0 +1,48 @@
+<?php
+/**
+ * This file belongs to the AnoynmFramework
+ *
+ * @author vahitserifsaglam <vahit.serif119@gmail.com>
+ * @see http://gemframework.com
+ *
+ * Thanks for using
+ */
+
+
+namespace App\Http\Middleware;
+
+use Anonym\Components\HttpClient\Request;
+use Anonym\Components\Route\MiddlewareInterface;
+use Anonym\Components\Route\TerminateInterface;
+
+/**
+ * Class UserAuth
+ * @package App\Http\Middleware
+ */
+class UserAuth implements MiddlewareInterface, TerminateInterface
+{
+
+    /**
+     * Handle the user access
+     *
+     * @param Request $request the instance of request
+     * @param mixed $role the user role
+     * @param callable|null $next work to be done
+     * @return mixed
+     */
+    public function handle(Request $request, $role, callable $next = null)
+    {
+
+    }
+
+    /**
+     * terminate the request
+     *
+     * @param Request $request
+     * @return mixed
+     */
+    public function terminate(Request $request)
+    {
+        //
+    }
+}
