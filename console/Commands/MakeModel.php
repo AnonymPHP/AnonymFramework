@@ -31,19 +31,19 @@ class MakeModel extends Command implements HandleInterface
     public function handle(InputInterface $input, OutputInterface $output)
     {
 
-        $content = file_get_contents(RESOURCE.'migrations/controller.php.dist');
+        $content = file_get_contents(RESOURCE.'migrations/model.php.dist');
 
         $generator = new TemplateGenerator($content);
         $name = $this->argument('name');
 
-        $path = 'App/Http/Controllers/'.$name.'.php';
+        $path = 'App/Models/'.$name.'.php';
         $generated = $generator->generate(['name' => $name]);
         if (!Stroge::exists($path)) {
             Stroge::create($path);
             Stroge::put($path, $generated);
             $this->info(sprintf('%s created succesfully to %s', $name, $path));
         } else {
-            $this->error(sprintf('%s Controller already exists', $name));
+            $this->error(sprintf('%s Model already exists', $name));
         }
     }
 }
