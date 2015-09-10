@@ -14,7 +14,6 @@ namespace App\Services;
 
 use Anonym\Bootstrap\ServiceProvider;
 use Anonym\Components\Route\AccessBag;
-use App\Http\Middleware\UserAuth;
 /**
  * Class MiddlewareService
  * @package App\Services
@@ -28,7 +27,6 @@ class MiddlewareService extends ServiceProvider
      * @var array
      */
     protected $middleware = [
-        'user.auth' => UserAuth::class
     ];
 
     /**
