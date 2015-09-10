@@ -9,7 +9,5 @@
  */
 
 get('/', function(){
-    return view('errors/503');
+    return view('welcome');
 });
-
-get('/test', 'Index:boot');
