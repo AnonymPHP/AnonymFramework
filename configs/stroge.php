@@ -48,6 +48,14 @@ return [
          * | *****************
          */
         'driver' => 'file',
+
+        /**
+         * | ****************
+         * |
+         * | cache file driver configs
+         * |
+         * | *****************
+         */
         'file' => [
             'ext' => '.cache',
             'folder' => RESOURCE.'cache',
@@ -55,14 +63,54 @@ return [
 
     ],
 
-
+    /**
+     * | ****************
+     * |
+     * |  Session class configs
+     * |
+     * | *****************
+     */
     'session' => [
 
+        /**
+         * | ****************
+         * |
+         * | driver can be = file, cache, database, cookie
+         * |
+         * | *****************
+         */
         'driver' => 'file',
 
+        /**
+         *  session file driver configs
+         */
         'file' => [
             'path' => RESOURCE . 'sessions/'
-        ]
+        ],
 
+        /**
+         * | ****************
+         * |
+         * | database driver configs,
+         * | table must be exists in your database.
+         * | table pattern is must be like that  => key:value
+         * |
+         * | *****************
+         */
+        'database' => [
+            'table' => 'sessions'
+        ],
+
+        /**
+         * | ****************
+         * |
+         * | cookie driver configs
+         * | lifetime must be an integer
+         * |
+         * | *****************
+         */
+        'cookie' => [
+            'lifetime' => 1800
+        ]
     ]
 ];
