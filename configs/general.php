@@ -48,8 +48,8 @@ return [
         \App\Services\RegisterService::class,
         \App\Services\MiddlewareService::class,
         \App\Services\ViewService::class,
+        \Anonym\Providers\CookieProvider::class,
         \Anonym\Providers\RouteProvider::class,
-        \Anonym\Providers\CookieProvider::class
     ],
     /**
      * | ****************
