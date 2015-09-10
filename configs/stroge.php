@@ -87,7 +87,7 @@ return [
          *  session file driver configs
          */
         'file' => [
-            'path' => RESOURCE . 'sessions/'
+            'path' =>  'resources/sessions/'
         ],
 
         /**
