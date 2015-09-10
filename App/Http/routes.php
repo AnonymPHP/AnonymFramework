@@ -11,3 +11,8 @@
 get('/', function(){
     return view('welcome');
 });
+
+
+get('/test', ['_controller' => 'Index:boot', '_middleware' => [
+     'name' => 'user.auth'
+]]);

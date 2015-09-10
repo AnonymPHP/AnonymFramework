@@ -34,7 +34,7 @@ class LoginService  extends ServiceProvider
      * @var array
      */
     protected $select = [
-        'username', 'email', 'role'
+        'username', 'email'
     ];
 
     /**
@@ -51,6 +51,13 @@ class LoginService  extends ServiceProvider
     ];
 
     /**
+     * the table of users
+     *
+     * @var string
+     */
+    protected $table = 'User';
+
+    /**
      * register the provider
      *
      * @return mixed
@@ -60,5 +67,6 @@ class LoginService  extends ServiceProvider
         Config::set('database.tables.login', $this->login);
         Config::set('database.tables.select', $this->select);
         Config::set('database.tables.authentication', $this->role);
+        Config::set('database.tables.table', $this->table);
     }
 }

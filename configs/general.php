@@ -49,7 +49,7 @@ return [
         \App\Services\MiddlewareService::class,
         \App\Services\ViewService::class,
         \Anonym\Providers\RouteProvider::class,
-
+        \Anonym\Providers\CookieProvider::class
     ],
     /**
      * | ****************
