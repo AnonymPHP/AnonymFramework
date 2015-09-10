@@ -54,4 +54,15 @@ return [
         ],
 
     ],
+
+
+    'session' => [
+
+        'driver' => 'file',
+
+        'file' => [
+            'path' => RESOURCE . 'sessions/'
+        ]
+
+    ]
 ];
