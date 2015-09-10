@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PHP Exception.s</title>
+    <title>PHP Exception.</title>
 
     <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -32,8 +32,21 @@
         }
 
         .title {
-            font-size: 72px;
+            color: #000;
+            font-size: 64px;
             margin-bottom: 40px;
+        }
+
+        .title-little{
+            font-size: 25px !important;
+        }
+
+        .title-red{
+            color: #ff0000; !important;
+        }
+        hr{
+            color:#ccc;
+            background: #ccc;
         }
     </style>
 </head>
@@ -42,19 +55,15 @@
 <div class="container">
     <div class="content">
 
-        <h1 class="title" style="font-family:Open Sans, sans-serif;">AnonymFramework Uygulama İstinası</h1>
-        <hr/>
-        <b>{{ file }} Dosyasında Bir İstisna Yakalandı:</b>
-        <hr/>
-        <pre>Mesaj : {{ message }}</pre>
-        <hr/>
-        Satır : {{ line }}
-        <hr/>
-        Hata Kodu : {{ code }}
-        <hr/>
+        <p class="title">AnonymPHP Application Exception</p>
 
-        <p><h4>Trace:</h4></p>
-        {{ trace }}
+        <p class="title-little title">{{ message }}</p>
+        <hr>
+
+        <p class="title-little title title-red">In: {{ file }}, {{ line }}</p>
+
+        <hr>
+        <p class="title" style="font-size: 14px">{{ trace }}</p>
 
     </div>
 </div>
