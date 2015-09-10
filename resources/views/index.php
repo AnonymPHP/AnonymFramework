@@ -5,6 +5,6 @@
     <title>Document</title>
 </head>
 <body>
- helo world
+ {{ get }}
 </body>
 </html>
