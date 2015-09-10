@@ -33,12 +33,19 @@
             .title {
                 font-size: 96px;
             }
+
+            .title-micro{
+                color: #787171;
+                font-size: 25px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
                 <div class="title">Anonym 2</div>
+
+                <p class="title-micro">Professional PHP Framework</p>
             </div>
         </div>
     </body>
