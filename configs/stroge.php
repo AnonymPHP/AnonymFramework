@@ -81,7 +81,7 @@ return [
          * |
          * | *****************
          */
-        'driver' => 'file',
+        'driver' => 'cookie',
 
         /**
          *  session file driver configs
