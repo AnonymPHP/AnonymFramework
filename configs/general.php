@@ -42,6 +42,7 @@ return [
      */
     'providers' => [
         \Anonym\Components\Session\SessionServiceProvider::class,
+        \Anonym\Components\Database\Pagination\PaginationServiceProvider::class,
         \App\Services\EventService::class,
         \App\Services\LoginService::class,
         \App\Services\RegisterService::class,
