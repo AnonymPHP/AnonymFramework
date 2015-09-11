@@ -8,6 +8,4 @@
  * Thanks for using
  */
 
-get('/', function(){
-    return view('welcome');
-});
+get('/', 'Index:boot');
