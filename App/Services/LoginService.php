@@ -44,10 +44,6 @@ class LoginService  extends ServiceProvider
      */
     protected $role = [
         'column' => 'role',
-        'roles' => [
-            'user' => 0,
-            'password' => 1
-        ]
     ];
 
     /**
@@ -68,5 +64,6 @@ class LoginService  extends ServiceProvider
         Config::set('database.tables.select', $this->select);
         Config::set('database.tables.authentication', $this->role);
         Config::set('database.tables.table', $this->table);
+
     }
 }
