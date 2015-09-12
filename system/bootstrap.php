@@ -129,6 +129,15 @@ define('ASSETS', PUBLIC_FILES. 'assets/');
 
 include BASE . 'vendor/autoload.php';
 
+
+/**
+ * |----------------------------
+ * | run the symfony debug handler
+ * |----------------------------
+ */
+
+\Symfony\Component\Debug\Debug::enable();
+
 /**
  * |----------------------------
  * | create an application
