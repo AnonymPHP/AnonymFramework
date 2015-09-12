@@ -16,6 +16,7 @@ use Anonym\Facades\Session;
 use Anonym\Facades\App;
 use Anonym\Facades\Cookie;
 use Anonym\Facades\Event;
+use Anonym\Facades\Csrf;
 use Illuminate\Contracts\Support\Htmlable;
 
 
@@ -575,6 +576,27 @@ if (!function_exists('response')) {
     function response($content = '', $statusCode = 200)
     {
         return App::make('http.response')->setContent($content)->setStatusCode($statusCode);
+    }
+
+}
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('csrf_active')) {
+
+    /**
+     * get the registered csrf token
+     *
+     *
+     * @return string
+     */
+    function csrf_active(){
+
     }
 
 }

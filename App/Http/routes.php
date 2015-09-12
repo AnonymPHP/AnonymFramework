@@ -10,5 +10,5 @@
 
 
 get('/', function(){
-    return view('index', ['test' => 'aa']);
+    return view('welcome');
 });
