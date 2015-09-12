@@ -5,6 +5,6 @@
     <title>Document</title>
 </head>
 <body>
- <?php var_dump($get); ?>
+
 </body>
 </html>
