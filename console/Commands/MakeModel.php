@@ -26,6 +26,17 @@ use Anonym\Facades\Stroge;
 class MakeModel extends Command implements HandleInterface
 {
 
+
+    /**
+     * @var string
+     */
+    protected $signature = 'make:model {name}';
+
+    /**
+     * @var string
+     */
+    protected $description = "create a new model file";
+
     /**
      * Komut yakalandığı zaman tetiklenecek fonksiyonlardan biridir
      * @param InputInterface $input

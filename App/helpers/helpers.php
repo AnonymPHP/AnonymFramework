@@ -16,7 +16,16 @@ use Anonym\Facades\Session;
 use Anonym\Facades\App;
 use Anonym\Facades\Cookie;
 use Anonym\Facades\Event;
+use Illuminate\Contracts\Support\Htmlable;
 
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
 if (!function_exists('value')) {
     /**
      * Return the default value of the given value.
@@ -30,6 +39,37 @@ if (!function_exists('value')) {
     }
 }
 
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('e')) {
+    /**
+     * Escape HTML entities in a string.
+     *
+     * @param  \Illuminate\Support\Htmlable|string $value
+     * @return string
+     */
+    function e($value)
+    {
+        if ($value instanceof Htmlable) {
+            return $value->toHtml();
+        }
+
+        return htmlentities($value, ENT_QUOTES, 'UTF-8', false);
+    }
+}
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
 if (!function_exists('data_get')) {
     /**
      * return the value
@@ -52,7 +92,13 @@ if (!function_exists('data_get')) {
     }
 }
 
-
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
 if (!function_exists('first')) {
 
 
@@ -495,8 +541,11 @@ if (!function_exists('getallheaders')) {
 
             foreach ($_SERVER as $name => $value) {
                 if (substr($name, 0, 5) == 'HTTP_') {
-                    $headers[str_replace(' ', '-',
-                        ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+                    $headers[str_replace(
+                        ' ',
+                        '-',
+                        ucwords(strtolower(str_replace('_', ' ', substr($name, 5))))
+                    )] = $value;
                 }
             }
 
@@ -523,7 +572,8 @@ if (!function_exists('response')) {
      * @param int $statusCode
      * @return mixed
      */
-    function response($content = '', $statusCode = 200){
+    function response($content = '', $statusCode = 200)
+    {
         return App::make('http.response')->setContent($content)->setStatusCode($statusCode);
     }
 
