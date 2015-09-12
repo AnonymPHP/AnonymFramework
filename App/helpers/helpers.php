@@ -595,8 +595,9 @@ if (!function_exists('csrf_active')) {
      *
      * @return string
      */
-    function csrf_active(){
-
+    function csrf_active()
+    {
+        return Csrf::getToken();
     }
-
 }
+
