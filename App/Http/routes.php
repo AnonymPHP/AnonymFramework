@@ -8,6 +8,7 @@
  * Thanks for using
  */
 
+
 get('/', function(){
-    return view('welcome');
+    return view('index', ['test' => 'aa']);
 });
