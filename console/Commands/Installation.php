@@ -45,6 +45,5 @@ class Installation extends Command implements HandleInterface
         Anonym::call('migration', [
             'function' => 'deploy', 'name' => 'Installation'
         ]);
-
     }
 }
