@@ -11,5 +11,9 @@
 
 $app = include 'system/bootstrap.php';
 $console = new \Console\System($app, 1);
+
+\Anonym\Facades\App::singleton('console', function() use($console){
+    return $console;
+});
 // run the console
 $console->run();

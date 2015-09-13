@@ -136,7 +136,7 @@ include BASE . 'vendor/autoload.php';
  * |----------------------------
  */
 
-\Symfony\Component\Debug\Debug::enable();
+# \Symfony\Component\Debug\Debug::enable();
 
 /**
  * |----------------------------
