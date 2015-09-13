@@ -93,7 +93,7 @@ class Migration extends AnonymCommand implements HandleInterface
      */
     public function deploy($name = '')
     {
-        $response = FacadeMigration::run($name);
+        FacadeMigration::run($name);
         $this->info('up method worked succesfully ');
         $this->info('down method worked succesfully in');
 
