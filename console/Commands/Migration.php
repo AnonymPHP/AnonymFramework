@@ -94,13 +94,15 @@ class Migration extends AnonymCommand implements HandleInterface
     public function deploy($name = '')
     {
         $response = FacadeMigration::run($name);
+        $this->info('up method worked succesfully ');
+        $this->info('down method worked succesfully in');
+
         foreach ($response as $answer) {
             $up = $answer['up'];
             $down = $answer['down'];
             $fname = $answer['name'];
             if (null !== $up) {
                 if (false !== $up) {
-                    $this->info(sprintf('up method worked succesfully in %s', $fname));
                 } else {
                     $this->error(sprintf('up method worked not successfully in %s', $fname));
                 }
@@ -110,7 +112,6 @@ class Migration extends AnonymCommand implements HandleInterface
             // düşürme işlemi
             if (null !== $down) {
                 if (false !== $down) {
-                    $this->info(sprintf('down method worked succesfully in %s', $fname));
                 } else {
                     $this->error(sprintf('down method worked not succesfully in %s', $fname));
                 }
