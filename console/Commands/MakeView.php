@@ -31,7 +31,7 @@ class MakeView extends Command implements HandleInterface
     /**
      * @var string
      */
-    protected $description = "create a new model file";
+    protected $description = "create a new view file";
 
     /**
      * the instance of filesystem
