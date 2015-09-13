@@ -28,6 +28,8 @@ class CleanView extends Command implements HandleInterface
     protected $description = 'clean the all view files';
 
     /**
+     * the signature of command
+     *
      * @var string
      */
     protected $name = 'clean:view';
