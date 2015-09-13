@@ -616,7 +616,8 @@ if (!function_exists('app')) {
      * get the registered csrf token
      *
      *
-     * @return string
+     * @param string $name
+     * @return mixed
      */
     function app($name = null)
     {
