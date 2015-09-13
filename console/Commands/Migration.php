@@ -97,28 +97,7 @@ class Migration extends AnonymCommand implements HandleInterface
         $this->info('up method worked succesfully ');
         $this->info('down method worked succesfully in');
 
-        foreach ($response as $answer) {
-            $up = $answer['up'];
-            $down = $answer['down'];
-            $fname = $answer['name'];
-            if (null !== $up) {
-                if (false !== $up) {
-                } else {
-                    $this->error(sprintf('up method worked not successfully in %s', $fname));
-                }
-            }else{
-                $this->error(sprintf('up method worked not successfully in %s', $fname));
-            }
-            // düşürme işlemi
-            if (null !== $down) {
-                if (false !== $down) {
-                } else {
-                    $this->error(sprintf('down method worked not succesfully in %s', $fname));
-                }
-            }else{
-                $this->error(sprintf('down method worked not successfully in %s', $fname));
-            }
-        }
+
     }
 
     /**
