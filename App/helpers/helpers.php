@@ -644,7 +644,7 @@ if (!function_exists('assets')) {
      */
     function asset($name = null)
     {
-        return $name === null ? ASSETS : ASSETS.$name;
+        return 'public/assets/'.$name;
     }
 }
 
