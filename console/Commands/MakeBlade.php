@@ -13,6 +13,7 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
+use Anonym\Facades\Anonym;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 
@@ -27,7 +28,7 @@ class MakeBlade extends Command implements HandleInterface
     /**
      * @var string
      */
-    protected $signature = 'make:view {name}';
+    protected $signature = 'make:blade {name}';
 
     /**
      * @var string
@@ -43,6 +44,9 @@ class MakeBlade extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-        
+        $name = $this->argument('name');
+        Anonym::call('make:view', [
+            'name' => $name
+        ]);
     }
 }
