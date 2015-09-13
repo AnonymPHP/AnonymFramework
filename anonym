@@ -11,6 +11,6 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 $app = include 'system/bootstrap.php';
-$console = new \Console\System(1);
+$console = new \Console\System($app, 1);
 // run the console
 $console->run();
