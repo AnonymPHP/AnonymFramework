@@ -2,6 +2,7 @@
 namespace Console\Commands;
 
 use Anonym\Components\Console\Command as AnonymCommand;
+use Anonym\Filesystem\Filesystem;
 use Anonym\Support\TemplateGenerator;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
@@ -43,11 +44,17 @@ class Migration extends AnonymCommand implements HandleInterface
     private $filesystem;
 
     /**
+     * @var Filesystem
+     */
+    private $file;
+
+    /**
      *  create a new instance and register the filesystem
      *
      */
-    public function __construct()
+    public function __construct(Filesystem $filesystem)
     {
+        $this->file = $filesystem;
         parent::__construct();
         $this->filesystem = Stroge::disk('local');
     }
@@ -76,9 +83,10 @@ class Migration extends AnonymCommand implements HandleInterface
      */
     public function forget($name = '')
     {
+
         $filePath = FacadeMigration::createName($name);
-        if ($this->filesystem->exists($filePath)) {
-            $this->filesystem->delete($filePath);
+        if ($this->file->exists($filePath)) {
+            $this->file->delete($filePath);
             $this->info(sprintf('%s migration succesfully removed in %s', $name, $filePath));
         } else {
             $this->error(sprintf('%s migration could not removed in %s, file not exists', $name,
@@ -110,7 +118,7 @@ class Migration extends AnonymCommand implements HandleInterface
         $content = $this->migrate(RESOURCE.'migrations/migration.php.dist', ['name' => $name]);
 
         $fileName = FacadeMigration::createName($name);
-        if (!$this->filesystem->exists($fileName)) {
+        if (!$this->file->exists($fileName)) {
             touch($fileName);
             $this->write(MIGRATION, $fileName, $content);
             $this->info(sprintf('%s migration created with successfully', $name));
@@ -129,11 +137,12 @@ class Migration extends AnonymCommand implements HandleInterface
      */
     private function write($src, $fileName, $content)
     {
-        if (!$this->filesystem->exists($src)) {
-            $this->filesystem->createDir($src);
+
+        if (!$this->file->exists($src)) {
+            $this->file->makeDirectory($src);
         }
-        $this->filesystem->chmod($src, 0777);
-        file_put_contents($fileName, $content);
+        chmod($src, 0777);
+        $this->file->put($fileName, $content);
     }
 
     /**
