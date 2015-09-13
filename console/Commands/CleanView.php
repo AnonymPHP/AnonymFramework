@@ -13,7 +13,7 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
-use Anonym\Components\Filesystem\Filesystem;
+use Anonym\Filesystem\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 
@@ -43,7 +43,7 @@ class CleanView extends Command implements HandleInterface
     private $filesystem;
 
     public function __construct(Filesystem $filesystem){
-
+        $this->filesystem = $filesystem;
     }
     /**
      * @param InputInterface $input
@@ -52,6 +52,7 @@ class CleanView extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-
+        $this->filesystem->cleanDirectory(VIEW);
+        $this->info('cleaned all view files');
     }
 }
