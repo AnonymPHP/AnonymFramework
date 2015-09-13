@@ -1,11 +1,18 @@
 <?php
+
 /**
- * This file belongs to the AnoynmFramework
- *
- * @author vahitserifsaglam <vahit.serif119@gmail.com>
- * @see http://gemframework.com
- *
- * Thanks for using
+ * |*******************************
+ * |
+ * | Anonym Framework, Devoloped For Turkish PHP Devolopers
+ * |
+ * |-----------------------------
+ * |
+ * | @author vahitserifsaglam1 <vahit.serif119@gmail.com>
+ * | @packpage Anonym
+ * | @homepage gemframework.com, anonymphp.com
+ * | @support anonymphp.com/support
+ * |
+ * |*****************************
  */
 
 include 'system/bootstrap.php';
