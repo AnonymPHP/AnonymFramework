@@ -9,4 +9,6 @@
  */
 
 
-get('/{name}', 'Index:boot');
+get('/', function(){
+    return view('welcome');
+});
