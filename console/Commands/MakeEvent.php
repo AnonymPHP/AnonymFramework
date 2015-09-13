@@ -14,6 +14,7 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
+use Anonym\Facades\Anonym;
 use Anonym\Facades\Stroge;
 use Anonym\Support\TemplateGenerator;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -68,7 +69,14 @@ class MakeEvent extends Command implements HandleInterface
         if (!file_exists($path)) {
             touch($path);
             file_put_contents($path, $generated);
-            $this->info(sprintf('%s created succesfully to %s', $name, $path));
+            $listenerName = $name.'Listener';
+
+            Anonym::call('make:listener', [
+                'name' => $listenerName
+            ]);
+
+            $this->info(sprintf('%s listener created successfully', $listenerName));
+            $this->info(sprintf('%s event created succesfully to %s', $name, $path));
         } else {
             $this->error(sprintf('%s Event already exists', $name));
         }
