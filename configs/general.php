@@ -31,7 +31,6 @@ return [
         'guard' => \Anonym\Components\Security\Authentication\Guard::class,
         'redirect' => \Anonym\Components\HttpClient\Redirect::class,
         'config' => \Anonym\Components\Config\Reposity::class,
-        'anonym' => \Anonym\Components\Console\Kernel::class
     ],
     /**
      * | ****************
