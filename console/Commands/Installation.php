@@ -25,7 +25,7 @@ class Installation extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $name = 'installation';
+    protected $name = 'install';
 
     /**
      * the description of command
