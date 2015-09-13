@@ -28,11 +28,15 @@ class MakeModel extends Command implements HandleInterface
 
 
     /**
+     * the signature of command
+     *
      * @var string
      */
     protected $signature = 'make:model {name}';
 
     /**
+     * the description of command
+     *
      * @var string
      */
     protected $description = "create a new model file";
