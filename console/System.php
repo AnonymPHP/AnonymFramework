@@ -14,9 +14,11 @@ use Anonym\Components\Cron\Cron as Schedule;
 use Anonym\Components\Console\Kernel;
 use Console\Commands\MakeController;
 use Console\Commands\MakeListener;
+use Console\Commands\MakeBlade;
 use Console\Commands\MakeModel;
 use Console\Commands\MakeEvent;
 use Console\Commands\Migration;
+use Console\Commands\MakeView;
 use Console\Commands\Backup;
 
 /**
@@ -38,6 +40,8 @@ class System extends Kernel
         MakeListener::class,
         MakeController::class,
         MakeModel::class,
+        MakeBlade::class,
+        MakeView::class,
         Backup::class
     ];
 
