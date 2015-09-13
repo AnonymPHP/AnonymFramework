@@ -601,3 +601,27 @@ if (!function_exists('csrf_active')) {
     }
 }
 
+
+
+/**
+ * | **********************
+ * |
+ * | determine if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('app')) {
+
+    /**
+     * get the registered csrf token
+     *
+     *
+     * @return string
+     */
+    function app($name = null)
+    {
+         return null === $name ? App::make('app') : App::make($name);
+    }
+}
+
+
