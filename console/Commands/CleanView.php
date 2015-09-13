@@ -27,6 +27,9 @@ class CleanView extends Command implements HandleInterface
      */
     protected $description = 'clean the all view files';
 
+    /**
+     * @var string
+     */
     protected $name = 'clean:view';
 
     public function __construct(Filesystem $filesystem){
