@@ -113,6 +113,7 @@ class Migration extends AnonymCommand implements HandleInterface
         if (!$this->filesystem->exists($fileName)) {
             touch($fileName);
             $this->write(MIGRATION, $fileName, $content);
+            $this->info(sprintf('%s migration created with successfully', $name));
         } else {
             $this->error(sprintf('%s file already exists in %s', $name, $fileName));
         }
