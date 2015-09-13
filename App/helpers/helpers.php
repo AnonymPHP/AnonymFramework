@@ -638,7 +638,7 @@ if (!function_exists('assets')) {
     /**
      * get the registered csrf token
      *
-     *
+     * @param string $name
      * @return string
      */
     function asset($name = null)
