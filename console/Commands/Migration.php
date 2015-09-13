@@ -8,8 +8,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Anonym\Facades\Migration as FacadeMigration;
 use Anonym\Components\Console\HandleInterface;
-use Anonym\Facades\App;
-use Anonym\Facades\Stroge;
 
 /**
  * This file belongs to the AnoynmFramework
@@ -36,12 +34,6 @@ class Migration extends AnonymCommand implements HandleInterface
      */
     protected $description = 'Migration oluşturma ve düzenleme komutları';
 
-    /**
-     * the filesystem adapter
-     *
-     * @var \Anonym\Components\Filesystem\FilesystemAdapter
-     */
-    private $filesystem;
 
     /**
      * @var Filesystem
@@ -56,7 +48,6 @@ class Migration extends AnonymCommand implements HandleInterface
     {
         $this->file = $filesystem;
         parent::__construct();
-        $this->filesystem = Stroge::disk('local');
     }
 
     /**
@@ -92,6 +83,15 @@ class Migration extends AnonymCommand implements HandleInterface
             $this->error(sprintf('%s migration could not removed in %s, file not exists', $name,
                 $filePath));
         }
+    }
+
+    /**
+     *  clean all migration files
+     */
+    public function clean(){
+        $this->file->cleanDirectory(MIGRATION);
+
+        $this->info('All migrations cleaned');
     }
 
     /**
