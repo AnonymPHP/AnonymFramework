@@ -25,15 +25,7 @@ use Console\Commands\Backup;
  */
 class System extends Kernel
 {
-    /**
-     * create a new instance
-     *
-     * @param int $version
-     */
-    public function __construct($version = 1)
-    {
-        parent::__construct($version);
-    }
+
 
     /**
      * the repository of console commands
