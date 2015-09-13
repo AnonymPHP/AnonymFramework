@@ -625,3 +625,26 @@ if (!function_exists('app')) {
 }
 
 
+
+/**
+ * | **********************
+ * |
+ * | determine if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('assets')) {
+
+    /**
+     * get the registered csrf token
+     *
+     *
+     * @return string
+     */
+    function asset($name = null)
+    {
+        return $name === null ? ASSETS : ASSETS.$name;
+    }
+}
+
+
