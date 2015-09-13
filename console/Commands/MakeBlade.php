@@ -13,7 +13,13 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Input\InputInterface;
 
+/**
+ * Class MakeBlade
+ * @package Console\Commands
+ */
 class MakeBlade extends Command implements HandleInterface
 {
     /**
@@ -29,4 +35,14 @@ class MakeBlade extends Command implements HandleInterface
     protected $description = "create blade view file";
 
 
+    /**
+     * Komut yakalandığı zaman tetiklenecek fonksiyonlardan biridir
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     * @return mixed
+     */
+    public function handle(InputInterface $input, OutputInterface $output)
+    {
+        // TODO: Implement handle() method.
+    }
 }
