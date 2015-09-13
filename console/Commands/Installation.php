@@ -13,11 +13,26 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
+use Anonym\Facades\Anonym;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 
 class Installation extends Command implements HandleInterface
 {
+
+    /**
+     * the signature of command
+     *
+     * @var string
+     */
+    protected $name = 'installation';
+
+    /**
+     * the description of command
+     *
+     * @var string
+     */
+    protected $description = 'install the required systems';
 
     /**
      * Komut yakalandığı zaman tetiklenecek fonksiyonlardan biridir
@@ -27,6 +42,9 @@ class Installation extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-        // TODO: Implement handle() method.
+        Anonym::call('migration', [
+            'function' => 'deploy', 'name' => 'Installation'
+        ]);
+
     }
 }
