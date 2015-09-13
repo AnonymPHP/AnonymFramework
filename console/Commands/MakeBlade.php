@@ -49,5 +49,7 @@ class MakeBlade extends Command implements HandleInterface
         Anonym::call('make:view', [
             'name' => $name
         ]);
+
+        $this->info(sprintf('%s blade view created with successfully', $name));
     }
 }
