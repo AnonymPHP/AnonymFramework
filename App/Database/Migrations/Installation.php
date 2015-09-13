@@ -26,6 +26,11 @@ class Installation extends Migration implements MigrationInterface
                 ->text('value');
         });
 
+        Schema::create('logins', function(Table $table){
+           return $table->primary('login_id')
+               ->varchar('ip')
+               ->varchar('username');
+        });
 
     }
 
