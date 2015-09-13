@@ -11,7 +11,10 @@
 namespace Console\Commands;
 
 
-class MakeBlade
+use Anonym\Components\Console\Command;
+use Anonym\Components\Console\HandleInterface;
+
+class MakeBlade extends Command implements HandleInterface
 {
     /**
      *
@@ -24,4 +27,6 @@ class MakeBlade
      * @var string
      */
     protected $description = "create blade view file";
+
+
 }
