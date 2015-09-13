@@ -104,6 +104,8 @@ class Migration extends AnonymCommand implements HandleInterface
                 } else {
                     $this->error(sprintf('up method worked not successfully in %s', $fname));
                 }
+            }else{
+                $this->error(sprintf('up method worked not successfully in %s', $fname));
             }
             // düşürme işlemi
             if (null !== $down) {
@@ -112,6 +114,8 @@ class Migration extends AnonymCommand implements HandleInterface
                 } else {
                     $this->error(sprintf('down method worked not succesfully in %s', $fname));
                 }
+            }else{
+                $this->error(sprintf('down method worked not successfully in %s', $fname));
             }
         }
     }
