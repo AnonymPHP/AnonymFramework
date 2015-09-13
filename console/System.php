@@ -14,6 +14,7 @@ use Anonym\Components\Cron\Cron as Schedule;
 use Anonym\Components\Console\Kernel;
 use Console\Commands\MakeController;
 use Console\Commands\MakeListener;
+use Console\Commands\Installation;
 use Console\Commands\MakeBlade;
 use Console\Commands\MakeModel;
 use Console\Commands\MakeEvent;
@@ -35,10 +36,11 @@ class System extends Kernel
      * @var array
      */
     protected $commands = [
+        MakeController::class,
+        Installation::class,
+        MakeListener::class,
         Migration::class,
         MakeEvent::class,
-        MakeListener::class,
-        MakeController::class,
         MakeModel::class,
         MakeBlade::class,
         MakeView::class,
