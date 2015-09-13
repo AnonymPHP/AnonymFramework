@@ -23,5 +23,5 @@ class MakeBlade
     /**
      * @var string
      */
-    protected $description = "create blade view file;
+    protected $description = "create blade view file";
 }
