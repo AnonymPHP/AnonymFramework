@@ -39,6 +39,6 @@ class MakeView extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-        // TODO: Implement handle() method.
+
     }
 }
