@@ -44,7 +44,7 @@ class MakeBlade extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-        $name = $this->argument('name');
+        $name = $this->argument('name').'.blade';
 
         Anonym::call('make:view', [
             'name' => $name
