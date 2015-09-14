@@ -13,6 +13,7 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
+use Anonym\Database\Tools\Backup\Seeder;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Finder\Finder;
@@ -63,7 +64,8 @@ class RunSeedCommand extends Command implements HandleInterface
             $name = (array)$name;
         }
 
-
+        $seeder = new Seeder($this->getContainer());
+        $seeder->setCommand($this);
     }
 
     /**
