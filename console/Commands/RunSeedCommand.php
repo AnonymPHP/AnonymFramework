@@ -53,6 +53,12 @@ class RunSeedCommand extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
+        $name = $this->argument('name') ?: '';
 
+        if($name === ''){
+            $name = $this->findAllSeeds();
+        }else{
+            $name = (array) $name;
+        }
     }
 }
