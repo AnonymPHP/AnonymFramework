@@ -60,7 +60,7 @@ class DeploySeedAllCommand extends Command implements HandleInterface
      */
     public function readAllSeeds()
     {
-        $list = Finder::create()->files()->name('*.php')->in(MIGRATION);
+        $list = Finder::create()->files()->name('*.php')->in(DATABASE. 'Seeds/');
 
         $result = [];
         foreach ($list as $l) {
