@@ -12,9 +12,9 @@ namespace Console;
 use Anonym\Components\Cron\Cron as Schedule;
 use Console\Commands\MakeMigrationCommand;
 use Console\Commands\MigrationRunCommand;
+use Console\Commands\DeploySeedCommand;
 use Console\Commands\MakeSeedCommand;
 use Anonym\Components\Console\Kernel;
-use Console\Commands\RunSeedCommand;
 use Console\Commands\MakeController;
 use Console\Commands\MakeListener;
 use Console\Commands\Installation;
@@ -42,7 +42,7 @@ class System extends Kernel
         MakeMigrationCommand::class,
         MigrationRunCommand::class,
         MakeSeedCommand::class,
-        RunSeedCommand::class,
+        DeploySeedCommand::class,
         MakeController::class,
         Installation::class,
         MakeListener::class,
