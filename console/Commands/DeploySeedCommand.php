@@ -10,13 +10,10 @@
 
 namespace Console\Commands;
 
-namespace Console\Commands;
-
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
 use Anonym\Components\Tools\Seeder;
-use Anonym\Support\TemplateGenerator;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Finder\Finder;
@@ -33,7 +30,7 @@ class DeploySeedCommand extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $signature = 'run:seed {name?}';
+    protected $signature = 'seed:run     {name?}';
 
     /**
      * @var string
