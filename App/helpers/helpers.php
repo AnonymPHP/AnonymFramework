@@ -649,3 +649,24 @@ if (!function_exists('assets')) {
 }
 
 
+/**
+ * | **********************
+ * |
+ * | determine if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('errors')) {
+
+    /**
+     * get the registered  token
+     *
+     * @return \Anonym\Support\ErrorBag
+     */
+    function errors()
+    {
+        return App::make('errors.bag');
+    }
+}
+
+
