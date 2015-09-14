@@ -38,6 +38,7 @@ class System extends Kernel
      */
     protected $commands = [
         MakeMigrationCommand::class,
+        MigrationRunCommand::class,
         MakeController::class,
         Installation::class,
         MakeListener::class,
