@@ -15,6 +15,7 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
+use Anonym\Components\Tools\Seeder;
 use Anonym\Support\TemplateGenerator;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
@@ -47,9 +48,15 @@ class DeploySeedCommand extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-
         $argument = $this->argument('name') ? $this->argument('name') : '';
 
+        $names = $argument === '' ? $this->readAllSeeds() : (array) $argument;
+        $seeder = new Seeder($this->getContainer());
+        $seeder->setCommand($this);
+
+        foreach($names as $name){
+            $seeder->call($name);
+        }
     }
 
     /**
