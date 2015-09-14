@@ -13,6 +13,7 @@ use Anonym\Components\Console\HandleInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Anonym\Components\Console\Command;
+use Anonym\Facades\Anonym;
 /**
  * Class MakeMigrationCommand
  * @package Console\Commands
@@ -41,7 +42,7 @@ class MakeMigrationCommand extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-        $name = $this->argument('name') . '.blade';
+        $name = $this->argument('name');
 
         Anonym::call('migration', [
             'function' => 'create', 'name' => $name
