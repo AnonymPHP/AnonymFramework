@@ -66,6 +66,8 @@ class RunSeedCommand extends Command implements HandleInterface
 
         $seeder = new Seeder($this->getContainer());
         $seeder->setCommand($this);
+
+
     }
 
     /**
@@ -76,7 +78,10 @@ class RunSeedCommand extends Command implements HandleInterface
 
         $return = [];
         foreach ($list as $l) {
-            $return[] = $this->first(explode('.', $l->getFilename()));
+            $filename = first(explode('.', $l->getFilename()));
+
+            $name = end(explode('/', $filename));
+            $return[] = $name;
         }
 
         return $return;
