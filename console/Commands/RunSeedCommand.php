@@ -13,9 +13,9 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
-use Anonym\Filesystem\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Finder\Finder;
 
 class RunSeedCommand extends Command implements HandleInterface
 {
@@ -34,15 +34,15 @@ class RunSeedCommand extends Command implements HandleInterface
 
 
     /**
-     * @var Filesystem
+     * @var Finder
      */
-    protected $file;
+    protected $finder;
 
     /**
-     * @param Filesystem $filesystem
+     * @param Finder $filesystem
      */
-    public function __construct(Filesystem $filesystem){
-        $this->file = $filesystem;
+    public function __construct(Finder $finder){
+        $this->finder = $finder;
         parent::__construct();
     }
     /**
@@ -53,5 +53,6 @@ class RunSeedCommand extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
+
     }
 }
