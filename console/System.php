@@ -10,6 +10,7 @@
 
 namespace Console;
 use Anonym\Components\Cron\Cron as Schedule;
+use Console\Commands\DeploySeedAllCommand;
 use Console\Commands\MakeMigrationCommand;
 use Console\Commands\MigrationRunCommand;
 use Console\Commands\DeploySeedCommand;
@@ -40,6 +41,7 @@ class System extends Kernel
      */
     protected $commands = [
         MakeMigrationCommand::class,
+        DeploySeedAllCommand::class,
         MigrationRunCommand::class,
         MakeSeedCommand::class,
         DeploySeedCommand::class,
