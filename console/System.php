@@ -12,6 +12,7 @@ namespace Console;
 use Anonym\Components\Cron\Cron as Schedule;
 use Console\Commands\MakeMigrationCommand;
 use Console\Commands\MigrationRunCommand;
+use Console\Commands\MakeSeedCommand;
 use Anonym\Components\Console\Kernel;
 use Console\Commands\MakeController;
 use Console\Commands\MakeListener;
@@ -39,6 +40,7 @@ class System extends Kernel
     protected $commands = [
         MakeMigrationCommand::class,
         MigrationRunCommand::class,
+        MakeSeedCommand::class,
         MakeController::class,
         Installation::class,
         MakeListener::class,
