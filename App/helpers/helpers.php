@@ -659,7 +659,7 @@ if (!function_exists('assets')) {
 if (!function_exists('errors')) {
 
     /**
-     * get the registered  token
+     * get the registered  error bag
      *
      * @return \Anonym\Support\ErrorBag
      */
