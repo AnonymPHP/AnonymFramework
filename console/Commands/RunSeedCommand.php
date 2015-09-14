@@ -44,8 +44,8 @@ class RunSeedCommand extends Command implements HandleInterface
      */
     public function __construct(Finder $finder)
     {
-        $this->finder = $finder;
         parent::__construct();
+        $this->finder = $finder;
     }
 
     /**
@@ -58,7 +58,7 @@ class RunSeedCommand extends Command implements HandleInterface
     {
         $name = $this->argument('name');
 
-        if ($name === 'runallseeds') {
+        if ($name === 'Runallseeds') {
             $name = $this->findAllSeeds();
         } else {
             $name = (array)$name;
@@ -69,7 +69,8 @@ class RunSeedCommand extends Command implements HandleInterface
 
 
         foreach($name as $seed){
-            $seed->call($seed);
+            var_dump($seed);
+            #$seed->call($seed);
         }
     }
 
