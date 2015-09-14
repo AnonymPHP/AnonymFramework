@@ -62,6 +62,8 @@ class RunSeedCommand extends Command implements HandleInterface
         } else {
             $name = (array)$name;
         }
+
+
     }
 
     /**
