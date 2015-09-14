@@ -13,7 +13,7 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
-use Anonym\Database\Tools\Backup\Seeder;
+use Anonym\Components\Tools\Seeder;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Finder\Finder;
@@ -26,7 +26,7 @@ class RunSeedCommand extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $signature = 'seed:run {name?}';
+    protected $signature = 'seed:run { name? }';
 
     /**
      * @var string
@@ -56,7 +56,7 @@ class RunSeedCommand extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-        $name = $this->argument('name') ?: '';
+        $name = $this->argument('name') ? $this->argument('name'):'';
 
         if ($name === '') {
             $name = $this->findAllSeeds();
