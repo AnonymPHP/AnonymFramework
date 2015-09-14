@@ -14,6 +14,7 @@ use Console\Commands\MakeMigrationCommand;
 use Console\Commands\MigrationRunCommand;
 use Console\Commands\MakeSeedCommand;
 use Anonym\Components\Console\Kernel;
+use Console\Commands\RunSeedCommand;
 use Console\Commands\MakeController;
 use Console\Commands\MakeListener;
 use Console\Commands\Installation;
