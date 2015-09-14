@@ -20,8 +20,8 @@ class MakeSeedCommand extends Command implements HandleInterface
 {
 
     /**
+     * the name of signature
      *
-    /**
      * @var string
      */
     protected $signature = 'make:seed {name}';
@@ -33,13 +33,13 @@ class MakeSeedCommand extends Command implements HandleInterface
 
 
     /**
-     * Komut yakalandığı zaman tetiklenecek fonksiyonlardan biridir
+     *
      * @param InputInterface $input
      * @param OutputInterface $output
      * @return mixed
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-        // TODO: Implement handle() method.
+
     }
 }
