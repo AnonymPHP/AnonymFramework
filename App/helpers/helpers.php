@@ -662,7 +662,7 @@ if (!function_exists('errors')) {
      * get the registered  error bag
      *
      * @param string $get
-     * @return \Anonym\Support\ErrorBag
+     * @return \Anonym\Support\ErrorBag|array
      */
     function errors($get = null)
     {
