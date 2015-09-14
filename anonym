@@ -8,8 +8,7 @@
  * Thanks for using
  */
 
-error_reporting(E_ALL);
-ini_set('diplay_errors', 'On');
+
 
 $app = include 'system/bootstrap.php';
 $console = new \Console\System($app, 1);
