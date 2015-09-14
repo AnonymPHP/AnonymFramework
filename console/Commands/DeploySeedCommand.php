@@ -49,7 +49,7 @@ class DeploySeedCommand extends Command implements HandleInterface
         $seeder = new Seeder($this->getContainer());
         $seeder->setCommand($this);
 
-       $seeder->call($argument);
+        $seeder->call($argument);
     }
 
     /**
