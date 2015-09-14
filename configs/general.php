@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * This file belongs to the AnoynmFramework
  *
@@ -42,7 +41,7 @@ return [
     'providers' => [
         \Anonym\Components\Session\SessionServiceProvider::class,
         \Anonym\Components\Database\Pagination\PaginationServiceProvider::class,
-        \Anonym\Providers\ErrogBagServiceProvider::class,
+        \ Anonym\Providers\ErrorBagServiceProvider::class,
         \App\Services\EventService::class,
         \App\Services\LoginService::class,
         \App\Services\RegisterService::class,
