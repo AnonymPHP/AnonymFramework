@@ -8,6 +8,8 @@ namespace App\Database\Migrations;
 
 use Anonym\Components\Tools\Migration;
 use Anonym\Components\Tools\MigrationInterface;
+use Anonym\Components\Tools\Table;
+use Anonym\Facades\Schema;
 
 class User extends Migration implements MigrationInterface
 {
@@ -18,6 +20,15 @@ class User extends Migration implements MigrationInterface
 
     public function up()
     {
+
+        Schema::create('User', function (Table $table) {
+            return $table->primary('id')
+                ->varchar('username')
+                ->varchar('password')
+                ->varchar('email')
+                ->current('created_at')
+                ->int('role')->defualt(0);
+        });
 
     }
 
