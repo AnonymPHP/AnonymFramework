@@ -48,6 +48,6 @@ class MakeMigrationRun extends Command implements HandleInterface
             'function' => 'deploy', 'name' => $name
         ]);
 
-        $this->info(sprintf('%s migration file created with successfully', $name));
+        $this->info(sprintf('%s migration command worked with successfully', $name));
     }
 }
