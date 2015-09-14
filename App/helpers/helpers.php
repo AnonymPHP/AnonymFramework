@@ -661,11 +661,18 @@ if (!function_exists('errors')) {
     /**
      * get the registered  error bag
      *
+     * @param string $get
      * @return \Anonym\Support\ErrorBag
      */
-    function errors()
+    function errors($get = null)
     {
-        return App::make('errors.bag');
+        $instance = App::make('error.bag');
+
+        if ('instance' === $get) {
+            return $instance;
+        }
+
+        return $instance->getErrors();
     }
 }
 
