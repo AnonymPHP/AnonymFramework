@@ -11,6 +11,7 @@
 namespace Console;
 use Anonym\Components\Cron\Cron as Schedule;
 use Console\Commands\MakeMigrationCommand;
+use Console\Commands\MigrationRunCommand;
 use Anonym\Components\Console\Kernel;
 use Console\Commands\MakeController;
 use Console\Commands\MakeListener;

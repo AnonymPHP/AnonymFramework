@@ -18,7 +18,7 @@ use Anonym\Facades\Anonym;
  * Class MakeMigrationCommand
  * @package Console\Commands
  */
-class MakeMigrationRun extends Command implements HandleInterface
+class MigrationRunCommand extends Command implements HandleInterface
 {
     /**
      *
