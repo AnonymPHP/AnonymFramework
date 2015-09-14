@@ -41,10 +41,12 @@ class RunSeedCommand extends Command implements HandleInterface
     /**
      * @param Finder $filesystem
      */
-    public function __construct(Finder $finder){
+    public function __construct(Finder $finder)
+    {
         $this->finder = $finder;
         parent::__construct();
     }
+
     /**
      *
      * @param InputInterface $input
@@ -55,10 +57,24 @@ class RunSeedCommand extends Command implements HandleInterface
     {
         $name = $this->argument('name') ?: '';
 
-        if($name === ''){
+        if ($name === '') {
             $name = $this->findAllSeeds();
-        }else{
-            $name = (array) $name;
+        } else {
+            $name = (array)$name;
         }
+    }
+
+    /**
+     * @return array
+     */
+    protected function findAllSeeds(){
+        $list = $this->finder->files()->name('*.php')->in(MIGRATION);
+
+        $return = [];
+        foreach ($list as $l) {
+            $return[] = $this->first(explode('.', $l->getFilename()));
+        }
+
+        return $return;
     }
 }
