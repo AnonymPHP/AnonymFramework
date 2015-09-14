@@ -1,0 +1,51 @@
+<?php
+/**
+ * This file belongs to the AnoynmFramework
+ *
+ * @author vahitserifsaglam <vahit.serif119@gmail.com>
+ * @see http://gemframework.com
+ *
+ * Thanks for using
+ */
+
+namespace Console\Commands;
+use Anonym\Components\Console\HandleInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Input\InputInterface;
+
+/**
+ * Class MakeMigrationCommand
+ * @package Console\Commands
+ */
+class MakeMigrationCommand extends Command implements HandleInterface
+{
+    /**
+     *
+     * /**
+     * @var string
+     */
+    protected $signature = 'make:blade {name}';
+
+    /**
+     * @var string
+     */
+    protected $description = "create blade view file";
+
+
+    /**
+     *
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     * @return mixed
+     */
+    public function handle(InputInterface $input, OutputInterface $output)
+    {
+        $name = $this->argument('name') . '.blade';
+
+        Anonym::call('make:view', [
+            'name' => $name
+        ]);
+
+        $this->info(sprintf('%s blade view created with successfully', $name));
+    }
+}
