@@ -19,6 +19,14 @@ use Anonym\Components\Tools\SeedInterface;
  */
 class {{ name }} extends Seeder implements SeedInterface{
 
+      /**
+       * execute the seeds
+       *
+       * @return void
+       */
+      public function run(){
 
+
+      }
 
 }
