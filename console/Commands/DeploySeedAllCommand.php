@@ -65,7 +65,7 @@ class DeploySeedAllCommand extends Command implements HandleInterface
         $result = [];
         foreach ($list as $l) {
             $exp = first(explode('.', $l->getFilename()));
-            $result[] = end(explode('/', $exp));
+            $result[] = $exp;
         }
 
         return $result;
