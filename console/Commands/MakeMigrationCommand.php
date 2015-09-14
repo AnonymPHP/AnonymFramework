@@ -12,7 +12,7 @@ namespace Console\Commands;
 use Anonym\Components\Console\HandleInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
-
+use Anonym\Components\Console\Command;
 /**
  * Class MakeMigrationCommand
  * @package Console\Commands
@@ -24,12 +24,13 @@ class MakeMigrationCommand extends Command implements HandleInterface
      * /**
      * @var string
      */
-    protected $signature = 'make:blade {name}';
+    protected $signature = 'make:migration {name}';
 
     /**
      * @var string
      */
-    protected $description = "create blade view file";
+    protected $description = "create a migration file";
+
 
 
     /**
@@ -42,10 +43,10 @@ class MakeMigrationCommand extends Command implements HandleInterface
     {
         $name = $this->argument('name') . '.blade';
 
-        Anonym::call('make:view', [
-            'name' => $name
+        Anonym::call('migration', [
+            'function' => 'create', 'name' => $name
         ]);
 
-        $this->info(sprintf('%s blade view created with successfully', $name));
+        $this->info(sprintf('%s migration file created with successfully', $name));
     }
 }
