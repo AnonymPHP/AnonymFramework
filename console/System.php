@@ -42,6 +42,7 @@ class System extends Kernel
         MakeMigrationCommand::class,
         MigrationRunCommand::class,
         MakeSeedCommand::class,
+        RunSeedCommand::class,
         MakeController::class,
         Installation::class,
         MakeListener::class,
