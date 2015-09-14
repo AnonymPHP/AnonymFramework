@@ -49,5 +49,7 @@ class Installation extends Command implements HandleInterface
         Anonym::call('migration', [
             'command' => 'forget', 'name' => 'Installation'
         ]);
+
+        $this->info('Anonym Framework installation with successfully');
     }
 }
