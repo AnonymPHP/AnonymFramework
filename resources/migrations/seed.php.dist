@@ -1,8 +1,22 @@
 <?php
+/**
+ * This file belongs to the AnoynmFramework
+ *
+ * @author vahitserifsaglam <vahit.serif119@gmail.com>
+ * @see http://gemframework.com
+ *
+ * Thanks for using
+ */
+
+namespace App\Database\Seeds;
 
 use Anonym\Components\Tools\Seeder;
 use Anonym\Components\Tools\SeedInterface;
-s
+
+/**
+ * Class {{ name }}
+ * @package App\Database\Seeds;
+ */
 class {{ name }} extends Seeder implements SeedInterface{
 
 

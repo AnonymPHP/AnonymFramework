@@ -11,6 +11,7 @@
 
 namespace App\Http\Controllers;
 use Anonym\Components\Route\Controller;
+
 /**
  * Class {{ name }}
  * @package App\Http\Controllers
