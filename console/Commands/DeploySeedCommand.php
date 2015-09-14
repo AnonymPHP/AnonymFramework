@@ -30,7 +30,7 @@ class DeploySeedCommand extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $signature = 'seed:run     {name?}';
+    protected $signature = 'seed:run { name? }';
 
     /**
      * @var string
@@ -46,27 +46,26 @@ class DeploySeedCommand extends Command implements HandleInterface
     public function handle(InputInterface $input, OutputInterface $output)
     {
         $argument = $this->argument('name') ? $this->argument('name') : '';
-
-        $names = $argument === '' ? $this->readAllSeeds() : (array) $argument;
         $seeder = new Seeder($this->getContainer());
         $seeder->setCommand($this);
 
-        foreach($names as $name){
-            $seeder->call($name);
-        }
+       $seeder->call($argument);
     }
 
     /**
      *
      * read all seeds name
      */
-    public function readAllSeeds(){
+    public function readAllSeeds()
+    {
         $list = Finder::create()->files()->name('*.php')->in(MIGRATION);
 
-        $result  = [];
+        $result = [];
         foreach ($list as $l) {
             $exp = first(explode('.', $l->getFilename()));
             $result[] = end(explode('/', $exp));
         }
+
+        return $result;
     }
 }
