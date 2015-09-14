@@ -1,0 +1,10 @@
+<?php
+
+use Anonym\Components\Tools\Seeder;
+use Anonym\Components\Tools\SeedInterface;
+s
+class {{ name }} extends Seeder implements SeedInterface{
+
+
+
+}
