@@ -176,6 +176,8 @@ class AuthController extends Controller
                 'password' => Crypt::encode($newPassword)
             ])->update();
 
+            Element::table('forgets')->where('key', $key)->delete();
+
             return $update ? true:false;
         }else{
             return false;
