@@ -19,6 +19,7 @@ use Anonym\Facades\Crypt;
 use Anonym\Facades\Element;
 use Anonym\Facades\Login;
 use Anonym\Facades\Register;
+use Anonym\Facades\Request;
 use Anonym\Support\TemplateGenerator;
 use OAuthException;
 /**
@@ -102,13 +103,13 @@ class AuthController extends Controller
             throw new QueryException('Forget keys and user_id could not added to database, please try agein later');
         }
 
+        $url = Request::getBaseWithoutQuery().$callback;
+
         $template = new TemplateGenerator(file_get_contents(RESOURCE.'migrations/forget_mail.php.dist'));
         $content = $template->generate([
-            ''
+            'url' => $url,
         ]);
 
-        $send = Mail::send($mailDriver, function() use($key, $mailAddress){
 
-        });
     }
 }
