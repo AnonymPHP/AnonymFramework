@@ -62,10 +62,14 @@ class AuthController extends Controller
         return Login::login($username, Crypt::encode($password), $remember);
     }
 
-    protected function forget()
+    protected function forget($username, $mailDriver = 'default')
     {
         $table = Config::get('database.tables.table');
 
         $database = Element::table($table);
+        $username = first(Config::get('database.tables.login'));
+
+
+
     }
 }
