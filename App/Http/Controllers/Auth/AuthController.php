@@ -138,4 +138,21 @@ class AuthController extends Controller
 
         return $send;
     }
+
+    /**
+     * determine forget key is exists
+     *
+     * @param string $key
+     * @return mixed
+     */
+    protected function forgetKeyIsExists($key = ''){
+        $table = Element::table('forgets');
+
+        return $table->where('key', $key)->rowCount();
+    }
+
+
+    protected function forgetResetPassword($key = ''){
+
+    }
 }
