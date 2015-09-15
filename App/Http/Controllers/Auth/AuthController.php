@@ -10,7 +10,6 @@
 
 namespace App\Http\Controllers\Auth;
 
-
 use Anonym\Components\Route\Controller;
 use Anonym\Facades\Config;
 use Anonym\Facades\Crypt;
