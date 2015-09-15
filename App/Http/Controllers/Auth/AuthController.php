@@ -152,6 +152,13 @@ class AuthController extends Controller
     }
 
 
+    /**
+     * reset  the password
+     *
+     * @param string $key
+     * @param string $newPassword
+     * @return bool
+     */
     protected function forgetResetPassword($key = '', $newPassword = ''){
         if ($information = $this->forgetKeyIsExists($key)) {
             $userid = $information->user_id;
