@@ -61,12 +61,14 @@ return [
     'helpers' => [
         APP.'helpers/helpers.php',
     ],
+
     /**
-     * | ****************
-     * |
-     * | if you input 1, it's mean framework running on server, else mean running on console
-     * |
-     * | *****************
+     * application installed path, url
      */
-    'server' => 1,
+    'url' => 'http://localhost/AnonymFramework',
+
+    /**
+     *  the name of application
+     */
+    'application_name' => 'Anonym Test Application'
 ];

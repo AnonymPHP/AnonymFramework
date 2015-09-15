@@ -97,7 +97,7 @@ class AuthController extends Controller
             throw new QueryException('Forget keys and user_id could not added to database, please try agein later');
         }
 
-        $send = Mail::send($mailDriver, function(){
+        $send = Mail::send($mailDriver, function() use($key, $mailAddress){
 
         });
     }
