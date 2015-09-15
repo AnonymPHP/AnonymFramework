@@ -147,12 +147,20 @@ class AuthController extends Controller
      */
     protected function forgetKeyIsExists($key = ''){
         $table = Element::table('forgets');
+        $where = $table->where('key', $key);
 
-        return $table->where('key', $key)->rowCount();
+        return $where->rowCount() ? $where->fetch():false;
     }
 
 
     protected function forgetResetPassword($key = ''){
+        if ($information = $this->forgetKeyIsExists($key)) {
+            $userid = $information->user_id;
 
+
+
+        }else{
+            return false;
+        }
     }
 }
