@@ -11,7 +11,40 @@
 namespace App\Http\Controllers\Auth;
 
 
-class AuthController
+use Anonym\Components\Route\Controller;
+use Anonym\Facades\Config;
+use Anonym\Facades\Crypt;
+use Anonym\Facades\Register;
+
+/**
+ * Class AuthController
+ * @package App\Http\Controllers\Auth
+ */
+class AuthController extends Controller
 {
+
+    /**
+     * create a new user
+     *
+     * @param array $data
+     * @return mixed
+     */
+    protected function create($data){
+
+        $results = [];
+        array_walk($data, function($key, $value) use(&$results){
+
+            $login = Config::get('database.tables.login');
+            $table = $login[1];
+
+            if($key === $table){
+
+                $value = Crypt::encode($value);
+            }
+            $results[] = [$key,$value];
+        });
+
+        return Register::register($data);
+    }
 
 }
