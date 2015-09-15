@@ -32,6 +32,13 @@ class Installation extends Migration implements MigrationInterface
                ->varchar('username');
         });
 
+        Schema::create('forgets', function(Table $table){
+            return $table->primary('forget_id')
+                ->varchar('user_id')
+                ->varchar('key');
+        });
+
+
     }
 
 
