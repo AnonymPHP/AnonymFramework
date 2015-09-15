@@ -8,6 +8,7 @@
  * Thanks for using
  */
 
+use Symfony\Component\Debug\Debug;
 
 /**
  * |----------------------------
@@ -136,7 +137,7 @@ include BASE . 'vendor/autoload.php';
  * |----------------------------
  */
 
-  \Symfony\Component\Debug\Debug::enable();
+  Debug::enable();
 
 /**
  * |----------------------------
