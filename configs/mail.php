@@ -28,6 +28,7 @@ return [
 
     'default' => [
 
-    ]
+    ],
 
+    'your_address' => 'vahit.serif119@gmail.com',
 ];
