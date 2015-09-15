@@ -44,7 +44,7 @@ class AuthController extends Controller
             $results[] = [$key,$value];
         });
 
-        return Register::register($data);
+        return Register::register($results);
     }
 
 }
