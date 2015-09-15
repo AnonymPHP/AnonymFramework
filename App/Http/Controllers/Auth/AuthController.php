@@ -13,6 +13,7 @@ namespace App\Http\Controllers\Auth;
 use Anonym\Components\Route\Controller;
 use Anonym\Facades\Config;
 use Anonym\Facades\Crypt;
+use Anonym\Facades\Element;
 use Anonym\Facades\Login;
 use Anonym\Facades\Register;
 
@@ -59,5 +60,12 @@ class AuthController extends Controller
      */
     protected function entry($username, $password, $remember = false){
         return Login::login($username, Crypt::encode($password), $remember);
+    }
+
+    protected function forget()
+    {
+        $table = Config::get('database.tables.table');
+
+        $database = Element::table($table);
     }
 }
