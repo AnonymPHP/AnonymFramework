@@ -11,6 +11,7 @@
 namespace App\Http\Controllers\Auth;
 
 use Anonym\Components\Database\Exceptions\QueryException;
+use Anonym\Components\Mail\DriverInterface;
 use Anonym\Components\Route\Controller;
 use Anonym\Components\Crypt\SecurityKeyGenerator;
 use Anonym\Facades\Mail;
@@ -20,6 +21,7 @@ use Anonym\Facades\Element;
 use Anonym\Facades\Login;
 use Anonym\Facades\Register;
 use Anonym\Facades\Request;
+use Anonym\Support\Str;
 use Anonym\Support\TemplateGenerator;
 use OAuthException;
 /**
@@ -103,13 +105,28 @@ class AuthController extends Controller
             throw new QueryException('Forget keys and user_id could not added to database, please try agein later');
         }
 
-        $url = Request::getBaseWithoutQuery().$callback;
+        $url = Request::getBaseWithoutQuery();
+
+        if(!Str::endsWith($callback, "/")){
+            $callback .= "/";
+        }
+
+        $url .= $callback.$key;
 
         $template = new TemplateGenerator(file_get_contents(RESOURCE.'migrations/forget_mail.php.dist'));
         $content = $template->generate([
             'url' => $url,
             'username' => $username
         ]);
+
+        $yourAddress = config('mail.your_address');
+        Mail::send($mailDriver, function(DriverInterface $mail) use($mailAddress, $username, $content, $yourAddress){
+            return $mail->from($yourAddress, '')
+                ->subject('Password Recovery')
+                ->to($mailAddress, $username)
+                ->body($content)
+                ->send();
+        });
 
 
     }
