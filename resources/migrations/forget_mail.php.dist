@@ -1,0 +1,5 @@
+Hi { username },
+
+We know you forget your password and I send a link to reset it;
+
+Your link is here: { url }

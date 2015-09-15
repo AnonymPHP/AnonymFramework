@@ -108,6 +108,7 @@ class AuthController extends Controller
         $template = new TemplateGenerator(file_get_contents(RESOURCE.'migrations/forget_mail.php.dist'));
         $content = $template->generate([
             'url' => $url,
+            'username' => $username
         ]);
 
 
