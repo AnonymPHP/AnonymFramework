@@ -19,6 +19,7 @@ use Anonym\Facades\Crypt;
 use Anonym\Facades\Element;
 use Anonym\Facades\Login;
 use Anonym\Facades\Register;
+use Anonym\Support\TemplateGenerator;
 use OAuthException;
 /**
  * Class AuthController
@@ -65,15 +66,19 @@ class AuthController extends Controller
         return Login::login($username, Crypt::encode($password), $remember);
     }
 
-    protected function forgetSendMail($username, $mailDriver = 'default')
+    protected function forgetSendMail(array $parameters = [])
     {
+        $username = isset($parameters['username']) ? $parameters['username']: '';
+        $mailDriver = isset($parameters['mail_driver']) ? $parameters['mail_driver'] : 'default';
+        $callback = isset($parameters['callback']) ? $parameters['callback'] : 'auth/forget';
+
         $table = Config::get('database.tables.table');
 
         $database = Element::table($table);
-        $username = first(Config::get('database.tables.login'));
+        $userColumn = first(Config::get('database.tables.login'));
 
 
-        $userInformation = $database->select(['email', 'id'])->where('username', $username);
+        $userInformation = $database->select(['email', 'id'])->where($userColumn, $username);
 
         if(!$userInformation->rowCount()){
             throw new OAuthException(sprintf('%s Username is not exists', $username));
@@ -96,6 +101,11 @@ class AuthController extends Controller
         if (!$add) {
             throw new QueryException('Forget keys and user_id could not added to database, please try agein later');
         }
+
+        $template = new TemplateGenerator(file_get_contents(RESOURCE.'migrations/forget_mail.php.dist'));
+        $content = $template->generate([
+            ''
+        ]);
 
         $send = Mail::send($mailDriver, function() use($key, $mailAddress){
 
