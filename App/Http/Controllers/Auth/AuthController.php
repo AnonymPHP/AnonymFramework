@@ -11,18 +11,17 @@
 namespace App\Http\Controllers\Auth;
 
 use Anonym\Components\Database\Exceptions\QueryException;
+use Anonym\Components\Crypt\SecurityKeyGenerator;
 use Anonym\Components\Mail\DriverInterface;
 use Anonym\Components\Route\Controller;
-use Anonym\Components\Crypt\SecurityKeyGenerator;
-use Anonym\Facades\Mail;
+use Anonym\Support\TemplateGenerator;
+use Anonym\Facades\Register;
+use Anonym\Facades\Element;
+use Anonym\Facades\Request;
 use Anonym\Facades\Config;
 use Anonym\Facades\Crypt;
-use Anonym\Facades\Element;
-use Anonym\Facades\Login;
-use Anonym\Facades\Register;
-use Anonym\Facades\Request;
+use Anonym\Facades\Mail;
 use Anonym\Support\Str;
-use Anonym\Support\TemplateGenerator;
 use OAuthException;
 /**
  * Class AuthController
@@ -153,12 +152,24 @@ class AuthController extends Controller
     }
 
 
-    protected function forgetResetPassword($key = ''){
+    protected function forgetResetPassword($key = '', $newPassword = ''){
         if ($information = $this->forgetKeyIsExists($key)) {
             $userid = $information->user_id;
 
+            $table = Config::get('database.tables.table');
+            $user = Element::table($table);
 
+            $findId = $user->find($userid);
 
+            if (!$findId->rowCount()) {
+                return false;
+            }
+
+            $update = $user->set([
+                'password' => Crypt::encode($newPassword)
+            ])->update();
+
+            return $update ? true:false;
         }else{
             return false;
         }
