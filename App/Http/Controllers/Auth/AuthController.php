@@ -69,6 +69,14 @@ class AuthController extends Controller
         return Login::login($username, Crypt::encode($password), $remember);
     }
 
+    /**
+     * send forget mail to user
+     *
+     * @param array $parameters
+     * @return mixed
+     * @throws OAuthException
+     * @throws QueryException
+     */
     protected function forgetSendMail(array $parameters = [])
     {
         $username = isset($parameters['username']) ? $parameters['username']: '';
@@ -120,7 +128,7 @@ class AuthController extends Controller
         ]);
 
         $yourAddress = config('mail.your_address');
-        Mail::send($mailDriver, function(DriverInterface $mail) use($mailAddress, $username, $content, $yourAddress){
+        $send = Mail::send($mailDriver, function(DriverInterface $mail) use($mailAddress, $username, $content, $yourAddress){
             return $mail->from($yourAddress, '')
                 ->subject('Password Recovery')
                 ->to($mailAddress, $username)
@@ -128,6 +136,6 @@ class AuthController extends Controller
                 ->send();
         });
 
-
+        return $send;
     }
 }
