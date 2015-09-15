@@ -32,6 +32,7 @@ class AuthController extends Controller
     protected function create($data){
 
         $results = [];
+
         array_walk($data, function($key, $value) use(&$results){
 
             $login = Config::get('database.tables.login');
