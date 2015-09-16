@@ -14,6 +14,7 @@ use Console\Commands\DeploySeedAllCommand;
 use Console\Commands\MakeMigrationCommand;
 use Console\Commands\MigrationRunCommand;
 use Console\Commands\CacheTableCommand;
+use Console\Commands\CacheClearCommand;
 use Console\Commands\DeploySeedCommand;
 use Console\Commands\MakeSeedCommand;
 use Anonym\Components\Console\Kernel;
@@ -46,6 +47,7 @@ class System extends Kernel
         MigrationRunCommand::class,
         DeploySeedCommand::class,
         CacheTableCommand::class,
+        CacheClearCommand::class,
         MakeSeedCommand::class,
         MakeController::class,
         Installation::class,
