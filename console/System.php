@@ -13,6 +13,7 @@ use Anonym\Components\Cron\Cron as Schedule;
 use Console\Commands\DeploySeedAllCommand;
 use Console\Commands\MakeMigrationCommand;
 use Console\Commands\MigrationRunCommand;
+use Console\Commands\CacheTableCommand;
 use Console\Commands\DeploySeedCommand;
 use Console\Commands\MakeSeedCommand;
 use Anonym\Components\Console\Kernel;
@@ -43,8 +44,9 @@ class System extends Kernel
         MakeMigrationCommand::class,
         DeploySeedAllCommand::class,
         MigrationRunCommand::class,
-        MakeSeedCommand::class,
         DeploySeedCommand::class,
+        CacheTableCommand::class,
+        MakeSeedCommand::class,
         MakeController::class,
         Installation::class,
         MakeListener::class,
