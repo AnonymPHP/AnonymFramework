@@ -8,13 +8,140 @@
  * Thanks for using
  */
 
+/**
+ * |----------------------------
+ * |the constant for base files
+ * |----------------------------
+ */
+define('BASE', getcwd() . '/');
+
+/**
+ * |----------------------------
+ * |the constant for application files
+ * |----------------------------
+ */
+define('APP', BASE . 'App/');
+
+/**
+ * |----------------------------
+ * |the constant for config files
+ * |----------------------------
+ */
+define('CONFIG', BASE . 'configs/');
+
+/**
+ * |----------------------------
+ * |the constant for system files
+ * |----------------------------
+ */
+define('SYSTEM', BASE . 'system/');
+
+/**
+ * |----------------------------
+ * |the constant for resource files
+ * |----------------------------
+ */
+define('RESOURCE', BASE . 'resources/');
 
 
-$app = include 'system/bootstrap.php';
-$console = new \Console\System($app, 1);
+/**
+ * |----------------------------
+ * |the constant for public files
+ * |----------------------------
+ */
+define('PUBLIC_FILES', BASE . 'public/');
 
-\Anonym\Facades\App::singleton('console', function() use($console){
+/**
+ * |----------------------------
+ * |the constant for upload files
+ * |----------------------------
+ */
+define('UPLOAD', PUBLIC_FILES . 'uploads/');
+
+
+/**
+ * |----------------------------
+ * |the constant for language files
+ * |----------------------------
+ */
+define('LANGUAGE', RESOURCE . 'languages/');
+
+/**
+ * |----------------------------
+ * |the constant for view files
+ * |----------------------------
+ */
+define('VIEW', RESOURCE . 'views/');
+/**
+ * |----------------------------
+ * |the constant for database files
+ * |----------------------------
+ */
+define('DATABASE', APP . 'Database/');
+
+/**
+ * |----------------------------
+ * |the constant for http files
+ * |----------------------------
+ */
+define('HTTP', APP . 'Http/');
+/**
+ * |----------------------------
+ * |the constant for routes.php
+ * |----------------------------
+ */
+define('ROUTE_PHP', HTTP . 'routes.php');
+
+/**
+ * |----------------------------
+ * |the constant for migration files
+ * |----------------------------
+ */
+define('MIGRATION', DATABASE . 'Migrations/');
+
+/**
+ * |----------------------------
+ * |the constant for migrations namespace
+ * |----------------------------
+ */
+define('MIGRATION_NAMESPACE', 'App\Database\Migrations\\');
+
+/**
+ * |----------------------------
+ * |the constant for backups files
+ * |----------------------------
+ */
+define('BACKUP', DATABASE . 'Backups/');
+
+/**
+ * |----------------------------
+ * |the constant for asset files
+ * |----------------------------
+ */
+define('ASSETS', PUBLIC_FILES . 'assets/');
+
+/**
+ * |----------------------------
+ * | include the autoloader
+ * |----------------------------
+ */
+
+include BASE . 'vendor/autoload.php';
+
+use Console\System;
+use Anonym\Facades\App;
+use Anonym\Bootstrap\Bootstrap;
+
+// create new application to console system
+$app = new Bootstrap('AnonymPHP Console Application', 2);
+
+// create a new console application with anonym framework application
+$console = new System($app, 1);
+
+// register console to facades and more!
+App::singleton('console', function () use ($console) {
     return $console;
 });
-// run the console
+
+
 $console->run();
