@@ -69,6 +69,6 @@ class CacheClearCommand extends Command implements HandleInterface
     {
         $this->file->cleanDirectory(RESOURCE . 'cache');
 
-
+        $this->info('all cache files removed successfully');
     }
 }
