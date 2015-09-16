@@ -39,7 +39,7 @@ class MakeController extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $description = 'create an controller';
+    protected $description = 'create a new controller file';
 
     /**
      * create an event instance
