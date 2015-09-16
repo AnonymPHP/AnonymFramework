@@ -33,7 +33,7 @@ class MakeBlade extends Command implements HandleInterface
     /**
      * @var string
      */
-    protected $description = "create blade view file";
+    protected $description = "create a new blade view file";
 
 
     /**
