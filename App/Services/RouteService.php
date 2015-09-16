@@ -22,7 +22,6 @@ class RouteService extends ServiceProvider
 {
 
 
-
     /**
      * register the provider
      *
