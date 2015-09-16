@@ -17,6 +17,10 @@ use Anonym\Facades\Anonym;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 
+/**
+ * Class Installation
+ * @package Console\Commands
+ */
 class Installation extends Command implements HandleInterface
 {
 
