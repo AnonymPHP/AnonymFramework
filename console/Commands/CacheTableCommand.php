@@ -46,6 +46,5 @@ class CacheTableCommand extends Command implements HandleInterface
     public function handle(InputInterface $input, OutputInterface $output)
     {
 
-
     }
 }
