@@ -71,4 +71,6 @@ class CacheClearCommand extends Command implements HandleInterface
 
         $this->info('all cache files removed successfully');
     }
+
 }
+
