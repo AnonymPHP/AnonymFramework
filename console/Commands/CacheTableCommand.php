@@ -13,6 +13,9 @@ namespace Console\Commands;
 
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
+use Anonym\Facades\Anonym;
+use Anonym\Facades\Migration;
+use Anonym\Filesystem\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 
@@ -38,6 +41,22 @@ class CacheTableCommand extends Command implements HandleInterface
     protected $description = 'create migration file for caches';
 
     /**
+     * the instance of filesystem
+     *
+     * @var Filesystem
+     */
+    private $file;
+
+    /**
+     * create a new instance and register filesystem
+     *
+     * @param Filesystem $filesystem
+     */
+    public function __construct(Filesystem $filesystem){
+        $this->file = $filesystem;
+    }
+
+    /**
      * Komut yakalandığı zaman tetiklenecek fonksiyonlardan biridir
      * @param InputInterface $input
      * @param OutputInterface $output
@@ -45,6 +64,14 @@ class CacheTableCommand extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
+        $content = file_get_contents(RESOURCE . '/migrations/stubs/cache_table.php.dist');
+
+        Anonym::call('make:migration', [
+            'name' => 'Cache'
+         ]);
+
+        $path = Migration::createName('Cache');
+
 
     }
 }
