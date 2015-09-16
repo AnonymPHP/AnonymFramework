@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * |*******************************
  * |
@@ -16,8 +15,12 @@
  * |*****************************
  */
 
+ if(!file_exists('../index.php')){
+     return false;
+ }
 
-return $app = include 'system/bootstrap.php';
+$app = include '../index.php';
+
 
 
 

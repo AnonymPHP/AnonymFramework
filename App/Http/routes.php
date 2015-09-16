@@ -10,5 +10,5 @@
 
 
 get('/', function(){
-    return response('aa');
+    return view('welcome');
 });
