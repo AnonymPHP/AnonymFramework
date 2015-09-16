@@ -37,7 +37,7 @@ class MakeListener extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $description = 'create an event listener';
+    protected $description = 'create a new event listener file';
 
     /**
      * create an new instance
