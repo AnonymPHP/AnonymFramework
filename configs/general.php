@@ -44,6 +44,7 @@ return [
         \Anonym\Components\Database\Pagination\PaginationServiceProvider::class,
         \Anonym\Providers\ErrorBagServiceProvider::class,
         \App\Services\EventService::class,
+        \App\Services\RouteService::class,
         \App\Services\LoginService::class,
         \App\Services\RegisterService::class,
         \App\Services\MiddlewareService::class,
