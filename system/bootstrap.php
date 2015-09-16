@@ -8,7 +8,6 @@
  * Thanks for using
  */
 
-use Symfony\Component\Debug\Debug;
 
 /**
  * |----------------------------
@@ -130,20 +129,12 @@ define('ASSETS', PUBLIC_FILES. 'assets/');
 
 include BASE . 'vendor/autoload.php';
 
-
-/**
- * |----------------------------
- * | run the symfony debug handler
- * |----------------------------
- */
-
-  Debug::enable();
-
+use Anonym\Bootstrap\Bootstrap;
 /**
  * |----------------------------
  * | create an application
  * |----------------------------
  */
 
-$app = new \Anonym\Bootstrap\Bootstrap('AnonymPHP', 2);
-return $app;
+return new Bootstrap('AnonymPHP', 2);
+

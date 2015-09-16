@@ -15,12 +15,13 @@
  * |*****************************
  */
 
- if(!file_exists('../index.php')){
-     return false;
- }
-
-$app = include '../index.php';
 
 
+if(!file_exists('../index.php')){
+   return false;
+}
+
+
+$app = include '../system/bootstrap.php';
 
 
