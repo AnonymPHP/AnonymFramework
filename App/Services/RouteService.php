@@ -10,6 +10,7 @@
 
 namespace App\Services;
 
+use Anonym\Bootstrap\ServiceProvider;
 use Anonym\Components\Route\RouteMatchException;
 use Anonym\Facades\App;
 
@@ -17,7 +18,7 @@ use Anonym\Facades\App;
  * Class RouteService
  * @package App\Services
  */
-class RouteService
+class RouteService extends ServiceProvider
 {
 
 
