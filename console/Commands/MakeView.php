@@ -17,6 +17,10 @@ use Anonym\Filesystem\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 
+/**
+ * Class MakeView
+ * @package Console\Commands
+ */
 class MakeView extends Command implements HandleInterface
 {
 
