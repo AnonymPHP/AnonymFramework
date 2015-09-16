@@ -32,8 +32,6 @@ class MigrationRunCommand extends Command implements HandleInterface
      */
     protected $description = "run a migration file, or more.";
 
-
-
     /**
      *
      * @param InputInterface $input
