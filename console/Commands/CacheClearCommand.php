@@ -31,7 +31,7 @@ class CacheClearCommand extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $singature = 'cache:clear';
+    protected $signature = 'cache:clear';
 
     /**
      * the description of command

@@ -31,7 +31,7 @@ class CacheTableCommand extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $singature = 'cache:table';
+    protected $signature = 'cache:table';
 
     /**
      * the description of command
