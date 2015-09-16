@@ -21,7 +21,6 @@ use Anonym\Facades\App;
 class RouteService extends ServiceProvider
 {
 
-
     /**
      * register the provider
      *
