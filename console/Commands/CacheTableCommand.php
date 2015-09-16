@@ -54,6 +54,8 @@ class CacheTableCommand extends Command implements HandleInterface
      */
     public function __construct(Filesystem $filesystem){
         $this->file = $filesystem;
+
+        parent::__construct();
     }
 
     /**
@@ -71,7 +73,8 @@ class CacheTableCommand extends Command implements HandleInterface
          ]);
 
         $path = Migration::createName('Cache');
+        $this->file->put($path, $content);
 
-
+        $this->info('Cache Migration created successfully');
     }
 }
