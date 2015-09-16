@@ -16,12 +16,9 @@
  */
 
 
-
-
 if(!file_exists('../system/bootstrap.php')){
    return false;
 }
-
 
 $app = include '../system/bootstrap.php';
 
