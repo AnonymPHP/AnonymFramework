@@ -17,7 +17,8 @@
 
 
 
-if(!file_exists('../index.php')){
+
+if(!file_exists('../system/bootstrap.php')){
    return false;
 }
 
