@@ -85,7 +85,6 @@ class MakeModel extends Command implements HandleInterface
             // write the created content to model file
             $this->file->put($path, $generated);
         }
-        $this->info(sprintf('%s created succesfully to %s', $name, $path));
-
+        $this->info(sprintf('%s model file created succesfully to %s', $name, $path));
     }
 }
