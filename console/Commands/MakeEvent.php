@@ -40,7 +40,7 @@ class MakeEvent extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $description = 'create an event';
+    protected $description = 'create a new event and listener file ';
 
     /**
      * create an event instance
