@@ -23,6 +23,7 @@ return [
      * | providers  => the providers
      * |*********************************
      */
+
     'alias' => [
         'cookie' => \Anonym\Components\Cookie\Cookie::class,
         'crypt' => \Anonym\Components\Crypt\Crypter::class,
@@ -33,10 +34,11 @@ return [
         'config' => \Anonym\Components\Config\Reposity::class,
         'mail'   => \Anonym\Components\Mail\Mail::class,
     ],
+
     /**
      * | ****************
      * |
-     * | the both of them must be an array
+     * | each provider must be an instance of ServiceProvider.
      * |
      * | *****************
      */
@@ -53,16 +55,18 @@ return [
         \Anonym\Providers\CookieProvider::class,
         \Anonym\Providers\RouteProvider::class,
     ],
+
     /**
      * | ****************
      * |
-     * | this configs for helpers functions file
+     * | the files of helpers
      * |
      * | *****************
      */
     'helpers' => [
         APP.'helpers/helpers.php',
     ],
+
 
     /**
      * application installed path, url
