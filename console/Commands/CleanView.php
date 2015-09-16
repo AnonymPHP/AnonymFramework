@@ -44,6 +44,8 @@ class CleanView extends Command implements HandleInterface
 
     public function __construct(Filesystem $filesystem){
         $this->filesystem = $filesystem;
+
+        parent::__construct();
     }
     /**
      * @param InputInterface $input
