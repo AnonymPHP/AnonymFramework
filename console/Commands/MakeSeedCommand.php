@@ -25,7 +25,7 @@ class MakeSeedCommand extends Command implements HandleInterface
     /**
      * @var string
      */
-    protected $description = "create a seed file";
+    protected $description = "create a new seed file";
     /**
      * @var Filesystem
      */
