@@ -11,6 +11,7 @@
 
 return [
 
+    'timezone' => 'Europe/Istanbul',
     /**
      * |*********************************
      * |
