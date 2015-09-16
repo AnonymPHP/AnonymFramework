@@ -32,7 +32,7 @@ class Migration extends AnonymCommand implements HandleInterface
      *
      * @var string
      */
-    protected $description = 'Migration oluşturma ve düzenleme komutları';
+    protected $description = 'create, run, forget and more migration functions';
 
 
     /**
