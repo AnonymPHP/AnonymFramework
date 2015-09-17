@@ -15,6 +15,7 @@ use Console\Commands\LoginLogsClearCommand;
 use Console\Commands\MakeMigrationCommand;
 use Console\Commands\DeploySeedAllCommand;
 use Console\Commands\MigrationRunCommand;
+use Console\Commands\ConfigCacheCommand;
 use Console\Commands\DeploySeedCommand;
 use Console\Commands\CacheTableCommand;
 use Console\Commands\CacheClearCommand;
@@ -50,6 +51,7 @@ class System extends Kernel
         DeploySeedAllCommand::class,
         MigrationRunCommand::class,
         DeploySeedCommand::class,
+        ConfigCacheCommand::class,
         CacheTableCommand::class,
         CacheClearCommand::class,
         MakeSeedCommand::class,
