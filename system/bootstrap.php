@@ -1,10 +1,7 @@
 <?php
-
-
-
 /**
  * |----------------------------
- * |the constant for base files
+ * | define the base dir, if application working o a console define the root dir, if it is working on server define the public dir.
  * |----------------------------
  */
 define('BASE', isset($_SERVER['HTTP_HOST']) ? dirname(getcwd()) : getcwd() . '/');
