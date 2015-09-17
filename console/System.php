@@ -98,7 +98,7 @@ class System extends Kernel
     public function schedule(Schedule $schedule)
     {
         $schedule->event(function(){
-           Anonym::call('config:cache');
+           return Anonym::call('config:cache');
         });
     }
 }
