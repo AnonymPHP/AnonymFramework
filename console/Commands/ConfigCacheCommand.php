@@ -42,6 +42,11 @@ class ConfigCacheCommand extends Command implements HandleInterface
      */
     private $loader;
 
+    /**
+     * the instance of filesystem
+     *
+     * @var Filesystem
+     */
     private $file;
     /**
      * create a new instance and register config loader
