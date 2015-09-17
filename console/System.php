@@ -81,6 +81,7 @@ class System extends Kernel
      */
     public function __construct(Container $container, $version = 2){
         // register console to facades and more!
+        $console = $this;
         App::singleton('console', function () use ($console) {
             return $console;
         });
