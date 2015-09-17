@@ -46,14 +46,19 @@ class Installation extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
+
+        // run installation migration
         Anonym::call('migration', [
             'function' => 'deploy', 'name' => 'Installation'
         ]);
 
+        // remove the installation migration
         Anonym::call('migration', [
             'command' => 'forget', 'name' => 'Installation'
         ]);
 
+        // cache all configuration files
+        Anonym::call('config:cache');
         $this->info('Anonym Framework installation with successfully');
     }
 }
