@@ -24,14 +24,14 @@ return [
      */
 
     'alias' => [
+        'mail'   => \Anonym\Components\Mail\Mail::class,
         'cookie' => \Anonym\Components\Cookie\Cookie::class,
         'crypt' => \Anonym\Components\Crypt\Crypter::class,
-        'event' => \Anonym\Components\Event\EventDispatcher::class,
-        'route' => \Anonym\Components\Route\RouteCollector::class,
-        'guard' => \Anonym\Components\Security\Authentication\Guard::class,
-        'redirect' => \Anonym\Components\HttpClient\Redirect::class,
         'config' => \Anonym\Components\Config\Reposity::class,
-        'mail'   => \Anonym\Components\Mail\Mail::class,
+        'route' => \Anonym\Components\Route\RouteCollector::class,
+        'redirect' => \Anonym\Components\HttpClient\Redirect::class,
+        'event' => \Anonym\Components\Event\EventDispatcher::class,
+        'guard' => \Anonym\Components\Security\Authentication\Guard::class,
     ],
 
     /**
@@ -42,17 +42,17 @@ return [
      * | *****************
      */
     'providers' => [
-        \Anonym\Components\Session\SessionServiceProvider::class,
-        \Anonym\Components\Database\Pagination\PaginationServiceProvider::class,
-        \Anonym\Providers\ErrorBagServiceProvider::class,
+        \App\Services\ViewService::class,
         \App\Services\EventService::class,
         \App\Services\RouteService::class,
         \App\Services\LoginService::class,
         \App\Services\RegisterService::class,
         \App\Services\MiddlewareService::class,
-        \App\Services\ViewService::class,
-        \Anonym\Providers\CookieProvider::class,
         \Anonym\Providers\RouteProvider::class,
+        \Anonym\Providers\CookieProvider::class,
+        \Anonym\Providers\ErrorBagServiceProvider::class,
+        \Anonym\Components\Session\SessionServiceProvider::class,
+        \Anonym\Components\Database\Pagination\PaginationServiceProvider::class,
     ],
 
     /**
