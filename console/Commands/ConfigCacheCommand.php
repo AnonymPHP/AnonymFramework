@@ -14,6 +14,7 @@ namespace Console\Commands;
 use Anonym\Components\Config\ConfigLoader;
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
+use Anonym\Filesystem\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 
@@ -41,13 +42,17 @@ class ConfigCacheCommand extends Command implements HandleInterface
      */
     private $loader;
 
+    private $file;
     /**
      * create a new instance and register config loader
      *
      * @param ConfigLoader $configLoader
      */
-    public function __construct(ConfigLoader $configLoader){
+    public function __construct(ConfigLoader $configLoader, Filesystem $filesystem){
         $this->loader = $configLoader;
+        $this->file = $filesystem;
+
+        parent::__construct();
     }
 
     public function handle(InputInterface $input, OutputInterface $output){
