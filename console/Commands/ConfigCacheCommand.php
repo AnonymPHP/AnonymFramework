@@ -25,7 +25,7 @@ class ConfigCacheCommand extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $signature = 'config:cache';
+    protected $signature = 'config:cache {--no-cache}';
 
     /**
      * the description of command
@@ -64,8 +64,10 @@ class ConfigCacheCommand extends Command implements HandleInterface
         $cachedPath  = SYSTEM.'cached_configs.php';
         $configs = $this->loadAllConfigs($cachedPath);
 
-        // write cached config files to system/cached_configs.php
-        $this->file->put($cachedPath, '<?php return '.var_export($configs, true).';'.PHP_EOL);
+        if(!$this->option('no-cache')){
+            // write cached config files to system/cached_configs.php
+            $this->file->put($cachedPath, '<?php return '.var_export($configs, true).';'.PHP_EOL);
+        }
 
         $this->info('Configuration cached successfully!');
     }
