@@ -10,6 +10,7 @@
 
 namespace Console;
 use Anonym\Components\Cron\Cron as Schedule;
+use Console\Commands\MigrationForgetCommand;
 use Console\Commands\DeploySeedAllCommand;
 use Console\Commands\MakeMigrationCommand;
 use Console\Commands\MigrationRunCommand;
@@ -42,6 +43,7 @@ class System extends Kernel
      * @var array
      */
     protected $commands = [
+        MigrationForgetCommand::class,
         MakeMigrationCommand::class,
         DeploySeedAllCommand::class,
         MigrationRunCommand::class,
