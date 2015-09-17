@@ -28,7 +28,7 @@ class OptimizeCommand extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $name = 'optimize';
+    protected $signature = 'optimize {--force}';
 
     /**
      * the description of command
@@ -63,15 +63,4 @@ class OptimizeCommand extends Command implements HandleInterface
          $path = $this->getContainer()->getCompiledPath();
     }
 
-    /**
-     * Get the console command options.
-     *
-     * @return array
-     */
-    protected function getOptions()
-    {
-        return array(
-            array('force', null, InputOption::VALUE_NONE, 'Force the compiled class file to be written.'),
-        );
-    }
 }
