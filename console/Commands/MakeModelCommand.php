@@ -24,7 +24,7 @@ use Anonym\Facades\Stroge;
  * Class MakeModel
  * @package Console\Commands
  */
-class MakeModel extends Command implements HandleInterface
+class MakeModelCommand extends Command implements HandleInterface
 {
 
 
