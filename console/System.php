@@ -10,6 +10,7 @@
 
 namespace Console;
 use Anonym\Components\Cron\Cron as Schedule;
+use Anonym\Components\Cron\Task\Task;
 use Console\Commands\MigrationForgetCommand;
 use Console\Commands\LoginLogsClearCommand;
 use Console\Commands\MakeMigrationCommand;
@@ -31,6 +32,8 @@ use Console\Commands\MakeEvent;
 use Console\Commands\Migration;
 use Console\Commands\MakeView;
 use Console\Commands\Backup;
+use Guzzle\Http\Client;
+use GuzzleHttp\Psr7\Request;
 
 /**
  * Class System
@@ -78,6 +81,11 @@ class System extends Kernel
      */
     public function schedule(Schedule $schedule)
     {
-
+        $schedule->event(function() use (){
+            return Task::call(function() {
+                $client = new Client();
+                $client->get('http://madonetr.com/hesap/test.php');
+            })->everyMinute();
+        });
     }
 }
