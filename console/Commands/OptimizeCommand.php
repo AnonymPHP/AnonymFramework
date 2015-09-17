@@ -9,14 +9,17 @@
  */
 
 namespace Console\Commands;
-
-
+use Symfony\Component\Process\Process;
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
-use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Process\Process;
+use Symfony\Component\Console\Output\OutputInterface;
 
+/**
+ * Class OptimizeCommand
+ * @package Console\Commands
+ */
 class OptimizeCommand extends Command implements HandleInterface
 {
 
@@ -45,7 +48,7 @@ class OptimizeCommand extends Command implements HandleInterface
         $process = new Process('composer --optimize');
         $process->run();
 
-        if($this->option('--force')){
+        if($this->option('force')){
             $this->info('Compiling all files');
             $this->compileAllFiles();
         }
@@ -58,5 +61,17 @@ class OptimizeCommand extends Command implements HandleInterface
      */
     private function compileAllFiles(){
          $path = $this->getContainer()->getCompiledPath();
+    }
+
+    /**
+     * Get the console command options.
+     *
+     * @return array
+     */
+    protected function getOptions()
+    {
+        return array(
+            array('force', null, InputOption::VALUE_NONE, 'Force the compiled class file to be written.'),
+        );
     }
 }
