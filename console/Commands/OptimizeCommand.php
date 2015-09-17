@@ -61,7 +61,6 @@ class OptimizeCommand extends Command implements HandleInterface
      *
      */
     private function compileAllFiles(){
-
-         // do nothing
+          // do nothing
     }
 }
