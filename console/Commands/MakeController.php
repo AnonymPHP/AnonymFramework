@@ -61,7 +61,8 @@ class MakeController extends Command implements HandleInterface
     }
 
     /**
-     * Komut yakalandığı zaman tetiklenecek fonksiyonlardan biridir
+     * execute the command
+     *
      * @param InputInterface $input
      * @param OutputInterface $output
      * @return mixed
