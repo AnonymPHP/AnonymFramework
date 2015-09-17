@@ -119,7 +119,7 @@ class Migration extends AnonymCommand implements HandleInterface
 
         $fileName = FacadeMigration::createName($name);
         if (!$this->file->exists($fileName)) {
-            touch($fileName);
+            $this->file->create($fileName);
             $this->write(MIGRATION, $fileName, $content);
             $this->info(sprintf('%s migration created with successfully', $name));
         } else {
@@ -141,7 +141,6 @@ class Migration extends AnonymCommand implements HandleInterface
         if (!$this->file->exists($src)) {
             $this->file->makeDirectory($src);
         }
-        chmod($src, 0777);
         $this->file->put($fileName, $content);
     }
 
