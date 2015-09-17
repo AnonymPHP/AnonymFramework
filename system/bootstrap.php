@@ -126,5 +126,5 @@ use Anonym\Bootstrap\Bootstrap;
  * |----------------------------
  */
 
-#return new Bootstrap('AnonymPHP', 2);
+return new Bootstrap('AnonymPHP', 2);
 
