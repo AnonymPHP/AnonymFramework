@@ -30,5 +30,4 @@ class ConfigCacheCommand extends Command implements HandleInterface
      */
     protected $description = 'cache all config files';
 
-
 }
