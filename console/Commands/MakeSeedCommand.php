@@ -50,7 +50,7 @@ class MakeSeedCommand extends Command implements HandleInterface
         $content = $template->generate([
             'name' => $name
         ]);
-        $path = "App/Database/Seeds/$name.php";
+        $path = "app/Database/Seeds/$name.php";
         if (!$this->file->exists($path)) {
             $this->file->create($path);
             $this->file->put($path, $content);
