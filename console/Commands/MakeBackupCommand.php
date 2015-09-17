@@ -33,6 +33,13 @@ class MakeBackupCommand extends Command implements HandleInterface
      */
     protected $description = 'create a new database backup file';
 
+    /**
+     * fire the command
+     *
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     * @return mixed
+     */
     public function handle(InputInterface $input, OutputInterface $output){
         $name = $this->argument('name');
         $tables = $this->argument('tables') ? $this->argument('tables') : '*';
