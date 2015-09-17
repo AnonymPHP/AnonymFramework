@@ -11,7 +11,7 @@ define('BASE', isset($_SERVER['HTTP_HOST']) ? dirname(getcwd()) : getcwd() . '/'
  * |the constant for application files
  * |----------------------------
  */
-define('APP', BASE . 'App/');
+define('APP', BASE . 'app/');
 
 /**
  * |----------------------------
