@@ -67,7 +67,7 @@ class OptimizeCommand extends Command implements HandleInterface
              $content .= $this->prepareForCompile(file_get_contents($file), $file);
          }
 
-        file_put_contents($path, $content);
+        file_put_contents($path, '<?php '. $content);
     }
 
     /**
@@ -83,7 +83,7 @@ class OptimizeCommand extends Command implements HandleInterface
             throw new Exception(sprintf('%s file is not a class', $path));
         }
 
-        return '<?php' .str_replace(["<?php", "?>"], '', $content);
+        return str_replace(["<?php", "?>"], '', $content).PHP_EOL;
     }
 
 }
