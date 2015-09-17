@@ -9,13 +9,12 @@
  */
 
 namespace Console;
-use Anonym\Components\Cron\Cron as Schedule;
-use Anonym\Components\Cron\Task\Task;
-use Anonym\Facades\Anonym;
 use Console\Commands\MigrationForgetCommand;
+use Anonym\Components\Cron\Cron as Schedule;
 use Console\Commands\LoginLogsClearCommand;
 use Console\Commands\MakeMigrationCommand;
 use Console\Commands\DeploySeedAllCommand;
+use Console\Commands\BackupLoaderCommand;
 use Console\Commands\BackupForgetCommand;
 use Console\Commands\MigrationRunCommand;
 use Console\Commands\MakeBackupCommand;
@@ -56,6 +55,7 @@ class System extends Kernel
         LoginLogsClearCommand::class,
         MakeMigrationCommand::class,
         DeploySeedAllCommand::class,
+        BackupLoaderCommand::class,
         BackupForgetCommand::class,
         MigrationRunCommand::class,
         MakeBackupCommand::class,
