@@ -75,9 +75,9 @@ class MakeController extends Command implements HandleInterface
 
         $path = HTTP.'Controllers/'.$name.'.php';
         $generated = $generator->generate(['name' => $name]);
-        if (!Stroge::exists($path)) {
-            Stroge::create($path);
-            Stroge::put($path, $generated);
+        if (!$this->filesystem->exists($path)) {
+           $this->filesystem->create($path);
+            $this->filesystem->put($path, $generated);
             $this->info(sprintf('%s created succesfully to %s', $name, $path));
         } else {
             $this->error(sprintf('%s Controller already exists', $name));
