@@ -15,6 +15,7 @@ namespace Console\Commands;
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
 use Anonym\Facades\Stroge;
+use Anonym\Filesystem\Filesystem;
 use Anonym\Support\TemplateGenerator;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
@@ -42,10 +43,20 @@ class MakeController extends Command implements HandleInterface
     protected $description = 'create a new controller file';
 
     /**
-     * create an event instance
+     * the instance of filesystem
+     *
+     * @var Filesystem
      */
-    public function __construct()
+    private $filesystem;
+
+    /**
+     * create an event instance and register filesystem
+     *
+     * @param Filesystem $filesystem
+     */
+    public function __construct(Filesystem $filesystem)
     {
+        $this->filesystem = $filesystem;
         parent::__construct();
     }
 
@@ -62,7 +73,7 @@ class MakeController extends Command implements HandleInterface
         $generator = new TemplateGenerator($content);
         $name = $this->argument('name');
 
-        $path = 'App/Http/Controllers/'.$name.'.php';
+        $path = HTTP.'Controllers/'.$name.'.php';
         $generated = $generator->generate(['name' => $name]);
         if (!Stroge::exists($path)) {
             Stroge::create($path);
