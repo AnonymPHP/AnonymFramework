@@ -18,7 +18,7 @@ define('APP', BASE . 'app/');
  * |the constant for config files
  * |----------------------------
  */
-define('CONFIG', BASE. 'configs/');
+define('CONFIG', BASE . 'configs/');
 
 /**
  * |----------------------------
@@ -47,7 +47,7 @@ define('PUBLIC_FILES', BASE . 'public/');
  * |the constant for upload files
  * |----------------------------
  */
-define('UPLOAD',  PUBLIC_FILES . 'uploads/');
+define('UPLOAD', PUBLIC_FILES . 'uploads/');
 
 
 /**
@@ -88,7 +88,7 @@ define('ROUTE_PHP', HTTP . 'routes.php');
  * |the constant for migration files
  * |----------------------------
  */
-define('MIGRATION', DATABASE. 'Migrations/');
+define('MIGRATION', DATABASE . 'Migrations/');
 
 /**
  * |----------------------------
@@ -102,14 +102,14 @@ define('MIGRATION_NAMESPACE', 'App\Database\Migrations\\');
  * |the constant for backups files
  * |----------------------------
  */
-define('BACKUP', DATABASE. 'Backups/');
+define('BACKUP', DATABASE . 'Backups/');
 
 /**
  * |----------------------------
  * |the constant for asset files
  * |----------------------------
  */
-define('ASSETS', PUBLIC_FILES. 'assets/');
+define('ASSETS', PUBLIC_FILES . 'assets/');
 
 /**
  * |----------------------------
@@ -120,11 +120,11 @@ define('ASSETS', PUBLIC_FILES. 'assets/');
 include BASE . 'vendor/autoload.php';
 
 use Anonym\Bootstrap\Bootstrap;
+
 /**
  * |----------------------------
  * | create an application
  * |----------------------------
  */
-
 return new Bootstrap('AnonymPHP', 2);
 

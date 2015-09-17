@@ -15,7 +15,6 @@
  * |*****************************
  */
 
-
 if(!file_exists('../system/bootstrap.php')){
    return false;
 }
