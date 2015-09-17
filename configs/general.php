@@ -69,12 +69,7 @@ return [
 
 
     /**
-     * application installed path, url
-     */
-    'url' => 'http://localhost/AnonymFramework',
-
-    /**
      *  the name of application
      */
-    'application_name' => 'Anonym Test Application'
+    'application_name' => 'AnonymPHP 2 Test Application'
 ];
