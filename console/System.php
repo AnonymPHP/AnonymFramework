@@ -16,6 +16,7 @@ use Console\Commands\MigrationForgetCommand;
 use Console\Commands\LoginLogsClearCommand;
 use Console\Commands\MakeMigrationCommand;
 use Console\Commands\DeploySeedAllCommand;
+use Console\Commands\BackupForgetCommand;
 use Console\Commands\MigrationRunCommand;
 use Console\Commands\MakeBackupCommand;
 use Console\Commands\ConfigCacheCommand;
@@ -55,6 +56,7 @@ class System extends Kernel
         LoginLogsClearCommand::class,
         MakeMigrationCommand::class,
         DeploySeedAllCommand::class,
+        BackupForgetCommand::class,
         MigrationRunCommand::class,
         MakeBackupCommand::class,
         ConfigCacheCommand::class,
