@@ -18,7 +18,6 @@ use Anonym\Filesystem\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Anonym\Support\TemplateGenerator;
-use Anonym\Facades\Stroge;
 
 /**
  * Class MakeModel
