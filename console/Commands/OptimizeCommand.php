@@ -46,7 +46,7 @@ class OptimizeCommand extends Command implements HandleInterface
     public function handle(InputInterface $input, OutputInterface $output){
 
         $this->info('Optimizing Composer autoloader');
-        $process = new Process('composer --optimize');
+        $process = new Process('composer dump-autoload --optimize');
         $process->run();
 
         if($this->option('force')){
