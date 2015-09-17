@@ -16,6 +16,10 @@ use Anonym\Components\Console\HandleInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+/**
+ * Class MakeBackupCommand
+ * @package Console\Commands
+ */
 class MakeBackupCommand extends Command implements HandleInterface
 {
 

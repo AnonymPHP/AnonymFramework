@@ -31,7 +31,7 @@ class Backup extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $signature = 'make:backup { function? } { params? } { tables? }';
+    protected $signature = 'backup { function? } { params? } { tables? }';
     /**
      * Komut açıklaması
      *
