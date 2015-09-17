@@ -20,6 +20,7 @@ use Console\Commands\DeploySeedCommand;
 use Console\Commands\CacheTableCommand;
 use Console\Commands\CacheClearCommand;
 use Console\Commands\MakeSeedCommand;
+use Console\Commands\OptimizeCommand;
 use Anonym\Components\Console\Kernel;
 use Console\Commands\MakeController;
 use Console\Commands\MakeListener;
@@ -55,14 +56,15 @@ class System extends Kernel
         CacheTableCommand::class,
         CacheClearCommand::class,
         MakeSeedCommand::class,
+        OptimizeCommand::class,
         MakeController::class,
-        Installation::class,
         MakeListener::class,
-        Migration::class,
+        Installation::class,
         MakeEvent::class,
         MakeModel::class,
         MakeBlade::class,
         MakeView::class,
+        Migration::class,
         Backup::class
     ];
 
