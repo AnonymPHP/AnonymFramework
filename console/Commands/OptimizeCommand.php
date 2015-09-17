@@ -9,6 +9,7 @@
  */
 
 namespace Console\Commands;
+use Exception;
 use Symfony\Component\Process\Process;
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
@@ -61,8 +62,28 @@ class OptimizeCommand extends Command implements HandleInterface
      */
     private function compileAllFiles(){
          $path = $this->getContainer()->getCompiledPath();
+         $content = '';
+         foreach(include SYSTEM.'_compile_files.php' as $file){
+             $content .= $this->prepareForCompile(file_get_contents($file), $file);
+         }
 
+        file_put_contents($path, $content);
+    }
 
+    /**
+     * prepare content to compile
+     *
+     * @param string $content
+     * @param string $path
+     * @return mixed
+     * @throws Exception
+     */
+    private function prepareForCompile($content , $path){
+        if(!strstr($content, 'namespace ')){
+            throw new Exception(sprintf('%s file is not a class', $path));
+        }
+
+        return '<?php' .str_replace(["<?php", "?>"], '', $content);
     }
 
 }
