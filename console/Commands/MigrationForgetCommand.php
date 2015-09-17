@@ -60,7 +60,7 @@ class MigrationForgetCommand extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-        $name = $this->argument('name') ? $this->argument('name') : false;
+        $name = $this->argument('name') ? $this->argument('name') : '';
 
         if('' !== $name){
             Anonym::call('migration', [
