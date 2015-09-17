@@ -61,6 +61,8 @@ class OptimizeCommand extends Command implements HandleInterface
      */
     private function compileAllFiles(){
          $path = $this->getContainer()->getCompiledPath();
+
+
     }
 
 }
