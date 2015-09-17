@@ -1,10 +1,13 @@
 <?php
+
+
+
 /**
  * |----------------------------
  * |the constant for base files
  * |----------------------------
  */
-define('BASE', dirname(getcwd()) . '/');
+define('BASE', isset($_SERVER['HTTP_HOST']) ? dirname(getcwd()) : getcwd() . '/');
 
 /**
  * |----------------------------
