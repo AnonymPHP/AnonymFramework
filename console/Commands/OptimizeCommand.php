@@ -13,7 +13,6 @@ use Exception;
 use Symfony\Component\Process\Process;
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
