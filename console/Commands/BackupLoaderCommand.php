@@ -45,7 +45,7 @@ class BackupLoaderCommand extends Command implements HandleInterface
      * @return mixed
      */
     public function handle(InputInterface $input, OutputInterface $output){
-        $name = $this->argument('name')  ? $this->argument('name') : ';'
+        $name = $this->argument('name')  ? $this->argument('name') : '';
 
         $load = BackupLoader::get($name);
         foreach ($load as $key => $return) {
