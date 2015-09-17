@@ -13,15 +13,14 @@ return [
 
     'timezone' => 'Europe/Istanbul',
     /**
-     * |*********************************
+     * |***************************************
      * |
      * | Anonym Framework General configs;
-     * | ---------------------------
-     * | variables;
+     * | -----------------------------;
      * |
      * | alias => the alias for facade classes
-     * | providers  => the providers
-     * |*********************************
+     * | providers  => the service providers
+     * |***************************************
      */
 
     'alias' => [
@@ -57,11 +56,11 @@ return [
     ],
 
     /**
-     * | ****************
+     * | ******************
      * |
      * | the files of helpers
      * |
-     * | *****************
+     * | ******************
      */
     'helpers' => [
         APP.'helpers/helpers.php',
@@ -69,7 +68,11 @@ return [
 
 
     /**
-     *  the name of application
+     * |*************************
+     * |
+     * | the name of application
+     * |
+     * |*************************
      */
     'application_name' => 'AnonymPHP 2 Test Application'
 ];
