@@ -14,6 +14,7 @@ namespace Console\Commands;
 use Anonym\Components\Console\Command;
 use Anonym\Components\Console\HandleInterface;
 use Anonym\Facades\Anonym;
+use Anonym\Filesystem\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 
@@ -35,6 +36,23 @@ class MigrationForgetCommand extends Command implements HandleInterface
     protected $description = 'remove an migration file';
 
     /**
+     * the instance of filesystem
+     *
+     * @var Filesystem
+     */
+    private $file;
+
+    /**
+     * create a new instance and register filesystem instance
+     *
+     * @param Filesystem $filesystem
+     */
+    public function __construct(Filesystem $filesystem){
+        $this->file = $filesystem;
+
+        parent::__construct();
+    }
+    /**
      *
      * @param InputInterface $input
      * @param OutputInterface $output
@@ -49,7 +67,11 @@ class MigrationForgetCommand extends Command implements HandleInterface
 
             $this->info(sprintf('%s migration file removed successfully', $name));
         }else{
+            if($this->ask('We will clean your migration directory, Do you want do this?')){
+                $this->file->cleanDirectory(MIGRATION);
 
+                $this->info('Your all migration files removed successfully');
+            }
         }
     }
 }
