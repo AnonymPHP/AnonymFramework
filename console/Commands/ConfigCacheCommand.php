@@ -71,11 +71,7 @@ class ConfigCacheCommand extends Command implements HandleInterface
         $cachedPath  = SYSTEM.'cached_configs.php';
         $configs = $this->loadAllConfigs($cachedPath);
 
-        if(!$this->option('no-cache')){
-            // write cached config files to system/cached_configs.php
-            $this->file->put($cachedPath, '<?php return '.var_export($configs, true).';'.PHP_EOL);
-        }
-
+        $this->file->put($cachedPath, '<?php return '.var_export($configs, true).';'.PHP_EOL);
         $this->info('Configuration cached successfully!');
     }
     /**

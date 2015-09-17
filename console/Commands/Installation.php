@@ -29,7 +29,7 @@ class Installation extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $name = 'install';
+    protected $name = 'install {--no-cache}';
 
     /**
      * the description of command
@@ -57,8 +57,11 @@ class Installation extends Command implements HandleInterface
             'command' => 'forget', 'name' => 'Installation'
         ]);
 
-        // cache all configuration files
-        Anonym::call('config:cache');
+        if(!$this->option('no-cache')){
+            // cache all configuration files
+            Anonym::call('config:cache');
+        }
+
         $this->info('Anonym Framework installation with successfully');
     }
 }
