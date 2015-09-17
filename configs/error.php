@@ -18,31 +18,5 @@ return [
      * | *****************
      */
 
-    'handler' => [
-
-        /**
-         *
-         *  true for enable, false to disable
-         *
-         */
-
-        'errors'     => [
-            'switch'  => E_USER_ERROR,
-            'enabled' => true
-        ],
-        /**
-         *
-         *  true for enable, false to disable
-         *
-         */
-        'exceptions' => true,
-
-        /**
-         *
-         *  Save Logs in App/logs/error.log
-         */
-
-        'log' => true,
-    ]
-
+    'log' => true,
 ];
