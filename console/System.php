@@ -74,7 +74,7 @@ class System extends Kernel
 
 
     /**
-     * createa new instance and register varaibles
+     * createa new instance and register version
      *
      * @param Container $container the instance of anonym application
      * @param int $version            the version of anonym console application
