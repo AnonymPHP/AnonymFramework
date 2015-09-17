@@ -10,13 +10,6 @@
 
 return [
 
-    /**
-     * | ****************
-     * |
-     * | these configs for handle the error or exceptions
-     * |
-     * | *****************
-     */
 
     'log' => true,
 ];

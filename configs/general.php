@@ -58,7 +58,7 @@ return [
     /**
      * | ******************
      * |
-     * | the files of helpers
+     * |  helper functions files
      * |
      * | ******************
      */
