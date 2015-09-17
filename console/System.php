@@ -22,6 +22,7 @@ use Console\Commands\ConfigCacheCommand;
 use Console\Commands\DeploySeedCommand;
 use Console\Commands\CacheTableCommand;
 use Console\Commands\CacheClearCommand;
+use Console\Commands\MakeModelCommand;
 use Console\Commands\MakeSeedCommand;
 use Console\Commands\OptimizeCommand;
 use Anonym\Components\Console\Kernel;
@@ -29,7 +30,6 @@ use Console\Commands\MakeController;
 use Console\Commands\MakeListener;
 use Console\Commands\Installation;
 use Console\Commands\MakeBlade;
-use Console\Commands\MakeModel;
 use Illuminate\Container\Container;
 use Console\Commands\MakeEvent;
 use Console\Commands\Migration;
@@ -63,13 +63,13 @@ class System extends Kernel
         DeploySeedCommand::class,
         CacheTableCommand::class,
         CacheClearCommand::class,
+        MakeModelCommand::class,
         MakeSeedCommand::class,
         OptimizeCommand::class,
         MakeController::class,
         MakeListener::class,
         Installation::class,
         MakeEvent::class,
-        MakeModel::class,
         MakeBlade::class,
         MakeView::class,
         Migration::class,
