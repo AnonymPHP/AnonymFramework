@@ -8,14 +8,11 @@
  * Thanks for using
  */
 
-include 'system/bootstrap.php';
+$app = include 'system/bootstrap.php';
 
 use Console\System;
 use Anonym\Facades\App;
-use Anonym\Bootstrap\Bootstrap;
 
-// create new application to console system
-$app = new Bootstrap('AnonymPHP Console Application', 2);
 
 // create a new console application with anonym framework application
 $console = new System($app, 1);
