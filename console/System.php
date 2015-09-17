@@ -33,8 +33,8 @@ use Console\Commands\MakeEvent;
 use Console\Commands\Migration;
 use Console\Commands\MakeView;
 use Console\Commands\Backup;
-use Guzzle\Http\Client;
-use GuzzleHttp\Psr7\Request;
+use Anonym\Facades\App;
+use Illuminate\Container\Container;
 
 /**
  * Class System
@@ -73,6 +73,20 @@ class System extends Kernel
     ];
 
 
+    /**
+     * createa new instance and register varaibles
+     *
+     * @param Container $container the instance of anonym application
+     * @param int $version            the version of anonym console application
+     */
+    public function __construct(Container $container, $version = 2){
+        // register console to facades and more!
+        App::singleton('console', function () use ($console) {
+            return $console;
+        });
+
+        parent::__construct($container, $version );
+    }
     /**
      * add the schedule commands
      *

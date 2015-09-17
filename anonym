@@ -11,15 +11,7 @@
 $app = include 'system/bootstrap.php';
 
 use Console\System;
-use Anonym\Facades\App;
-
-
 // create a new console application with anonym framework application
 $console = new System($app, 1);
-
-// register console to facades and more!
-App::bind('console', function () use ($console) {
-    return $console;
-});
 
 $console->run();
