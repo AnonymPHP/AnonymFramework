@@ -18,9 +18,8 @@ use Anonym\Facades\App;
 $console = new System($app, 1);
 
 // register console to facades and more!
-App::singleton('console', function () use ($console) {
+App::bind('console', function () use ($console) {
     return $console;
 });
-
 
 $console->run();

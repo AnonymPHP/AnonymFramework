@@ -11,6 +11,7 @@
 namespace Console;
 use Anonym\Components\Cron\Cron as Schedule;
 use Anonym\Components\Cron\Task\Task;
+use Anonym\Facades\Anonym;
 use Console\Commands\MigrationForgetCommand;
 use Console\Commands\LoginLogsClearCommand;
 use Console\Commands\MakeMigrationCommand;
@@ -82,10 +83,7 @@ class System extends Kernel
     public function schedule(Schedule $schedule)
     {
         $schedule->event(function(){
-            return Task::call(function() {
-                $client = new Client();
-                $client->get('http://madonetr.com/hesap/test.php');
-            })->everyMinute();
+           Anonym::call('config:cache');
         });
     }
 }
