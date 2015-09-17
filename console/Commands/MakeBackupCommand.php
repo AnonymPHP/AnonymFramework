@@ -9,6 +9,7 @@
  */
 
 namespace Console\Commands;
+use Anonym\Facades\BackupLoader;
 use Anonym\Components\Console\Command;
 use Anonym\Facades\Backup as BackupFacade;
 use Anonym\Components\Console\HandleInterface;
