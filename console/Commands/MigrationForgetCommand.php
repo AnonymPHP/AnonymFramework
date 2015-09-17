@@ -69,7 +69,7 @@ class MigrationForgetCommand extends Command implements HandleInterface
 
             $this->info(sprintf('%s migration file removed successfully', $name));
         }else{
-            if($this->ask('We will clean your migration directory, Do you want do this?')){
+            if($this->confirm('We will clean your migration directory, Do you want do this? [y|N]')){
                 $this->file->cleanDirectory(MIGRATION);
 
                 $this->info('Your all migration files removed successfully');
