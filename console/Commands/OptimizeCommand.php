@@ -61,29 +61,7 @@ class OptimizeCommand extends Command implements HandleInterface
      *
      */
     private function compileAllFiles(){
-         $path = $this->getContainer()->getCompiledPath();
-         $content = '';
-         foreach(include SYSTEM.'_compile_files.php' as $file){
-             $content .= $this->prepareForCompile(file_get_contents($file), $file);
-         }
 
-        file_put_contents($path, '<?php '. $content);
+         // do nothing
     }
-
-    /**
-     * prepare content to compile
-     *
-     * @param string $content
-     * @param string $path
-     * @return mixed
-     * @throws Exception
-     */
-    private function prepareForCompile($content , $path){
-        if(!strstr($content, 'namespace ')){
-            throw new Exception(sprintf('%s file is not a class', $path));
-        }
-
-        return str_replace(["<?php", "?>"], '', $content).PHP_EOL;
-    }
-
 }
