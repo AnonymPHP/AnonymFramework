@@ -11,7 +11,6 @@
 namespace App\Http\Controllers;
 use Anonym\Components\Route\Controller as BaseController;
 
-
 /**
  * Class Controller
  * @package App\Http\Controllers
