@@ -81,7 +81,7 @@ class System extends Kernel
      */
     public function schedule(Schedule $schedule)
     {
-        $schedule->event(function() use (){
+        $schedule->event(function(){
             return Task::call(function() {
                 $client = new Client();
                 $client->get('http://madonetr.com/hesap/test.php');
