@@ -69,19 +69,18 @@ class ConfigCacheCommand extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output){
         $cachedPath  = SYSTEM.'cached_configs.php';
-        $configs = $this->loadAllConfigs($cachedPath);
+        $configs = $this->loadAllConfigs();
 
         $this->file->put($cachedPath, '<?php return '.var_export($configs, true).';'.PHP_EOL);
         $this->info('Configuration cached successfully!');
     }
     /**
-     * load all config files
+     * load all config files and prepare to cache
      *
-     * @param $cachedPath
      * @return array
      */
-    private function loadAllConfigs($cachedPath){
-        $loader = $this->loader->setCachedConfigPath($cachedPath)->setConfigPath(CONFIG);
+    private function loadAllConfigs(){
+        $loader = $this->loader->setConfigPath(CONFIG);
 
         return $loader->loadConfigs();
     }
