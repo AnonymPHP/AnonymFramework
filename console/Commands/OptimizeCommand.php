@@ -10,10 +10,16 @@
 
 namespace Console\Commands;
 use Exception;
+use ClassPreloader\Parser\DirVisitor;
+use ClassPreloader\Parser\FileVisitor;
+use ClassPreloader\Parser\NodeTraverser;
 use Symfony\Component\Process\Process;
 use Anonym\Components\Console\Command;
+use ClassPreloader\Exceptions\SkipFileException;
 use Anonym\Components\Console\HandleInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
+use PhpParser\PrettyPrinter\Standard as PrettyPrinter;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
@@ -59,7 +65,12 @@ class OptimizeCommand extends Command implements HandleInterface
      *  compile all files
      *
      */
-    private function compileAllFiles(){
-          // do nothing
+    private function getAllFiles(){
+        $proivers = config('compile.providers');
+        $core   = config('compile.core');
+        $aliases   = config('compile.aliases');
+        $files = array_merge($core, $proivers, $aliases);
+
+        return $files;
     }
 }

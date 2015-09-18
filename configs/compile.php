@@ -33,7 +33,7 @@ return [
      * | all framework class
      * |
      */
-    'classes' => [
+    'core' => [
 
     ]
 ];
