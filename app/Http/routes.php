@@ -13,3 +13,7 @@
 get('/', function(){
        return view('welcome');
 });
+
+get('/{test}', function(){
+
+});
