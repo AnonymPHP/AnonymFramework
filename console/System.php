@@ -13,6 +13,7 @@ use Console\Commands\MigrationForgetCommand;
 use Anonym\Components\Cron\Cron as Schedule;
 use Console\Commands\LoginLogsClearCommand;
 use Console\Commands\MakeMigrationCommand;
+use Console\Commands\ClearCompiledCommand;
 use Console\Commands\DeploySeedAllCommand;
 use Console\Commands\BackupLoaderCommand;
 use Console\Commands\BackupForgetCommand;
@@ -54,6 +55,7 @@ class System extends Kernel
         MigrationForgetCommand::class,
         LoginLogsClearCommand::class,
         MakeMigrationCommand::class,
+        ClearCompiledCommand::class,
         DeploySeedAllCommand::class,
         BackupLoaderCommand::class,
         BackupForgetCommand::class,
