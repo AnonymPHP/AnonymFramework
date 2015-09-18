@@ -677,3 +677,27 @@ if (!function_exists('errors')) {
 }
 
 
+
+/**
+ * | **********************
+ * |
+ * | determine if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('filter')) {
+
+    /**
+     * get the registered  error bag
+     *
+     * @param string $name the name of filter
+     * @param string $regex the expression of filter
+     * @return \Anonym\Components\Route\RouteCollector
+     */
+    function filter($name = null, $regex = '')
+    {
+         return Route::filter($name, $regex);
+    }
+}
+
+
