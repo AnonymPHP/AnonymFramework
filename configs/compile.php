@@ -27,13 +27,4 @@ return [
     'aliases' => [
 
     ],
-
-    /**
-     * |
-     * | all framework class
-     * |
-     */
-    'core' => [
-
-    ]
 ];

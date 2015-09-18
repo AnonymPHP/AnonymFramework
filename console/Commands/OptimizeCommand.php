@@ -9,7 +9,9 @@
  */
 
 namespace Console\Commands;
-use Exception;
+use PhpParser\Lexer;
+use PhpParser\Parser;
+use ClassPreloader\ClassPreloader;
 use ClassPreloader\Parser\DirVisitor;
 use ClassPreloader\Parser\FileVisitor;
 use ClassPreloader\Parser\NodeTraverser;
@@ -17,7 +19,6 @@ use Symfony\Component\Process\Process;
 use Anonym\Components\Console\Command;
 use ClassPreloader\Exceptions\SkipFileException;
 use Anonym\Components\Console\HandleInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use PhpParser\PrettyPrinter\Standard as PrettyPrinter;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -62,12 +63,46 @@ class OptimizeCommand extends Command implements HandleInterface
     }
 
     /**
+     *  compile all files for the better performance
+     *
+     *  @return mixed
+     */
+    protected function compileAllFiles(){
+        $preloader = new ClassPreloader(new PrettyPrinter, new Parser(new Lexer), $this->getTraverser());
+        $handle = $preloader->prepareOutput($this->getContainer()->getCompiledPath());
+        foreach ($this->getAllFiles() as $file) {
+            try {
+                fwrite($handle, $preloader->getCode($file, false)."\n");
+            } catch (SkipFileException $ex) {
+                //
+            }
+        }
+
+        fclose($handle);
+    }
+
+    /**
+     * Get the node traverser used by the command.
+     *
+     * @return NodeTraverser
+     */
+    protected function getTraverser(){
+        $traverser = new NodeTraverser();
+
+        $traverser->addVisitor(new DirVisitor(true));
+
+        $traverser->addVisitor(new FileVisitor(true));
+
+        return $traverser;
+    }
+    /**
      *  compile all files
      *
      */
-    private function getAllFiles(){
+    protected function getAllFiles(){
+        $core = require __DIR__. '/Optimize/core.php';
+
         $proivers = config('compile.providers');
-        $core   = config('compile.core');
         $aliases   = config('compile.aliases');
         $files = array_merge($core, $proivers, $aliases);
 
