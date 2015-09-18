@@ -8,6 +8,9 @@
  *
  * Thanks for using
  */
-get('/{page:string}', function(){
+
+
+get('/', function(){
+       return view('welcome');
 });
 
