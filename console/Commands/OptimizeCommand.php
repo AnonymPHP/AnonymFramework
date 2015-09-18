@@ -69,6 +69,11 @@ class OptimizeCommand extends Command implements HandleInterface
      */
     protected function compileAllFiles(){
         $preloader = new ClassPreloader(new PrettyPrinter, new Parser(new Lexer), $this->getTraverser());
+
+        if(!file_exists($this->getContainer()->getCompiledPath())){
+            touch($this->getContainer()->getCompiledPath());
+        }
+
         $handle = $preloader->prepareOutput($this->getContainer()->getCompiledPath());
         foreach ($this->getAllFiles() as $file) {
             try {
