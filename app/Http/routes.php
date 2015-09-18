@@ -8,7 +8,7 @@
  *
  * Thanks for using
  */
-
 get('/{page:int}', function(){
        return view('welcome');
 });
+
