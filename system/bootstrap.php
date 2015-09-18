@@ -130,7 +130,7 @@ use Anonym\Bootstrap\Bootstrap;
 
 $app = new Bootstrap('AnonymPHP', 2);
 
-if(!file_exists($path = $app->getCompiledPath())){
+if(file_exists($path = RESOURCE.'migrations/_compiled.php.cache')){
      include $path;
 }
 /**
