@@ -117,9 +117,14 @@ define('ASSETS', PUBLIC_FILES . 'assets/');
  * |----------------------------
  */
 
+if(file_exists($path = RESOURCE.'bootstrap/_compiled.php')){
+    include $path;
+}
+
 include BASE . 'vendor/autoload.php';
 
 use Anonym\Bootstrap\Bootstrap;
+
 
 /**
  * |----------------------------
