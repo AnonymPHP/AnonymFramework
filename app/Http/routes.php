@@ -9,11 +9,6 @@
  * Thanks for using
  */
 
-
-get('/', function(){
+get('/{page:int}', function(){
        return view('welcome');
-});
-
-get('/{test}', function(){
-
 });
