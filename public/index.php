@@ -14,7 +14,6 @@
  * |
  * |*****************************
  */
-
 if(!file_exists('../system/bootstrap.php')){
    return false;
 }
@@ -25,4 +24,3 @@ if(!file_exists('../system/bootstrap.php')){
  * |
  */
 $app = include '../system/bootstrap.php';
-

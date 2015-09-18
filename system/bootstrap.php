@@ -117,7 +117,6 @@ define('ASSETS', PUBLIC_FILES . 'assets/');
  * |----------------------------
  */
 
-
 include BASE . 'vendor/autoload.php';
 
 /**
@@ -139,4 +138,3 @@ use Anonym\Bootstrap\Bootstrap;
  * |----------------------------
  */
 return new Bootstrap('AnonymPHP', 2);
-
