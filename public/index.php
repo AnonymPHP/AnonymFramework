@@ -21,5 +21,4 @@ if(!file_exists('../system/bootstrap.php')){
 
 $app = include '../system/bootstrap.php';
 
-$content = '<?php return '.var_export(get_included_files(), true).';'.PHP_EOL;
-file_put_contents('../console/Commands/Optimize/core.php', $content);
+
