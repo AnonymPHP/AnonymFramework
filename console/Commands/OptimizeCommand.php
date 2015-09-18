@@ -55,6 +55,9 @@ class OptimizeCommand extends Command implements HandleInterface
         $process = new Process('composer dump-autoload --optimize');
         $process->run();
 
+        $this->info('caching configuration files');
+        Anonym::call('config:cache');
+
         if($this->option('force')){
             $this->info('Compiling all files');
             $this->compileAllFiles();
