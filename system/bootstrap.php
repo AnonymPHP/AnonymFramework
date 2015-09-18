@@ -135,7 +135,7 @@ if(!file_exists($path = $app->getCompiledPath())){
 }
 /**
  * |----------------------------
- * | create an application
+ * |  return the application
  * |----------------------------
  */
 return $app;
