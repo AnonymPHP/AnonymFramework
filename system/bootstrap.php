@@ -117,19 +117,26 @@ define('ASSETS', PUBLIC_FILES . 'assets/');
  * |----------------------------
  */
 
-if(file_exists($path = RESOURCE.'bootstrap/_compiled.php')){
-    include $path;
-}
 
 include BASE . 'vendor/autoload.php';
 
+/**
+ * |
+ * | we will include the compiled file, this is gonna do  better do better performance
+ * |
+ */
+
 use Anonym\Bootstrap\Bootstrap;
 
+$app = new Bootstrap('AnonymPHP', 2);
 
+if(!file_exists($path = $app->getCompiledPath())){
+     include $path;
+}
 /**
  * |----------------------------
  * | create an application
  * |----------------------------
  */
-return new Bootstrap('AnonymPHP', 2);
+return $app;
 
