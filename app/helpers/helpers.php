@@ -185,8 +185,13 @@ if (!function_exists('config')) {
      * @param mixed $set if it is not equal, these values will be set the config file
      * @return mixed
      */
-    function config($name, $set = null)
+    function config($name = '', $set = null)
     {
+
+        if ('' === $name) {
+            return App::make('config');
+        }
+
         return null === $set ? Config::get($name) : Config::set($name, $set);
     }
 
