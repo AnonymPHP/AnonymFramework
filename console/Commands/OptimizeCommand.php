@@ -11,6 +11,7 @@
 namespace Console\Commands;
 use PhpParser\Lexer;
 use PhpParser\Parser;
+use Anonym\Facades\Anonym;
 use ClassPreloader\ClassPreloader;
 use ClassPreloader\Parser\DirVisitor;
 use ClassPreloader\Parser\FileVisitor;
