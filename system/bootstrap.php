@@ -126,13 +126,13 @@ include BASE . 'vendor/autoload.php';
  * |
  */
 
-use Anonym\Bootstrap\Bootstrap;
-
-$app = new Bootstrap('AnonymPHP', 2);
 
 if(file_exists($path = RESOURCE.'migrations/_compiled.php.cache')){
      include $path;
 }
+use Anonym\Bootstrap\Bootstrap;
+$app = new Bootstrap('AnonymPHP', 2);
+
 /**
  * |----------------------------
  * |  return the application
