@@ -127,9 +127,10 @@ include BASE . 'vendor/autoload.php';
  */
 
 
-if(file_exists($path = RESOURCE.'migrations/_compiled.php.cache')){
+if(file_exists($path = RESOURCE.'bootstrap/_compiled.php.cache')){
      include $path;
 }
+
 use Anonym\Bootstrap\Bootstrap;
 
 /**
