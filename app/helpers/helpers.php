@@ -647,8 +647,9 @@ if (!function_exists('assets')) {
      */
     function asset($name = null)
     {
-        $document = app('http.request')->root;
-        end(explode('/', $document));
+        $document = explode('/', app('http.request')->root);
+        $document = end($document);
+
         $defaultPath = $document === 'public' ? 'assets/' : 'public/assets/';
 
         $packpage = new \Anonym\Component\Assets\VersionPackpage('', '%f', $defaultPath);
