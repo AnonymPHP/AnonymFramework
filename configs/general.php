@@ -34,6 +34,7 @@ return [
         'guard' => \Anonym\Components\Security\Authentication\Guard::class,
         'app' => \Anonym\Facades\App::class,
         'session' => \Anonym\Facades\Session::class,
+        'Response' => \Anonym\Facades\Response::class,
     ],
 
     /**
