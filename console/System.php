@@ -9,6 +9,7 @@
  */
 
 namespace Console;
+
 use Console\Commands\MigrationForgetCommand;
 use Anonym\Components\Cron\Cron as Schedule;
 use Console\Commands\LoginLogsClearCommand;
@@ -83,17 +84,19 @@ class System extends Kernel
      * createa new instance and register version
      *
      * @param Container $container the instance of anonym application
-     * @param int $version            the version of anonym console application
+     * @param int $version the version of anonym console application
      */
-    public function __construct(Container $container, $version = 2){
+    public function __construct(Container $container, $version = 2)
+    {
         // register console to facades and more!
         $console = $this;
         App::singleton('console', function () use ($console) {
             return $console;
         });
 
-        parent::__construct($container, $version );
+        parent::__construct($container, $version);
     }
+
     /**
      * add the schedule commands
      *

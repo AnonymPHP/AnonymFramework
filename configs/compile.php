@@ -15,9 +15,9 @@ return [
      * | all providers
      * |
      */
-     'providers' => [
+    'providers' => [
 
-     ],
+    ],
 
     /**
      * |

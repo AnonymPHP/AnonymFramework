@@ -47,8 +47,8 @@ return [
      * | *****************
      */
     'blade' => [
-        'view' => RESOURCE.'views',
-        'cache' => RESOURCE.'cache',
+        'view' => RESOURCE . 'views',
+        'cache' => RESOURCE . 'cache',
     ],
     /**
      * | ****************

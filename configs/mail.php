@@ -28,8 +28,8 @@ return [
     'default' => [
         'username' => '',
         'password' => '',
-        'port'     => 587,
-        'driver'   => 'swift'
+        'port' => 587,
+        'driver' => 'swift'
     ],
 
     'your_address' => 'vahit.serif119@gmail.com',

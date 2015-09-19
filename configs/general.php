@@ -24,7 +24,7 @@ return [
      */
 
     'alias' => [
-        'mail'   => \Anonym\Components\Mail\Mail::class,
+        'mail' => \Anonym\Components\Mail\Mail::class,
         'cookie' => \Anonym\Components\Cookie\Cookie::class,
         'crypt' => \Anonym\Components\Crypt\Crypter::class,
         'config' => \Anonym\Components\Config\Reposity::class,
@@ -63,7 +63,7 @@ return [
      * | ******************
      */
     'helpers' => [
-        APP.'helpers/helpers.php',
+        APP . 'helpers/helpers.php',
     ],
 
 

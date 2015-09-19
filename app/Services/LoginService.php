@@ -10,6 +10,7 @@
 
 
 namespace App\Services;
+
 use Anonym\Bootstrap\ServiceProvider;
 use Anonym\Facades\Config;
 
@@ -18,7 +19,7 @@ use Anonym\Facades\Config;
  * Class LoginService
  * @package App\Services
  */
-class LoginService  extends ServiceProvider
+class LoginService extends ServiceProvider
 {
 
     /**

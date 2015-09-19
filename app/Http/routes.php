@@ -10,7 +10,7 @@
  */
 
 
-get('/', function(){
-       return view('welcome');
+get('/', function () {
+    return view('welcome');
 });
 

@@ -124,8 +124,8 @@ include BASE . 'vendor/autoload.php';
  * | we will include the compiled file, it gonna a better performance for framework
  * |
  */
-if(file_exists($path = RESOURCE.'bootstrap/_compiled.php.cache')){
-     include $path;
+if (file_exists($path = RESOURCE . 'bootstrap/_compiled.php.cache')) {
+    include $path;
 }
 
 use Anonym\Bootstrap\Bootstrap;

@@ -11,6 +11,7 @@
 $app = include 'system/bootstrap.php';
 
 use Console\System;
+
 // create a new console application with anonym framework application
 $console = new System($app, 1);
 

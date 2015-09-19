@@ -58,7 +58,7 @@ return [
          */
         'file' => [
             'ext' => '.cache',
-            'folder' => RESOURCE.'cache',
+            'folder' => RESOURCE . 'cache',
         ],
 
     ],
@@ -87,7 +87,7 @@ return [
          *  session file driver configs
          */
         'file' => [
-            'path' =>  'resources/sessions/'
+            'path' => 'resources/sessions/'
         ],
 
         /**
