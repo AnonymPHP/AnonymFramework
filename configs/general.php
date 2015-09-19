@@ -32,6 +32,8 @@ return [
         'redirect' => \Anonym\Components\HttpClient\Redirect::class,
         'event' => \Anonym\Components\Event\EventDispatcher::class,
         'guard' => \Anonym\Components\Security\Authentication\Guard::class,
+        'app' => \Anonym\Facades\App::class,
+        'session' => \Anonym\Facades\Session::class,
     ],
 
     /**
