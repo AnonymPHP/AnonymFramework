@@ -607,7 +607,6 @@ if (!function_exists('csrf_active')) {
 }
 
 
-
 /**
  * | **********************
  * |
@@ -626,10 +625,9 @@ if (!function_exists('app')) {
      */
     function app($name = null)
     {
-         return null === $name ? App::make('app') : App::make($name);
+        return null === $name ? App::make('app') : App::make($name);
     }
 }
-
 
 
 /**
@@ -649,7 +647,12 @@ if (!function_exists('assets')) {
      */
     function asset($name = null)
     {
-        return 'public/assets/'.$name;
+        $document = app('http.request')->root;
+        end(explode('/', $document));
+        $defaultPath = $document === 'public' ? 'assets/' : 'public/assets/';
+
+        $packpage = new \Anonym\Component\Assets\VersionPackpage('', '%f', $defaultPath);
+        return $name !== null ? $packpage->getUrl($name) : $defaultPath;
     }
 }
 
@@ -682,7 +685,6 @@ if (!function_exists('errors')) {
 }
 
 
-
 /**
  * | **********************
  * |
@@ -701,7 +703,7 @@ if (!function_exists('filter')) {
      */
     function filter($name = null, $regex = '')
     {
-         return Route::filter($name, $regex);
+        return Route::filter($name, $regex);
     }
 }
 
