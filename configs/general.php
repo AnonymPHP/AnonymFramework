@@ -29,6 +29,8 @@ return [
         'Crypt' => \Anonym\Components\Crypt\Crypter::class,
         'Config' => \Anonym\Components\Config\Reposity::class,
         'Route' => \Anonym\Facades\Route::class,
+        'Query' => \Anonym\Facades\Query::class,
+        'Input' => \Anonym\Facades\Input::class,
         'Redirect' => \Anonym\Components\HttpClient\Redirect::class,
         'Event' => \Anonym\Components\Event\EventDispatcher::class,
         'Guard' => \Anonym\Components\Security\Authentication\Guard::class,
