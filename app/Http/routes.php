@@ -10,7 +10,8 @@
  */
 
 
-Route::get('/aa', function(){
-
+Route::get('/', function(){
    return view('welcome');
 });
+
+
