@@ -129,9 +129,7 @@ if (file_exists($path = RESOURCE . 'bootstrap/_compiled.php.cache')) {
 }
 
 use Anonym\Bootstrap\Bootstrap;
-use Symfony\Component\Debug\Debug;
 
-Debug::enable();
 /**
  * |----------------------------
  * |  create a new application and return it
