@@ -27,7 +27,7 @@ return [
         'Mail' => \Anonym\Components\Mail\Mail::class,
         'Cookie' => \Anonym\Components\Cookie\Cookie::class,
         'Crypt' => \Anonym\Components\Crypt\Crypter::class,
-        'Config' => \Anonym\Facades\Config::class,
+        'Config' => \Anonym\Components\Config\Reposity::class,
         'Route' => \Anonym\Components\Route\RouteCollector::class,
         'Redirect' => \Anonym\Components\HttpClient\Redirect::class,
         'Event' => \Anonym\Components\Event\EventDispatcher::class,
