@@ -95,5 +95,31 @@ return [
      * |
      * |*************************
      */
-    'application_name' => 'AnonymPHP 2 Test Application'
+    'application_name' => 'AnonymPHP 2 Test Application',
+
+
+    /**
+     * |--------------------------------------------------
+     * | Application Error Logger
+     * | -------------------------------------------------
+     * |
+     * | When Your logger is true , we will store all errors in app/logs/error.log
+     * |
+     */
+
+    'log' => true,
+
+
+    /*
+     |--------------------------------------------------------------------------
+     | Application Debug Mode
+     |--------------------------------------------------------------------------
+     |
+     | When your application is in debug mode, detailed error messages with
+     | stack traces will be shown on every error that occurs within your
+     | application. If disabled, a simple generic error page is shown.
+     |
+     */
+
+    'debug' => true,
 ];
