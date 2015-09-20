@@ -12,15 +12,13 @@
 return [
 
     'timezone' => 'Europe/Istanbul',
+
     /**
-     * |***************************************
+     * | *****************
      * |
-     * | Anonym Framework General configs;
-     * | -----------------------------;
+     * |  the class aliases
      * |
-     * | alias => the alias for facade classes
-     * | providers  => the service providers
-     * |***************************************
+     * | *****************
      */
 
     'alias' => [
