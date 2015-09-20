@@ -56,11 +56,13 @@ return [
     ],
 
     /**
-     * | ****************
+     * | ------------------------------------------------
+     * |  The list of all application provider
+     * | ------------------------------------------------
      * |
-     * | each provider must be an instance of ServiceProvider.
+     * | If you want register a new service provider,
+     * | it's must be an instance of Anonym\Bootstrap\ServiceProvider
      * |
-     * | *****************
      */
     'providers' => [
         \App\Services\ViewService::class,
@@ -89,11 +91,12 @@ return [
 
 
     /**
-     * |*************************
+     * | -------------------------------------------------
+     * | The Name of Your Application
+     * | -------------------------------------------------
      * |
-     * | the name of application
+     * | We gonna use this to send mails
      * |
-     * |*************************
      */
     'application_name' => 'AnonymPHP 2 Test Application',
 
