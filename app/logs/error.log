@@ -1,1 +1,0 @@
-2015/09/20 03:28:47 [error] 10132#0: *30 open() "/usr/share/nginx/html/Framework/public/test/assets/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /test/assets/favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/test/aa"
