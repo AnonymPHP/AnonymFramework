@@ -12,3 +12,14 @@
 [22.09.2015- 01:33] Message = Undefined index: group : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/RouteCollector.php-82 
 [22.09.2015- 01:39] Message = Argument 1 passed to Anonym\Components\Route\ActionDispatcher::findMiddleware() must be an instance of array, Closure$;765626588 given : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/ActionDispatcher.php-145 
 [22.09.2015- 01:39] Message = Argument 1 passed to Anonym\Components\Route\ActionDispatcher::findMiddleware() must be an instance of array, Closure$;765626588 given : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/ActionDispatcher.php-145 
+[22.09.2015- 01:45] Message = You Can not access here. : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/ActionDispatcher.php-107 
+[22.09.2015- 01:45] Message = You Can not access here. : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/ActionDispatcher.php-107 
+[22.09.2015- 01:59] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-230 
+[22.09.2015- 02:00] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-230 
+[22.09.2015- 02:00] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-230 
+[22.09.2015- 02:00] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-230 
+[22.09.2015- 02:00] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-230 
+[22.09.2015- 02:00] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-230 
+[22.09.2015- 02:00] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-230 
+[22.09.2015- 02:02] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-230 
+[22.09.2015- 02:04] Message = You can not access here. : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/ActionDispatcher.php-107 

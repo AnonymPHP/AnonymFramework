@@ -9,8 +9,6 @@
  * Thanks for using
  */
 
-Route::group('admin', [ '_middleware' => ['name' => 'user.auth']], function(){
-    Route::get('/admin/login', function(){
-         return view('welcome');
-    });
+get('/', function(){
+   return view('welcome');
 });
