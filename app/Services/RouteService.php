@@ -31,5 +31,9 @@ class RouteService extends ServiceProvider
         App::bind('route.not.found', function () {
             App::abort(404, 'Page Not Found');
         });
+
+        App::bind('route.middleware.failed',  function(){
+            throw new MiddlewareException('You can\'t access here, your authority is incorrect');
+        });
     }
 }
