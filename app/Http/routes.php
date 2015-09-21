@@ -9,5 +9,8 @@
  * Thanks for using
  */
 
-
-
+Route::when('/admin', function () {
+     Route::get('/login', function(){
+          return view('welcome');
+     });
+});
