@@ -10,3 +10,5 @@
 [22.09.2015- 01:33] Message = Undefined index: group : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/RouteCollector.php-82 
 [22.09.2015- 01:33] Message = Undefined index: group : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/RouteCollector.php-82 
 [22.09.2015- 01:33] Message = Undefined index: group : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/RouteCollector.php-82 
+[22.09.2015- 01:39] Message = Argument 1 passed to Anonym\Components\Route\ActionDispatcher::findMiddleware() must be an instance of array, Closure$;765626588 given : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/ActionDispatcher.php-145 
+[22.09.2015- 01:39] Message = Argument 1 passed to Anonym\Components\Route\ActionDispatcher::findMiddleware() must be an instance of array, Closure$;765626588 given : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/ActionDispatcher.php-145 
