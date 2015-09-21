@@ -1,2 +1,12 @@
 [22.09.2015- 01:18] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-229 
 [22.09.2015- 01:22] Message = Undefined index: WHEN : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-245 
+[22.09.2015- 01:29] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-229 
+[22.09.2015- 01:29] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-229 
+[22.09.2015- 01:29] Message = Argument 3 passed to Anonym\Components\Route\RouteCollector::group() must be an instance of Anonym\Components\Route\Closure, Closure$#2;765626588 given : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/RouteCollector.php-241 
+[22.09.2015- 01:29] Message = Argument 2 passed to Illuminate\Container\Container::call() must be an instance of array, Anonym\Facades\Route given : (File-Line) = /usr/share/nginx/html/Framework/vendor/illuminate/container/Container.php-489 
+[22.09.2015- 01:29] Message = Argument 2 passed to Illuminate\Container\Container::call() must be an instance of array, Anonym\Facades\Route given : (File-Line) = /usr/share/nginx/html/Framework/vendor/illuminate/container/Container.php-489 
+[22.09.2015- 01:31] Message = Undefined variable: uri : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-270 
+[22.09.2015- 01:33] Message = Undefined index: group : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/RouteCollector.php-82 
+[22.09.2015- 01:33] Message = Undefined index: group : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/RouteCollector.php-82 
+[22.09.2015- 01:33] Message = Undefined index: group : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/RouteCollector.php-82 
+[22.09.2015- 01:33] Message = Undefined index: group : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/RouteCollector.php-82 

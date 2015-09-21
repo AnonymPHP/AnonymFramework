@@ -9,8 +9,8 @@
  * Thanks for using
  */
 
-Route::when('/admin', function () {
-     Route::get('/login', function(){
-          return view('welcome');
-     });
+Route::group('admin', [], function(){
+    Route::get('/admin/login', function(){
+         return view('welcome');
+    });
 });
