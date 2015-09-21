@@ -727,7 +727,7 @@ if (!function_exists('filter')) {
      */
     function abort($code = 503, $message = '', array $headers = [])
     {
-        App::abort($$code, $message, $headers);
+        App::abort($code, $message, $headers);
     }
 
 }
