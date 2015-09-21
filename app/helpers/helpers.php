@@ -731,3 +731,49 @@ if (!function_exists('filter')) {
     }
 
 }
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('when')) {
+
+    /**
+     * Works with route collector. this function add a new when collection
+     *
+     * @param string $uri
+     * @param \Closure $action
+     * @return mixed
+     */
+    function when($uri, $action)
+    {
+        return Route::when($uri, $action);
+    }
+}
+
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('group')) {
+
+    /**
+     * add a new group collection to router
+     *
+     * @param string $name
+     * @param array $action
+     * @param Closure $callback
+     * @return mixed
+     */
+    function group($name, $action, Closure $callback)
+    {
+        return Route::group($name, $action, $callback);
+    }
+}
+
