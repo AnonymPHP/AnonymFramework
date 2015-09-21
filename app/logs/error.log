@@ -1,0 +1,2 @@
+2015/09/21 04:55:49 [error] 1146#0: *1 open() "/usr/share/nginx/html/Framework/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2015/09/21 15:53:50 [error] 1174#0: *1 open() "/usr/share/nginx/html/Framework/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
