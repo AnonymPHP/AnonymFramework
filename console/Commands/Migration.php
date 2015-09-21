@@ -104,8 +104,6 @@ class Migration extends AnonymCommand implements HandleInterface
         FacadeMigration::run($name);
         $this->info('up method worked succesfully ');
         $this->info('down method worked succesfully in');
-
-
     }
 
     /**
