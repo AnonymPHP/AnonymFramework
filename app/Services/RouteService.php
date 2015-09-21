@@ -29,7 +29,7 @@ class RouteService extends ServiceProvider
     public function register()
     {
         App::bind('route.not.found', function () {
-            throw new RouteMatchException(sprintf('There is nothing Here'));
+            App::abort();
         });
     }
 }

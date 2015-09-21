@@ -709,3 +709,25 @@ if (!function_exists('filter')) {
 }
 
 
+/**
+ * | **********************
+ * |
+ * | determine if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('filter')) {
+    /**
+     * throw an http exception with given datas
+     *
+     * @param int $code
+     * @param string $message
+     * @param array $headers
+     * @throws HttpException
+     */
+    function abort($code = 503, $message = '', array $headers = [])
+    {
+        App::abort($$code, $message, $headers);
+    }
+
+}
