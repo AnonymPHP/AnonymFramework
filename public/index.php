@@ -25,3 +25,4 @@ if (!file_exists('../system/bootstrap.php')) {
  * |
  */
 $app = include '../system/bootstrap.php';
+
