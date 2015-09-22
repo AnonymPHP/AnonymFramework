@@ -28,6 +28,6 @@ class ViewService extends ServiceProvider
      */
     public function register()
     {
-
+        // do nothing for now
     }
 }
