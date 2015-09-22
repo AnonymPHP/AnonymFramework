@@ -13,3 +13,5 @@ get('/', function () {
     return view('welcome');
 });
 
+get('/test', 'Test:boot');
+
