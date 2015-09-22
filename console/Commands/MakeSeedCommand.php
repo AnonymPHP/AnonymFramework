@@ -16,20 +16,24 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 class MakeSeedCommand extends Command implements HandleInterface
 {
+
     /**
      * the name of signature
      *
      * @var string
      */
     protected $signature = 'make:seed {name}';
+
     /**
      * @var string
      */
     protected $description = "create a new seed file";
+
     /**
      * @var Filesystem
      */
     protected $file;
+
     /**
      * @param Filesystem $filesystem
      */
@@ -37,6 +41,7 @@ class MakeSeedCommand extends Command implements HandleInterface
         $this->file = $filesystem;
         parent::__construct();
     }
+
     /**
      *
      * @param InputInterface $input
