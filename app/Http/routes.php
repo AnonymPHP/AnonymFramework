@@ -12,3 +12,6 @@
 get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/test', 'Index:test');
