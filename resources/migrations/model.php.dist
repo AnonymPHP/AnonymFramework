@@ -19,5 +19,5 @@ use Anonym\Facades\Element;
  * @package App\Models
  */
 class {{ name }}  extends Element {
-        public $table = '{{ lower-name }}'
+        public $table = '{{ lower-name }}';
 }
