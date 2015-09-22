@@ -147,6 +147,27 @@ if (!function_exists('view')) {
     }
 }
 
+/**
+ * | **********************
+ * |
+ * | checks if there is or not the same function
+ * |
+ * | **************************
+ */
+if (!function_exists('lang')) {
+
+    /**
+     * get language parameter
+     *
+     * @param string $lang
+     * @return mixed
+     */
+    function lang($lang = '')
+    {
+        return View::lang($lang);
+    }
+
+}
 
 /**
  * | **********************
