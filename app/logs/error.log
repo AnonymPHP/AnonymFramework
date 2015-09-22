@@ -1,1 +1,0 @@
-2015/09/22 04:44:47 [error] 1141#0: *1 open() "/usr/share/nginx/html/Framework/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/test"
