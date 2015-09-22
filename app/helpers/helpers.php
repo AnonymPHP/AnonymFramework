@@ -138,11 +138,12 @@ if (!function_exists('view')) {
      *
      * @param string $file the file name
      * @param array $parameters the paramaters to be sent
+     * @param array $parameters the parameters for $language files
      * @return mixed
      */
-    function view($file = '', $parameters = [])
+    function view($file = '', $parameters = [], $mergeParameters = [])
     {
-        return View::make($file, $parameters);
+        return View::make($file, $parameters, $mergeParameters);
     }
 }
 
