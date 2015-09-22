@@ -12,60 +12,20 @@ return [
 
 
     /**
-     * | ****************
      * |
-     * | driver can be file, twig, smarty or blade
+     * | The path of view files, please do not touch this
      * |
-     * | *****************
      */
-    'driver' => 'blade',
-    /**
-     * | ****************
-     * |
-     * | this configs used for twig driver
-     * |
-     * | *****************
-     */
-    'twig' => [
+    'view' => RESOURCE . 'views',
 
-    ],
-    /**
-     * | ****************
-     * |
-     * | this configs used for smarty driver
-     * |
-     * | *****************
-     */
-    'smarty' => [
 
-    ],
     /**
-     * | ****************
      * |
-     * | this configs used for blade driver
+     * | The path of view cache files, please do not touch this
      * |
-     * | *****************
      */
-    'blade' => [
-        'view' => RESOURCE . 'views',
-        'cache' => RESOURCE . 'cache',
-    ],
-    /**
-     * | ****************
-     * |
-     * | the extension type of view files
-     * |
-     * | *****************
-     */
-    'ext' => '.php',
-    /**
-     * | ****************
-     * |
-     * | the root dir of view files
-     * |
-     * | *****************
-     */
-    'root' => VIEW,
+    'cache' => RESOURCE . 'cache',
+
     /**
      * | ****************
      * |
@@ -74,27 +34,5 @@ return [
      * | *****************
      */
     'language' => LANGUAGE,
-    /**
-     * | ****************
-     * |
-     * | the files of header
-     * | please change this in ViewService
-     * |
-     * | *****************
-     */
-    'header' => [
-
-    ],
-    /**
-     * | ****************
-     * |
-     * | the files of footer
-     * | please change this in ViewService
-     * |
-     * | *****************
-     */
-    'footer' => [
-    ],
-
 
 ];
