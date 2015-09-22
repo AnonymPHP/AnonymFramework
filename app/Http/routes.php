@@ -9,8 +9,6 @@
  * Thanks for using
  */
 
-get('/', function () {
+Route::get('/', function () {
     return view('welcome');
 });
-
-
