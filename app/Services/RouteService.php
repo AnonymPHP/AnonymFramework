@@ -33,7 +33,7 @@ class RouteService extends ServiceProvider
         });
 
 
-        App::bind('route.middleware.failed',  function(){
+        App::bind('route.middleware.failed', function () {
             throw new MiddlewareException('You can\'t access here, your authority is incorrect');
         });
     }
