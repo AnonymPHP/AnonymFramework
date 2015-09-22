@@ -18,4 +18,6 @@ use Anonym\Facades\Element;
  * Class {{ name }}
  * @package App\Models
  */
-class {{ name }}  extends Element {}
+class {{ name }}  extends Element {
+        public $table = '{{ lower-name }}'
+}

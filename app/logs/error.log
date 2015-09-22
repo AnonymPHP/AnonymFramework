@@ -1,0 +1,1 @@
+2015/09/22 06:11:21 [error] 10370#0: *14 open() "/usr/share/nginx/html/First/public/images/ico/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /images/ico/favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
