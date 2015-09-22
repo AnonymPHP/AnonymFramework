@@ -59,6 +59,7 @@ class MakeModelCommand extends Command implements HandleInterface
 
         parent::__construct();
     }
+
     /**
      *
      * @param InputInterface $input
