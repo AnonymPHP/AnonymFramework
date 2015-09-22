@@ -36,3 +36,4 @@
 2015/09/22 21:59:39 [error] 1153#0: *30 open() "/usr/share/nginx/html/First/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
 2015/09/22 23:38:00 [error] 14266#0: *1 directory index of "/usr/share/nginx/html/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost"
 2015/09/22 23:44:18 [error] 14266#0: *21 directory index of "/usr/share/nginx/html/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost"
+[23.09.2015- 02:00] Message = Undefined variable: aa (View: /usr/share/nginx/html/Framework/resources/views/welcome.blade.php) : (File-Line) = /usr/share/nginx/html/Framework/resources/cache/9239f1e50cbcd83c4ae6eda41c96e0aa-55 

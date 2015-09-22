@@ -51,5 +51,3 @@
         </div>
     </body>
 </html>
-
-{{ $test }}
