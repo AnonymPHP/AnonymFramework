@@ -74,7 +74,7 @@ class MakeModelCommand extends Command implements HandleInterface
         $generator = new TemplateGenerator($content);
         $name = $this->argument('name');
 
-        $path = 'App/Models/'.$name.'.php';
+        $path = 'app/Models/'.$name.'.php';
 
         // create content
         $generated = $generator->generate(['name' => $name]);
