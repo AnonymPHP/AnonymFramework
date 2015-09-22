@@ -28,8 +28,8 @@ class ViewService extends ServiceProvider
      */
     public function register()
     {
-        View::composer('welcome', function ($view) {
-            $view->with('test', 'deneme');
+        View::composer('index', function ($view) {
+            $view->with('aa', 'bb');
         });
     }
 }
