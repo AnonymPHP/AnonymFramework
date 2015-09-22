@@ -12,5 +12,3 @@
 get('/', function () {
     return view('welcome');
 });
-
-
