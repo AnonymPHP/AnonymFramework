@@ -9,6 +9,8 @@
  * Thanks for using
  */
 
-get('/', function(){
+get('/', function () {
     return view('welcome');
 });
+
+

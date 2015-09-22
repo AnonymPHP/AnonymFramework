@@ -23,3 +23,5 @@
 [22.09.2015- 02:00] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-230 
 [22.09.2015- 02:02] Message = There is no route in your GET method : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/Router.php-230 
 [22.09.2015- 02:04] Message = You can not access here. : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/ActionDispatcher.php-107 
+[22.09.2015- 04:11] Message = You Can not access here. : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-route/ActionDispatcher.php-107 
+2015/09/22 04:11:32 [error] 1152#0: *1 open() "/usr/share/nginx/html/Framework/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
