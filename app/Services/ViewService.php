@@ -14,6 +14,7 @@ namespace App\Services;
 
 use Anonym\Bootstrap\ServiceProvider;
 use Anonym\Facades\Config;
+use Anonym\Facades\View;
 
 /**
  * Class ViewService
@@ -27,6 +28,8 @@ class ViewService extends ServiceProvider
      */
     public function register()
     {
-
+        View::composer('welcome', function ($view) {
+            $view->with('test', 'deneme');
+        });
     }
 }
