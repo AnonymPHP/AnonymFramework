@@ -77,7 +77,7 @@ class MakeModelCommand extends Command implements HandleInterface
         $path = 'app/Models/'.$name.'.php';
 
         // create content
-        $generated = $generator->generate(['name' => $name]);
+        $generated = $generator->generate(['name' => $name, 'lower-name' => strtolower($name)]);
         if (!$this->file->exists($path)) {
             $this->file->create($path);
 
