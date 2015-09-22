@@ -23,31 +23,10 @@ class ViewService extends ServiceProvider
 {
 
     /**
-     * the list of header files
-     *
-     * @var array
-     */
-    protected $headers = [
-
-    ];
-
-    /**
-     * the list of footer files
-     *
-     * @var array
-     */
-    protected $footers = [
-
-    ];
-
-    /**
-     * register the provider
-     *
-     * @return mixed
+     *  register the composer and creator files in here
      */
     public function register()
     {
-        Config::set('view.header', $this->headers);
-        Config::set('view.footer', $this->footers);
+
     }
 }
