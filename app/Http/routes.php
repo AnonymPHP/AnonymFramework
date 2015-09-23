@@ -9,6 +9,14 @@
  * Thanks for using
  */
 
-get('/', function () {
-    return view('welcome');
+Route::when('/blog', function ($route) {
+
+    get('/{page:int}', function () {
+        return view('welcome');
+    });
+
+    get('/blog-search', function () {
+        return view('welcome');
+    });
+
 });
