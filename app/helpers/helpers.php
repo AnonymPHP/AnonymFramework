@@ -143,7 +143,7 @@ if (!function_exists('view')) {
      */
     function view($file = '', $parameters = [], $mergeParameters = [])
     {
-        return View::make($file, $parameters, $mergeParameters);
+        return $file !== '' ? View::make($file, $parameters, $mergeParameters) : app('view');
     }
 }
 
@@ -187,7 +187,7 @@ if (!function_exists('assign')) {
      */
     function assign($name = '', $value = '')
     {
-        return View::assign($name, $value);
+        return View::with($name, $value);
     }
 }
 
