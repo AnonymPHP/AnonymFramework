@@ -10,6 +10,7 @@
 
 namespace Console\Commands;
 
+use Anonym\Support\TemplateGenerator;
 use Anonym\Components\Console\Command;
 use Anonym\Components\Filesystem\Filesystem;
 use Anonym\Components\Console\HandleInterface;
