@@ -10,8 +10,8 @@
 
 namespace Console\Commands;
 
-
 use Anonym\Components\Console\Command;
+use Anonym\Components\Filesystem\Filesystem;
 use Anonym\Components\Console\HandleInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -28,14 +28,35 @@ class MakeMiddlewareCommand extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $signature = '';
+    protected $signature = 'make:middleware {name}';
 
     /**
      * the description of command
      *
      * @var string
      */
-    protected $description = '';
+    protected $description = 'create a new middleware with <name>';
+
+
+    /**
+     * the instance of filesystem
+     *
+     * @var Filesystem
+     */
+    protected $file;
+
+    /**
+     * create a new isntance and register filesystem
+     *
+     * @param Filesystem $filesystem
+     */
+    public function __construct(Filesystem $filesystem)
+    {
+        $this->file = $filesystem;
+
+        parent::__construct();
+    }
+
 
     /**
      *
@@ -45,6 +66,19 @@ class MakeMiddlewareCommand extends Command implements HandleInterface
      */
     public function handle(InputInterface $input, OutputInterface $output)
     {
-        //
+        $content = $this->file->get(RESOURCE . 'migrations/middleware.php.dist');
+
+        $name = $this->argument('name');
+
+        $template = new TemplateGenerator($content);
+        $generated = $template->generate([
+            'name' => $name
+        ]);
+
+
+        $path = HTTP . 'Middleware/' . $name . '.php';
+        $this->file->put($path, $generated);
+
+        $this->info(sprintf('%s middleware created with successfully in %s', $name, $path));
     }
 }

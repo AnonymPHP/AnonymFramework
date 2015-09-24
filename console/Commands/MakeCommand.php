@@ -37,7 +37,7 @@ class MakeCommand extends Command implements HandleInterface
      *
      * @var string
      */
-    protected $description = '';
+    protected $description = 'Create a new console command with <name>';
 
 
     /**
