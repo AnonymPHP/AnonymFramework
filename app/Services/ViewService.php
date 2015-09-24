@@ -29,7 +29,6 @@ class ViewService extends ServiceProvider
     public function register()
     {
 
-
         $this->composers();
     }
 
