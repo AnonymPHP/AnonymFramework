@@ -1,0 +1,2 @@
+[24.09.2015- 07:48] Message = Command class "Console\Commands\MakeCommand" is not correctly initialized. You probably forgot to call the parent constructor. : (File-Line) = /usr/share/nginx/html/Framework/vendor/symfony/console/Application.php-395 
+[24.09.2015- 07:48] Message = Command class "Console\Commands\MakeCommand" is not correctly initialized. You probably forgot to call the parent constructor. : (File-Line) = /usr/share/nginx/html/Framework/vendor/symfony/console/Application.php-395 

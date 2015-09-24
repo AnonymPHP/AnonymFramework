@@ -55,6 +55,8 @@ class MakeCommand extends Command implements HandleInterface
     public function __construct(Filesystem $filesystem)
     {
         $this->file = $filesystem;
+
+        parent::__construct();
     }
 
     /**
