@@ -29,10 +29,11 @@ use Console\Commands\MakeSeedCommand;
 use Console\Commands\OptimizeCommand;
 use Anonym\Components\Console\Kernel;
 use Console\Commands\MakeController;
+use Illuminate\Container\Container;
 use Console\Commands\MakeListener;
 use Console\Commands\Installation;
+use Console\Commands\MakeCommand;
 use Console\Commands\MakeBlade;
-use Illuminate\Container\Container;
 use Console\Commands\MakeEvent;
 use Console\Commands\Migration;
 use Console\Commands\MakeView;
@@ -72,10 +73,11 @@ class System extends Kernel
         MakeController::class,
         MakeListener::class,
         Installation::class,
-        MakeEvent::class,
+        MakeCommand::class,
         MakeBlade::class,
-        MakeView::class,
         Migration::class,
+        MakeEvent::class,
+        MakeView::class,
         Backup::class
     ];
 
