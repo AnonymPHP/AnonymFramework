@@ -10,9 +10,10 @@
 
 namespace Console;
 
-use Console\Commands\MigrationForgetCommand;
 use Anonym\Components\Cron\Cron as Schedule;
+use Console\Commands\MigrationForgetCommand;
 use Console\Commands\LoginLogsClearCommand;
+use Console\Commands\MakeMiddlewareCommand;
 use Console\Commands\MakeMigrationCommand;
 use Console\Commands\ClearCompiledCommand;
 use Console\Commands\DeploySeedAllCommand;
@@ -56,14 +57,15 @@ class System extends Kernel
     protected $commands = [
         MigrationForgetCommand::class,
         LoginLogsClearCommand::class,
+        MakeMiddlewareCommand::class,
         MakeMigrationCommand::class,
         ClearCompiledCommand::class,
         DeploySeedAllCommand::class,
         BackupLoaderCommand::class,
         BackupForgetCommand::class,
         MigrationRunCommand::class,
-        MakeBackupCommand::class,
         ConfigCacheCommand::class,
+        MakeBackupCommand::class,
         DeploySeedCommand::class,
         CacheTableCommand::class,
         CacheClearCommand::class,
