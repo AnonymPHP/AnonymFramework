@@ -28,6 +28,20 @@ class ViewService extends ServiceProvider
      */
     public function register()
     {
-        // do nothing for now
+
+
+        $this->composers();
+    }
+
+    /**
+     * register view composers in here or somewhere else, your call
+     *
+     *
+     * @return void
+     */
+    protected function composers()
+    {
+
+
     }
 }
