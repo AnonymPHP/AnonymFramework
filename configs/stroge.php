@@ -112,7 +112,9 @@ return [
          * | *****************
          */
         'cookie' => [
-            'lifetime' => 1800
+            'lifetime' => 1800,
+
+            'encode' => true
         ]
     ]
 ];
