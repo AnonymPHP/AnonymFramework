@@ -140,4 +140,17 @@ return [
      */
 
     'debug' => true,
+
+    /**
+     * |--------------------------------------------------
+     * | Application Config Option
+     * | -------------------------------------------------
+     * |
+     * | you select drivers you will use
+     * |
+     */
+    'config' => [
+
+
+    ]
 ];
