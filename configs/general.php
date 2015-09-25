@@ -73,7 +73,7 @@ return [
         \App\Services\RegisterService::class,
         \App\Services\MiddlewareService::class,
         \Anonym\Providers\RouteProvider::class,
-        \Anonym\Providers\CookieProvider::class,
+        \Anonym\Cookie\CookieServiceProvider::class,
         \Anonym\Providers\ErrorBagServiceProvider::class,
         \Anonym\Components\Session\SessionServiceProvider::class,
     ],
