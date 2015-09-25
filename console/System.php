@@ -11,34 +11,7 @@
 namespace Console;
 
 use Anonym\Cron\Cron as Schedule;
-use Console\Commands\MigrationForgetCommand;
-use Console\Commands\LoginLogsClearCommand;
-use Console\Commands\MakeMiddlewareCommand;
-use Console\Commands\MakeMigrationCommand;
-use Console\Commands\ClearCompiledCommand;
-use Console\Commands\DeploySeedAllCommand;
-use Console\Commands\BackupLoaderCommand;
-use Console\Commands\BackupForgetCommand;
-use Console\Commands\MigrationRunCommand;
-use Console\Commands\MakeBackupCommand;
-use Console\Commands\ConfigCacheCommand;
-use Console\Commands\DeploySeedCommand;
-use Console\Commands\CacheTableCommand;
-use Console\Commands\CacheClearCommand;
-use Console\Commands\MakeModelCommand;
-use Console\Commands\MakeSeedCommand;
-use Console\Commands\OptimizeCommand;
 use Anonym\Console\Kernel;
-use Console\Commands\MakeController;
-use Illuminate\Container\Container;
-use Console\Commands\MakeListener;
-use Console\Commands\Installation;
-use Console\Commands\MakeCommand;
-use Console\Commands\MakeBlade;
-use Console\Commands\MakeEvent;
-use Console\Commands\Migration;
-use Console\Commands\MakeView;
-use Console\Commands\Backup;
 use Anonym\Facades\App;
 
 /**
