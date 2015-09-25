@@ -135,4 +135,4 @@ use Anonym\Application\Application;
  * |  create a new application and return it
  * |----------------------------
  */
-return new Bootstrap('AnonymPHP', 2);
+return new Application('AnonymPHP', 2);
