@@ -50,16 +50,29 @@ return [
         'driver' => 'file',
 
         /**
-         * | ****************
+         * | --------------------------------
          * |
-         * | cache file driver configs
+         * | Cache file driver configs
          * |
-         * | *****************
+         * | ---------------------------------
+         * |
+         * | ext = the extension of cache files
+         * | folder = the folder path of cache files
          */
+
         'file' => [
             'ext' => '.cache',
             'folder' => RESOURCE . 'cache',
         ],
+
+        'memcache' => [
+
+        ],
+
+        'redis' => [
+
+        ],
+
 
     ],
 
