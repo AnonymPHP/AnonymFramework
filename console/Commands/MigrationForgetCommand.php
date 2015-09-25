@@ -9,8 +9,9 @@
  */
 
 namespace Console\Commands;
-use Anonym\Components\Console\Command;
-use Anonym\Components\Console\HandleInterface;
+
+use Anonym\Console\Command;
+use Anonym\Console\HandleInterface;
 use Anonym\Facades\Anonym;
 use Anonym\Filesystem\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;

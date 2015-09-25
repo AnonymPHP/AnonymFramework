@@ -10,7 +10,7 @@
 namespace App\Services;
 
 use Anonym\Bootstrap\ServiceProvider;
-use Anonym\Components\Event\EventCollector;
+use Anonym\Event\EventCollector;
 use Anonym\Facades\Config;
 
 /**

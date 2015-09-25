@@ -11,9 +11,9 @@
 namespace Console\Commands;
 
 
-use Anonym\Components\Console\Command;
-use Anonym\Components\Console\HandleInterface;
-use Anonym\Components\Tools\Seeder;
+use Anonym\Console\Command;
+use Anonym\Console\HandleInterface;
+use Anonym\Tools\Seeder;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Finder\Finder;

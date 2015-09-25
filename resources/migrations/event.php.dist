@@ -11,7 +11,7 @@
 
 namespace App\Events;
 
-use Anonym\Components\Event\Event;
+use Anonym\Event\Event;
 
 /**
  * Class {{ name }}

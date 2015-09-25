@@ -10,8 +10,8 @@
 
 namespace Console\Commands;
 use Anonym\Facades\BackupLoader;
-use Anonym\Components\Console\Command;
-use Anonym\Components\Console\HandleInterface;
+use Anonym\Console\Command;
+use Anonym\Console\HandleInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 

@@ -13,8 +13,8 @@ namespace Console\Commands;
 
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
-use Anonym\Components\Console\HandleInterface;
-use Anonym\Components\Console\Command;
+use Anonym\Console\HandleInterface;
+use Anonym\Console\Command;
 use Anonym\Support\TemplateGenerator;
 
 /**

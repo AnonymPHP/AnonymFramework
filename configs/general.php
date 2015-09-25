@@ -22,16 +22,16 @@ return [
      */
 
     'alias' => [
-        'Mail' => \Anonym\Components\Mail\Mail::class,
-        'Cookie' => \Anonym\Components\Cookie\Cookie::class,
-        'Crypt' => \Anonym\Components\Crypt\Crypter::class,
+        'Mail' => \Anonym\Mail\Mail::class,
+        'Cookie' => \Anonym\Cookie\Cookie::class,
+        'Crypt' => \Anonym\Crypt\Crypter::class,
         'Config' => \Anonym\Config\Reposity::class,
         'Route' => \Anonym\Facades\Route::class,
         'Query' => \Anonym\Facades\Query::class,
         'Input' => \Anonym\Facades\Input::class,
-        'Redirect' => \Anonym\Components\HttpClient\Redirect::class,
+        'Redirect' => \Anonym\HttpClient\Redirect::class,
         'Event' => \Anonym\Event\EventDispatcher::class,
-        'Guard' => \Anonym\Components\Security\Authentication\Guard::class,
+        'Guard' => \Anonym\Security\Authentication\Guard::class,
         'App' => \Anonym\Facades\App::class,
         'Session' => \Anonym\Facades\Session::class,
         'Response' => \Anonym\Facades\Response::class,
@@ -65,7 +65,7 @@ return [
      * |
      */
     'providers' => [
-        \Anonym\Components\Database\Pagination\PaginationServiceProvider::class,
+        \Anonym\Database\Pagination\PaginationServiceProvider::class,
         \Anonym\Cookie\CookieServiceProvider::class,
         \App\Services\ViewService::class,
         \App\Services\EventService::class,
@@ -75,7 +75,7 @@ return [
         \App\Services\MiddlewareService::class,
         \Anonym\Providers\RouteProvider::class,
         \Anonym\Providers\ErrorBagServiceProvider::class,
-        \Anonym\Components\Session\SessionServiceProvider::class,
+        \Anonym\Session\SessionServiceProvider::class,
     ],
 
     /**

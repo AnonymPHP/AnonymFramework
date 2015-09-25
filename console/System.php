@@ -10,7 +10,7 @@
 
 namespace Console;
 
-use Anonym\Components\Cron\Cron as Schedule;
+use Anonym\Cron\Cron as Schedule;
 use Console\Commands\MigrationForgetCommand;
 use Console\Commands\LoginLogsClearCommand;
 use Console\Commands\MakeMiddlewareCommand;
@@ -28,7 +28,7 @@ use Console\Commands\CacheClearCommand;
 use Console\Commands\MakeModelCommand;
 use Console\Commands\MakeSeedCommand;
 use Console\Commands\OptimizeCommand;
-use Anonym\Components\Console\Kernel;
+use Anonym\Console\Kernel;
 use Console\Commands\MakeController;
 use Illuminate\Container\Container;
 use Console\Commands\MakeListener;

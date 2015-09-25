@@ -10,10 +10,10 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Anonym\Components\Database\Exceptions\QueryException;
-use Anonym\Components\Crypt\SecurityKeyGenerator;
-use Anonym\Components\Mail\DriverInterface;
-use Anonym\Components\Route\Controller;
+use Anonym\Database\Exceptions\QueryException;
+use Anonym\Crypt\SecurityKeyGenerator;
+use Anonym\Mail\DriverInterface;
+use Anonym\Route\Controller;
 use Anonym\Support\TemplateGenerator;
 use Anonym\Facades\Register;
 use Anonym\Facades\Element;

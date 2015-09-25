@@ -6,9 +6,9 @@
 
 namespace App\Database\Migrations;
 
-use Anonym\Components\Tools\Migration;
-use Anonym\Components\Tools\MigrationInterface;
-use Anonym\Components\Tools\Table;
+use Anonym\Tools\Migration;
+use Anonym\Tools\MigrationInterface;
+use Anonym\Tools\Table;
 use Anonym\Facades\Schema;
 
 class User extends Migration implements MigrationInterface

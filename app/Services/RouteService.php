@@ -11,7 +11,7 @@
 namespace App\Services;
 
 use Anonym\Bootstrap\ServiceProvider;
-use Anonym\Components\Route\RouteMatchException;
+use Anonym\Route\RouteMatchException;
 use Anonym\Facades\App;
 
 /**

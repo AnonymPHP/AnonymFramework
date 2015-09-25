@@ -9,10 +9,11 @@
  */
 
 namespace Console\Commands;
-use Anonym\Components\Console\HandleInterface;
+
+use Anonym\Console\HandleInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
-use Anonym\Components\Console\Command;
+use Anonym\Console\Command;
 use Anonym\Facades\Anonym;
 /**
  * Class MakeMigrationCommand

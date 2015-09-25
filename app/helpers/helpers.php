@@ -722,7 +722,7 @@ if (!function_exists('filter')) {
      *
      * @param string $name the name of filter
      * @param string $regex the expression of filter
-     * @return \Anonym\Components\Route\RouteCollector
+     * @return \Anonym\Route\RouteCollector
      */
     function filter($name = null, $regex = '')
     {

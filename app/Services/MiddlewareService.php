@@ -13,7 +13,7 @@ namespace App\Services;
 
 
 use Anonym\Bootstrap\ServiceProvider;
-use Anonym\Components\Route\AccessBag;
+use Anonym\Route\AccessBag;
 
 /**
  * Class MiddlewareService

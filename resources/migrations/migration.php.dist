@@ -6,8 +6,8 @@
 
 namespace App\Database\Migrations;
 
-use Anonym\Components\Tools\Migration;
-use Anonym\Components\Tools\MigrationInterface;
+use Anonym\Tools\Migration;
+use Anonym\Tools\MigrationInterface;
 
 class {{ name }} extends Migration implements MigrationInterface
 {

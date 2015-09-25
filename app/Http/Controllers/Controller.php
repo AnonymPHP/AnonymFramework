@@ -10,7 +10,7 @@
 
 namespace App\Http\Controllers;
 
-use Anonym\Components\Route\Controller as BaseController;
+use Anonym\Route\Controller as BaseController;
 
 /**
  * Class Controller

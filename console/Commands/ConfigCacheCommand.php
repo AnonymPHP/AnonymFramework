@@ -11,9 +11,9 @@
 namespace Console\Commands;
 
 
-use Anonym\Components\Config\ConfigLoader;
-use Anonym\Components\Console\Command;
-use Anonym\Components\Console\HandleInterface;
+use Anonym\Config\ConfigLoader;
+use Anonym\Console\Command;
+use Anonym\Console\HandleInterface;
 use Anonym\Filesystem\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
