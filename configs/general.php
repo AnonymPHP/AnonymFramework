@@ -143,14 +143,14 @@ return [
 
     /**
      * |--------------------------------------------------
-     * | Application Config Option
+     * | Application Config Setting
      * | -------------------------------------------------
      * |
      * | you select drivers you will use
      * |
+     * | The driver can be 'memcache', 'apc', 'redis', 'xcache', 'standart'
+     * |
+     * |--------------------------------------------------
      */
-    'config' => [
-
-
-    ]
+    'config' => 'standart'
 ];
