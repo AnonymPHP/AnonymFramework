@@ -21,6 +21,11 @@ return [
     'app_key' => 'AnonymPHPRandomString',
 
 
+    /**
+     *  |
+     *  | The timezone of your country
+     *  |
+     */
     'timezone' => 'Europe/Istanbul',
 
     /**
