@@ -11,6 +11,16 @@
 
 return [
 
+    /**
+     * | ************************************
+     * |
+     * | the application special key, this gonna use in crypter and somewhere else.
+     * |
+     * | **************************************
+     */
+    'app_key' => 'AnonymPHPRandomString',
+
+
     'timezone' => 'Europe/Istanbul',
 
     /**
