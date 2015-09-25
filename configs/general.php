@@ -66,6 +66,7 @@ return [
      */
     'providers' => [
         \Anonym\Components\Database\Pagination\PaginationServiceProvider::class,
+        \Anonym\Cookie\CookieServiceProvider::class,
         \App\Services\ViewService::class,
         \App\Services\EventService::class,
         \App\Services\RouteService::class,
@@ -73,7 +74,6 @@ return [
         \App\Services\RegisterService::class,
         \App\Services\MiddlewareService::class,
         \Anonym\Providers\RouteProvider::class,
-        \Anonym\Cookie\CookieServiceProvider::class,
         \Anonym\Providers\ErrorBagServiceProvider::class,
         \Anonym\Components\Session\SessionServiceProvider::class,
     ],
