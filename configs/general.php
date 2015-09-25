@@ -30,7 +30,7 @@ return [
         'Query' => \Anonym\Facades\Query::class,
         'Input' => \Anonym\Facades\Input::class,
         'Redirect' => \Anonym\Components\HttpClient\Redirect::class,
-        'Event' => \Anonym\Components\Event\EventDispatcher::class,
+        'Event' => \Anonym\Event\EventDispatcher::class,
         'Guard' => \Anonym\Components\Security\Authentication\Guard::class,
         'App' => \Anonym\Facades\App::class,
         'Session' => \Anonym\Facades\Session::class,
