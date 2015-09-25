@@ -128,7 +128,7 @@ if (file_exists($path = RESOURCE . 'bootstrap/_compiled.php.cache')) {
     include $path;
 }
 
-use Anonym\Bootstrap\Bootstrap;
+use Anonym\Application\Application;
 
 /**
  * |----------------------------

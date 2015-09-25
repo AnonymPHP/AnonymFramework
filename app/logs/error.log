@@ -1,2 +1,35 @@
 [24.09.2015- 07:48] Message = Command class "Console\Commands\MakeCommand" is not correctly initialized. You probably forgot to call the parent constructor. : (File-Line) = /usr/share/nginx/html/Framework/vendor/symfony/console/Application.php-395 
 [24.09.2015- 07:48] Message = Command class "Console\Commands\MakeCommand" is not correctly initialized. You probably forgot to call the parent constructor. : (File-Line) = /usr/share/nginx/html/Framework/vendor/symfony/console/Application.php-395 
+[25.09.2015- 06:42] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:43] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:44] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:45] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:46] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:47] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:48] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:49] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:50] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:51] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:52] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:53] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:54] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:55] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:56] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:57] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:58] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 06:59] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 07:00] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 07:01] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 07:02] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 07:03] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 07:04] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 07:05] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 07:06] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 07:07] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 02:48] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 02:49] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 02:50] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 02:51] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 02:52] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 02:53] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
+[25.09.2015- 02:54] Message = Class 'Anonym\Config\Reposity' not found : (File-Line) = /usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Application/AliasLoader.php-45 
