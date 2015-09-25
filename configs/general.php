@@ -23,7 +23,7 @@ return [
 
     'alias' => [
         'Mail' => \Anonym\Mail\Mail::class,
-        'Cookie' => \Anonym\Cookie\Cookie::class,
+        'Cookie' => \Anonym\Facades\Cookie::class,
         'Crypt' => \Anonym\Crypt\Crypter::class,
         'Config' => \Anonym\Config\Reposity::class,
         'Route' => \Anonym\Facades\Route::class,
