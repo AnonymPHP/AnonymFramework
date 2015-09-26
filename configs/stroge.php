@@ -75,6 +75,9 @@ return [
 
         'memcache' => [
 
+            'host' => '127.0.0.1',// the hostname of memcache
+            'post' => 11211
+
         ],
 
 
