@@ -674,7 +674,7 @@ if (!function_exists('assets')) {
 
         $defaultPath = $document === 'public' ? '/assets/' : '/public/assets/';
 
-        $packpage = new \Anonym\Component\Assets\VersionPackpage('', '%f', $defaultPath);
+        $packpage = new \Anonym\Assets\VersionPackpage('', '%f', $defaultPath);
         return $name !== null ? $packpage->getUrl($name) : $defaultPath;
     }
 }
