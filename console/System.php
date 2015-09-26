@@ -10,6 +10,7 @@
 
 namespace Console;
 
+use Illuminate\Container\Container;
 use Anonym\Cron\Cron as Schedule;
 use Anonym\Console\Kernel;
 use Anonym\Facades\App;
