@@ -130,6 +130,7 @@ if (file_exists($path = RESOURCE . 'bootstrap/_compiled.php.cache')) {
 
 use Anonym\Application\Application;
 
+
 /**
  * |----------------------------
  * |  create a new application and return it

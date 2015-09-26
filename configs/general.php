@@ -76,7 +76,7 @@ return [
      * | ------------------------------------------------
      * |
      * | If you want register a new service provider,
-     * | it's must be an instance of Anonym\Bootstrap\ServiceProvider
+     * | it's must be an instance of Anonym\Application\ServiceProvider
      * |
      */
     'providers' => [

@@ -10,7 +10,7 @@
 
 namespace App\Services;
 
-use Anonym\Bootstrap\ServiceProvider;
+use Anonym\Application\ServiceProvider;
 use Anonym\Route\RouteMatchException;
 use Anonym\Facades\App;
 

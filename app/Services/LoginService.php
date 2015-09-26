@@ -11,7 +11,7 @@
 
 namespace App\Services;
 
-use Anonym\Bootstrap\ServiceProvider;
+use Anonym\Application\ServiceProvider;
 use Anonym\Facades\Config;
 
 /**

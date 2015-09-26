@@ -9,7 +9,7 @@
  */
 namespace App\Services;
 
-use Anonym\Bootstrap\ServiceProvider;
+use Anonym\Application\ServiceProvider;
 use Anonym\Event\EventCollector;
 use Anonym\Facades\Config;
 

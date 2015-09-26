@@ -24,6 +24,7 @@ if (!file_exists('../system/bootstrap.php')) {
  * |
  * | include system starter and start application
  * |
+ *
  */
-$app = include '../system/bootstrap.php';
 
+$app = include '../system/bootstrap.php';
