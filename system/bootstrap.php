@@ -137,3 +137,5 @@ use Anonym\Application\Application;
  * |----------------------------
  */
 return new Application('AnonymPHP', 2);
+
+
