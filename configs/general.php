@@ -44,7 +44,6 @@ return [
         'Route' => \Anonym\Facades\Route::class,
         'Query' => \Anonym\Facades\Query::class,
         'Input' => \Anonym\Facades\Input::class,
-        'Redirect' => \Anonym\HttpClient\Redirect::class,
         'Event' => \Anonym\Event\EventDispatcher::class,
         'Guard' => \Anonym\Security\Authentication\Guard::class,
         'App' => \Anonym\Facades\App::class,

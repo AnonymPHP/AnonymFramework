@@ -340,3 +340,5 @@
 [27.09.2015- 03:24]
                  Başlıklarınız zaten gönderilmiş, cookie kullanılamaz.
                  - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Cookie/UseCookieHeaders.php:52) 
+[27.09.2015- 04:33]Your redirect:sending event havent got listener - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Event/EventDispatcher.php:138) 
+[27.09.2015- 04:34]Your redirect:sending event havent got listener - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Event/EventDispatcher.php:138) 
