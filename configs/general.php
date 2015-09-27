@@ -91,6 +91,7 @@ return [
         \Anonym\Providers\RouteProvider::class,
         \Anonym\Providers\ErrorBagServiceProvider::class,
         \Anonym\Session\SessionServiceProvider::class,
+        \Anonym\Http\RedirectServiceProvider::class
     ],
 
     /**
