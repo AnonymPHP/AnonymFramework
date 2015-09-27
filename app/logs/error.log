@@ -388,3 +388,7 @@
 [27.09.2015- 04:56]Your redirect:sending event havent got listener - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Event/EventDispatcher.php:138) 
 [27.09.2015- 04:57]Your redirect:sending event havent got listener - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Event/EventDispatcher.php:138) 
 [27.09.2015- 04:58]Your redirect:sending event havent got listener - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Event/EventDispatcher.php:138) 
+[27.09.2015- 06:36]Invalid argument: function: method 'to' not found - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Patterns/Facade.php:89) 
+[27.09.2015- 06:36]Invalid argument: function: method 'to' not found - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Patterns/Facade.php:91) 
+[27.09.2015- 06:37]call_user_func_array() expects parameter 1 to be a valid callback, class 'Anonym\Facades\Redirect' does not have a method 'send' - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Patterns/Facade.php:89) 
+[27.09.2015- 06:37]Invalid argument: function: method 'to' not found - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Patterns/Facade.php:93) 
