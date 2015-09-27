@@ -76,7 +76,8 @@ return [
         'memcache' => [
 
             'host' => '127.0.0.1',// the hostname of memcache
-            'post' => 11211
+            'post' => 11211,  // the port address of memcache
+            'timeout' => 30,
 
         ],
 
@@ -89,7 +90,9 @@ return [
          * | ---------------------------------
          */
         'redis' => [
-
+            '            host' => '127.0.0.1',// the hostname of redis
+            'post' => 6379,  // the port address of redis
+            'timeout' => 30,
         ],
 
 
