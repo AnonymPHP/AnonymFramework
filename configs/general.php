@@ -80,6 +80,7 @@ return [
      * |
      */
     'providers' => [
+        \Anonym\Http\RedirectServiceProvider::class,
         \Anonym\Database\Pagination\PaginationServiceProvider::class,
         \Anonym\Cookie\CookieServiceProvider::class,
         \App\Services\ViewService::class,
@@ -91,7 +92,6 @@ return [
         \Anonym\Providers\RouteProvider::class,
         \Anonym\Providers\ErrorBagServiceProvider::class,
         \Anonym\Session\SessionServiceProvider::class,
-        \Anonym\Http\RedirectServiceProvider::class
     ],
 
     /**
