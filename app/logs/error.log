@@ -337,3 +337,6 @@
 [27.09.2015- 01:50]Class Anonym\Console\MigrationForgetCommand does not exist - (/usr/share/nginx/html/Framework/vendor/illuminate/container/Container.php:723) 
 [27.09.2015- 01:51]Class Anonym\Console\MigrationForgetCommand does not exist - (/usr/share/nginx/html/Framework/vendor/illuminate/container/Container.php:723) 
 [27.09.2015- 01:52]Class Anonym\Console\MigrationForgetCommand does not exist - (/usr/share/nginx/html/Framework/vendor/illuminate/container/Container.php:723) 
+[27.09.2015- 03:24]
+                 Başlıklarınız zaten gönderilmiş, cookie kullanılamaz.
+                 - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Cookie/UseCookieHeaders.php:52) 
