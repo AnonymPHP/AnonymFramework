@@ -80,6 +80,7 @@ return [
      * |
      */
     'providers' => [
+        \Anonym\Crypt\CrypterServiceProvider::class,
         \Anonym\Http\RedirectServiceProvider::class,
         \Anonym\Database\Pagination\PaginationServiceProvider::class,
         \Anonym\Cookie\CookieServiceProvider::class,

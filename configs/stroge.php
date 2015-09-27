@@ -143,10 +143,31 @@ return [
          * |
          * | *****************
          */
+
         'cookie' => [
+
+
             'lifetime' => 1800,
 
-            'encode' => true
+            /**
+             * |-------------------------------
+             * |
+             * | if you entry this true, your cookies will be crypted
+             * |
+             * | ------------------------------
+             */
+
+            'crypting' => true,
+
+            /**
+             * |-------------------------------
+             * |
+             * | The cookie class will use this class if you entry true to crypting config.
+             * |
+             * | Avaible encoders, Base64Encoder, AnonymEncoder
+             * | ------------------------------
+             */
+            'encoder' => \Anonym\Cookie\Base64Encoder::class,
         ]
     ]
 ];
