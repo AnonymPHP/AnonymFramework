@@ -21,9 +21,12 @@ if (!file_exists('../system/bootstrap.php')) {
 
 
 /**
+ * | -----------------------------------
  * |
- * | include system starter and start application
+ * | Include bootstrap.php and get it return value.
+ * | NOTE: system/bootstrap.php is starting application and run it.
  * |
+ * | --------------------------------------
  *
  */
 
