@@ -9,5 +9,7 @@
  * Thanks for using
  */
 
-Route::get('/', 'Index:boot');
+Route::get('/', function(){
+       return view('index');
+});
 

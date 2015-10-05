@@ -67,6 +67,7 @@ return [
         'ErrorBag' => \Anonym\Facades\ErrorBag::class,
         'BackupLoader' => \Anonym\Facades\BackupLoader::class,
         'Backup' => \Anonym\Facades\Backup::class,
+        'Form'   => \Anonym\Facades\Form::class
     ],
 
     /**
@@ -81,6 +82,7 @@ return [
     'providers' => [
         \Anonym\Session\SessionServiceProvider::class,
         \Anonym\Crypt\CrypterServiceProvider::class,
+        \Anonym\Providers\SecurityProvider::class,
         \Anonym\Database\Pagination\PaginationServiceProvider::class,
         \Anonym\Cookie\CookieServiceProvider::class,
         \App\Services\ViewService::class,

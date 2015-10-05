@@ -30,7 +30,7 @@ return [
      */
     'firewall' => [
 
-        'status' => true, // if status === true, process the firewall
+        'status' => false, // if status === true, process the firewall
         /**
          * | ****************
          * |
