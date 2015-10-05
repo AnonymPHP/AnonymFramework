@@ -80,11 +80,11 @@ return [
      * |
      */
     'providers' => [
+        \Anonym\Cookie\CookieServiceProvider::class,
         \Anonym\Session\SessionServiceProvider::class,
         \Anonym\Crypt\CrypterServiceProvider::class,
         \Anonym\Providers\SecurityProvider::class,
         \Anonym\Database\Pagination\PaginationServiceProvider::class,
-        \Anonym\Cookie\CookieServiceProvider::class,
         \App\Services\ViewService::class,
         \App\Services\EventService::class,
         \App\Services\RouteService::class,
