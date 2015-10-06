@@ -8,10 +8,9 @@
  * Thanks for using
  */
 
-namespace Console;
+namespace App\Console;
 
 use Anonym\Application\Application;
-use Illuminate\Container\Container;
 use Anonym\Cron\Cron as Schedule;
 use Anonym\Console\Kernel;
 use Anonym\Facades\App;
