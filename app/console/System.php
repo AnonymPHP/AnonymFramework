@@ -10,6 +10,7 @@
 
 namespace Console;
 
+use Anonym\Application\Application;
 use Illuminate\Container\Container;
 use Anonym\Cron\Cron as Schedule;
 use Anonym\Console\Kernel;
@@ -36,10 +37,10 @@ class System extends Kernel
     /**
      * createa new instance and register version
      *
-     * @param Container $container the instance of anonym application
+     * @param Application $application the instance of anonym application
      * @param int $version the version of anonym console application
      */
-    public function __construct(Container $container, $version = 2)
+    public function __construct(Application $application, $version = 2)
     {
         // register console to facades and more!
         $console = $this;
@@ -48,7 +49,7 @@ class System extends Kernel
             return $console;
         });
 
-        parent::__construct($container, $version);
+        parent::__construct($application, $version);
     }
 
     /**
