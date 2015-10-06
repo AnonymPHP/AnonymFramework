@@ -1872,3 +1872,11 @@ Stack trace:
 [05.10.2015- 06:47]
                  Başlıklarınız zaten gönderilmiş, cookie kullanılamaz.
                  - (/usr/share/nginx/html/Framework/vendor/anonym-php/anonym-library/src/Anonym/Cookie/UseCookieHeaders.php:52) 
+[06.10.2015- 10:48]Your Anonym\Application\RegisterProviders proiver must be a instance of ServiceProvider - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Application\RegisterProviders.php:54) 
+[06.10.2015- 10:48]Illegal offset type in isset or empty - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Support\Arr.php:244) 
+[06.10.2015- 10:49]Illegal offset type in isset or empty - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Support\Arr.php:246) 
+[06.10.2015- 10:49]Illegal offset type in isset or empty - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Support\Arr.php:245) 
+[06.10.2015- 10:50]Illegal offset type in isset or empty - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Support\Arr.php:245) 
+[06.10.2015- 10:51]Illegal offset type in isset or empty - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Support\Arr.php:245) 
+[06.10.2015- 10:51]Undefined index: status - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Providers\SecurityProvider.php:128) 
+[06.10.2015- 10:51]Undefined index: status - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Providers\SecurityProvider.php:128) 
