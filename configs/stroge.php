@@ -152,7 +152,7 @@ return [
             /**
              *   -----------------------------
              * |
-             * | The cookie expration date
+             * | The cookie expiration date
              * |
              *   -----------------------------
              */
