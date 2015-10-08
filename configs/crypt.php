@@ -38,14 +38,5 @@ return [
      */
     'mode' => MCRYPT_MODE_ECB,
 
-    /**
-     * | --------------------------------
-     * |
-     * | the classname of crypter, Crypt class gonna use this.
-     * |
-     * | Avaible Classes : AnonymCrypt, Base64Crypt, Md5Crypt
-     * | --------------------------------
-     */
-    'crypter' => \Anonym\Crypt\AnonymCrypt::class
 
 ]; 
