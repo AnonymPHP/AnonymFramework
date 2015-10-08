@@ -39,7 +39,7 @@ return [
     'alias' => [
         'Mail' => \Anonym\Mail\Mail::class,
         'Cookie' => \Anonym\Facades\Cookie::class,
-        'Crypt' => \Anonym\Crypt\Crypter::class,
+        'Crypt' => \Anonym\Facades\Crypt::class,
         'Config' => \Anonym\Config\Reposity::class,
         'Route' => \Anonym\Facades\Route::class,
         'Query' => \Anonym\Facades\Query::class,
