@@ -107,7 +107,7 @@ return [
      */
     'session' => [
 
-        'encrypt' => true,
+        'encrypt' => false,
 
         /**
          * | ****************
