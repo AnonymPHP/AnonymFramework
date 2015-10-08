@@ -12,7 +12,7 @@
 Route::get(
     '/',
     function () {
-        Session::set('bb','cc');
+
     }
 );
 
