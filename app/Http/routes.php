@@ -11,6 +11,8 @@
 
 Route::get(
     '/',
-    function () {}
+    function () {
+        Session::set('bb','cc');
+    }
 );
 
