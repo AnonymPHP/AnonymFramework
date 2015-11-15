@@ -47,6 +47,7 @@
                 <div class="title">Anonym 2</div>
 
                 <p class="title-micro">Professional PHP Framework</p>
+                <p class="title-micro">IT is WORKING!</p>
             </div>
         </div>
     </body>
