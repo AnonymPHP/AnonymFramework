@@ -29,8 +29,21 @@ return [
         'username' => '',
         'password' => '',
         'port' => 587,
-        'driver' => 'swift'
+        'driver' => 'swift',
+
+        'from' => [
+            'mail' => 'vahit.serif119@gmail.com',
+            'name' => 'Vahit'
+        ]
     ],
 
-    'your_address' => 'vahit.serif119@gmail.com',
+    'mail_trap' => [
+        'username' => '',
+        'password' => '',
+
+        'from' => [
+            'mail' => 'vahit.serif119@gmail.com',
+            'name' => 'Vahit'
+        ]
+    ]
 ];

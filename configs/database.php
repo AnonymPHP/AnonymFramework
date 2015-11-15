@@ -10,7 +10,6 @@
 
 return [
 
-
     /**
      * | ****************
      * |
@@ -19,6 +18,7 @@ return [
      * | *****************
      */
     'autostart' => true,
+
     /**
      * | ****************
      * |
@@ -26,7 +26,7 @@ return [
      * |
      * | *****************
      */
-    'connection' => 'default',  // selected connection, has to be in connections
+    'connection' => 'default',  // the selected connection name must be an index of connections array
 
     'connections' =>
         [
@@ -50,7 +50,7 @@ return [
                 /**
                  * | ****************
                  * |
-                 * | the variable of database username
+                 * | the username to sql connection
                  * |
                  * | *****************
                  */
@@ -59,20 +59,20 @@ return [
                 /**
                  * | ****************
                  * |
-                 * | the variable of database password
+                 * | the password to sql connection
                  * |
                  * | *****************
                  */
                 'password' => 123456,
-                /**
-                 * | ****************
-                 * |
-                 * | driver can be pdo or mysqli
-                 * |
-                 * | *****************
-                 */
 
-                'driver' => 'pdo',
+                /**
+                 * | ********************
+                 * |
+                 * | The type of sql driver.
+                 * |
+                 * | ********************
+                 */
+                'bridge' => 'mysql'
             ],
         ],
     /**
