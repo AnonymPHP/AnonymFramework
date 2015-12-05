@@ -107,7 +107,7 @@ return [
      */
     'session' => [
 
-        'encrypt' => false,
+        'encrypt' => false, // you can not use this with cookie driver, there is a bug with crypting for now
 
         /**
          * | ****************
