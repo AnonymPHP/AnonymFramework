@@ -119,6 +119,8 @@ define('ASSETS', PUBLIC_FILES . 'assets/');
 
 if(file_exists($autoloader =  BASE . 'vendor/autoload.php')){
     include $autoloader;
+}else{
+    die('Autoloader was not activated');
 }
 
 
