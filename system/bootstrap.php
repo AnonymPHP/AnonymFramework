@@ -117,7 +117,10 @@ define('ASSETS', PUBLIC_FILES . 'assets/');
  * |----------------------------
  */
 
-include BASE . 'vendor/autoload.php';
+if(file_exists($autoloader =  BASE . 'vendor/autoload.php')){
+    include $autoloader;
+}
+
 
 /**
  * |
