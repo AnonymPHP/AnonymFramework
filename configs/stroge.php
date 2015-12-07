@@ -112,7 +112,7 @@ return [
         /**
          * | ****************
          * |
-         * | driver can be = file, cache, database, cookie
+         * | driver can be = file, cache, database, php
          * |
          * | *****************
          */

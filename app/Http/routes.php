@@ -14,7 +14,7 @@
 Route::get(
     '/',
     function () {
-
+        Session::set('aa', 'bb');
         return view('welcome');
     }
 );
