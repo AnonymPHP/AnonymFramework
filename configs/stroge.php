@@ -139,35 +139,13 @@ return [
         ],
 
         /**
-         * | ****************
+         *   -----------------------------
          * |
-         * | cookie driver configs
-         * | lifetime must be an integer
+         * | The session expiration date
          * |
-         * | *****************
+         *   -----------------------------
          */
+        'lifetime' => 1800,
 
-        'cookie' => [
-
-            /**
-             *   -----------------------------
-             * |
-             * | The cookie expiration date
-             * |
-             *   -----------------------------
-             */
-            'lifetime' => 1800,
-
-            /**
-             * |-------------------------------
-             * |
-             * | if you entry this true, your cookies will be crypted
-             * |
-             * | ------------------------------
-             */
-
-            'crypting' => true,
-
-        ]
     ]
 ];
