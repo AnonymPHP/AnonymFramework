@@ -8,14 +8,14 @@
  * Thanks for using
  */
 
-namespace App\Database\Seeds;
+namespace Database\Seeds;
 
 use Anonym\Tools\Seeder;
 use Anonym\Tools\SeedInterface;
 
 /**
  * Class {{ name }}
- * @package App\Database\Seeds;
+ * @package Database\Seeds;
  */
 class {{ name }} extends Seeder implements SeedInterface{
 
