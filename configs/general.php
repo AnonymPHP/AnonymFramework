@@ -53,7 +53,7 @@ return [
         'Stroge' => \Anonym\Facades\Stroge::class,
         'Cache' => \Anonym\Facades\Cache::class,
         'Csrf'  => \Anonym\Facades\Csrf::class,
-        'Database' => \Anonym\Facades\Database::class,
+        'database' => \Anonym\Facades\Database::class,
         'Login'  => \Anonym\Facades\Login::class,
         'Migration' => \Anonym\Facades\Migration::class,
         'Register' => \Anonym\Facades\Register::class,

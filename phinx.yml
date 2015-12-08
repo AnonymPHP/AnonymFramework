@@ -1,2 +1,2 @@
 paths:
-    migrations: Application/Database/Migrations/
+    migrations: Application/database/migrations/

@@ -25,18 +25,32 @@
                         class="icon-bar"></span></button>
             <div class="collapse navbar-collapse navMenuCollapse">
                 <ul class="nav">
-                    <li><a href="kophack.com">Documantation</a></li>
+                    <li><a href="http://kophack.com/documantation">Documantation</a></li>
                 </ul>
             </div>
         </div>
     </nav><!-- TEXT 1COL BLOCK -->
-    <section id="text-1col">
+
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <center>
-                        <h2>AnonymPHP Framework</h2>.
-                        <h5 class="sub-title">The best PHP Framework</h5>
+                        <div class="col-lg-12 pull-left">
+                            <img src="{{ asset('header.png') }}" alt="AnonymPHP Framework" height="128px" width="128px">
+                        </div>
+
+                        <div class="col-lg-12 pull-left" style="margin-top: 20px;">
+                            <h2>AnonymPHP Framework</h2>.
+                        </div>
+                        <h6 class="sub-title">The best PHP Framework</h6>
+
+                        <div class="col-lg-12 pull-left">
+                            <a href="http://kophack.com" class="btn btn-default"
+                                 style="margin-top:20px; border:1px solid #ABB2B5; color: #000;padding-right: 20px;padding-left: 20px;">
+                                See More
+                            </a>
+                        </div>
                     </center>
                 </div>
             </div>

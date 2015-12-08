@@ -68,7 +68,7 @@ define('VIEW', RESOURCE . 'views/');
  * |the constant for database files
  * |----------------------------
  */
-define('DATABASE', APP . 'Database/');
+define('DATABASE', APP . 'database/');
 
 /**
  * |----------------------------
@@ -88,7 +88,7 @@ define('ROUTE_PHP', HTTP . 'routes.php');
  * |the constant for migration files
  * |----------------------------
  */
-define('MIGRATION', DATABASE . 'Migrations/');
+define('MIGRATION', DATABASE . 'migrations/');
 
 /**
  * |----------------------------
