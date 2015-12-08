@@ -10,6 +10,19 @@
 
 return [
 
+
+    /**
+     *  if you wanna change some opts abouts cookie, you can do it at here.
+     */
+    'cookie' => [
+
+        /**
+         *  if you put this true, your cookie datas will be encrypted.
+         */
+        'crypting' => false
+
+    ],
+
     /**
      * | ****************
      * |
