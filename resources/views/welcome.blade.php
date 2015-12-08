@@ -3,7 +3,8 @@
     <head>
         <title>AnonymPHP</title>
 
-        <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ asset('style.css') }}">
+        <link rel="stylesheet" href="{{ asset('bootstrap.css') }}">
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
         <style>
