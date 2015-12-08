@@ -68,7 +68,7 @@ define('VIEW', RESOURCE . 'views/');
  * |the constant for database files
  * |----------------------------
  */
-define('DATABASE', APP . 'database/');
+define('DATABASE',  'database/');
 
 /**
  * |----------------------------
@@ -95,14 +95,14 @@ define('MIGRATION', DATABASE . 'migrations/');
  * |the constant for migrations namespace
  * |----------------------------
  */
-define('MIGRATION_NAMESPACE', 'App\Database\Migrations\\');
+define('MIGRATION_NAMESPACE', 'Database\\Migrations\\');
 
 /**
  * |----------------------------
  * |the constant for backups files
  * |----------------------------
  */
-define('BACKUP', DATABASE . 'Backups/');
+define('BACKUP', DATABASE . 'backups/');
 
 /**
  * |----------------------------
