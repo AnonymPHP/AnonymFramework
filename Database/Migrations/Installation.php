@@ -11,6 +11,10 @@ use Anonym\Tools\MigrationInterface;
 use Anonym\Tools\Table;
 use Anonym\Facades\Schema;
 
+/**
+ * Class Installation
+ * @package App\Database\Migrations
+ */
 class Installation extends Migration implements MigrationInterface
 {
 

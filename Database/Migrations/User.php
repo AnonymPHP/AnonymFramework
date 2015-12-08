@@ -11,6 +11,10 @@ use Anonym\Tools\MigrationInterface;
 use Anonym\Tools\Table;
 use Anonym\Facades\Schema;
 
+/**
+ * Class User
+ * @package App\Database\Migrations
+ */
 class User extends Migration implements MigrationInterface
 {
 
