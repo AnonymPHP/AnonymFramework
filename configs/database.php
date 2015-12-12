@@ -85,6 +85,8 @@ return [
 
     'tables' => [
 
+        'billing' => 'billing',
+
         /**
          * | ****************
          * |
