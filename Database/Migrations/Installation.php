@@ -4,7 +4,7 @@
  * @copyright GemMedya, 2015
  */
 
-namespace App\Database\Migrations;
+namespace Database\Migrations;
 
 use Anonym\Tools\Migration;
 use Anonym\Tools\MigrationInterface;
