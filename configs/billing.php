@@ -21,6 +21,11 @@ return [
     'table_name' => 'billing',
 
     /**
+     *  determine how many days will be trail
+     */
+    'trail_days' => 14,
+
+    /**
      * | ********************************
      * |
      * | the plans and their days.
