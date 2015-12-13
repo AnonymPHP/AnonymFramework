@@ -21,8 +21,11 @@ return [
     'table_name' => 'billing',
 
     /**
-     *  the plans and their days.
-     *
+     * | ********************************
+     * |
+     * | the plans and their days.
+     * |
+     * | *********************************
      */
     'plans' => [
         'weekly' => 7,
