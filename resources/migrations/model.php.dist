@@ -12,12 +12,12 @@
 namespace App\Models;
 
 
-use Anonym\Facades\Element;
+use Anonym\Database\Database;
 
 /**
  * Class {{ name }}
  * @package App\Models
  */
-class {{ name }}  extends Element {
+class {{ name }}  extends Database {
         public $table = '{{ lower-name }}';
 }
