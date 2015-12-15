@@ -807,13 +807,13 @@ if (!function_exists('group')) {
  * |
  * |*********************
  */
-if (! function_exists('env')) {
+if (!function_exists('env')) {
 
     /**
      * Gets the value of an environment variable. Supports boolean, empty and null.
      *
-     * @param  string  $key
-     * @param  mixed   $default
+     * @param  string $key
+     * @param  mixed $default
      * @return mixed
      */
     function env($key, $default = null)
