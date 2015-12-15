@@ -29,9 +29,14 @@ class Billing extends Migration implements MigrationInterface
     public function up()
     {
         $table = Config::get('billing.table_name');
-        Schema::create($table, function(Table $table){
+        Schema::create($table, function (Table $table) {
             return $table->primary('billing_id')
-                   ->int('subscription_starts_at')
+                ->int('subscription_started')
+                ->varchar('subscription_plan')
+                ->varchar('subscription_status')
+                ->int('trail_started')
+                ->int('trail_ends_at');
+
         });
     }
 
@@ -42,6 +47,7 @@ class Billing extends Migration implements MigrationInterface
      */
     public function down()
     {
-        // TODO: Implement down() method.
+        $table = Config::get('billing.table_name');
+        Schema::drop($table);
     }
 }
