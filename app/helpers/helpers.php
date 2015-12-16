@@ -603,7 +603,7 @@ if (!function_exists('response')) {
      */
     function response($content = '', $statusCode = 200)
     {
-        return App::make('http.response')->setContent($content)->setStatusCode($statusCode);
+        return new \Anonym\Http\Response($content, $statusCode);
     }
 
 }
