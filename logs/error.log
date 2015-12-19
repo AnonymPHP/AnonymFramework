@@ -23,3 +23,34 @@
  - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
 [15.12.2015- 04:03]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
  - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[15.12.2015- 04:06]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[15.12.2015- 05:06]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[15.12.2015- 05:07]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[15.12.2015- 05:10]Class http.request does not exist - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\illuminate\container\Container.php:780) 
+[15.12.2015- 05:12]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[15.12.2015- 05:13]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[15.12.2015- 05:15]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[15.12.2015- 05:16]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[15.12.2015- 05:42]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[15.12.2015- 05:43]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[16.12.2015- 03:14]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[16.12.2015- 03:15]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[17.12.2015- 09:18]PDO threw that exception message : SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[17.12.2015- 09:19]PDO threw that exception message : SQLSTATE[HY000] [1049] Unknown database 'first' - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
+[17.12.2015- 09:19]Argument 1 passed to Anonym\Database\Database::setDatabaseApplication() must be an instance of Anonym\Database\Base, instance of Anonym\Database\Database given, called in C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Constructors\DatabaseConstructor.php on line 57 and defined - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Database.php:94) 
+[17.12.2015- 09:21]Argument 1 passed to Anonym\Database\Database::setDatabaseApplication() must be an instance of Anonym\Database\Base, instance of Anonym\Database\Database given, called in C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Constructors\DatabaseConstructor.php on line 58 and defined - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Database.php:94) 
+[17.12.2015- 09:22]Argument 1 passed to Anonym\Database\Database::setDatabaseApplication() must be an instance of Anonym\Database\Base, instance of Anonym\Database\Database given, called in C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Constructors\DatabaseConstructor.php on line 57 and defined - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Database.php:94) 
+[17.12.2015- 09:31]Argument 1 passed to Anonym\Database\Database::setDatabaseApplication() must be an instance of Anonym\Database\Base, instance of Anonym\Database\Database given, called in C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Constructors\DatabaseConstructor.php on line 56 and defined - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Database.php:94) 
+[19.12.2015- 12:11]PDO threw that exception message : SQLSTATE[HY000] [2002] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+ - (C:\Program Files (x86)\Zend\Apache2\htdocs\AnonymFramework\vendor\anonym-php\anonym-library\src\Anonym\Database\Bridge\Bridge.php:97) 
