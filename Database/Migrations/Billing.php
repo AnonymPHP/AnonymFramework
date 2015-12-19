@@ -35,7 +35,8 @@ class Billing extends Migration implements MigrationInterface
                 ->varchar('subscription_plan')
                 ->varchar('subscription_status')
                 ->int('trail_started')
-                ->int('trail_ends_at');
+                ->int('trail_ends_at')
+                ->int('cash');
 
         });
     }
