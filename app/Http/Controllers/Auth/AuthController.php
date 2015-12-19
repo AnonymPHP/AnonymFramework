@@ -12,6 +12,7 @@ namespace App\Http\Controllers\Auth;
 
 use Anonym\Database\Exceptions\QueryException;
 use Anonym\Crypt\SecurityKeyGenerator;
+use Anonym\Facades\Database;
 use Anonym\Mail\DriverInterface;
 use Anonym\Route\Controller;
 use Anonym\Support\TemplateGenerator;
@@ -85,7 +86,7 @@ class AuthController extends Controller
 
         $table = Config::get('database.tables.table');
 
-        $database = Element::table($table);
+        $database = Database::table($table);
         $userColumn = null === $column ? first(Config::get('database.tables.login')): $column;
 
 
@@ -95,7 +96,7 @@ class AuthController extends Controller
             throw new OAuthException(sprintf('%s Username is not exists', $username));
         }
 
-        $datas = $userInformation->fetch();
+        $datas = $userInformation->first();
 
         // we will find user email now
         $mailAddress = $datas->email;
@@ -103,13 +104,13 @@ class AuthController extends Controller
         $generator = new SecurityKeyGenerator();
         $key = $generator->random($username.$mailAddress);
 
-        $forgets = Element::table('forgets');
-        $add = $forgets->set([
+        $forgets = Database::table('forgets');
+        $add = $forgets->insert([
             'key' => $key,
             'user_id' => $datas->id
-        ])->insert();
+        ]);
 
-        if (!$add) {
+        if (!$add->isSuccess()) {
             throw new QueryException('Forget keys and user_id could not added to database, please try agein later');
         }
 
