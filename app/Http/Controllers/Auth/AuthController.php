@@ -78,7 +78,7 @@ class AuthController extends Controller
      * @throws OAuthException
      * @throws QueryException
      */
-    protected function forgetSendMail(array $parameters = [], $column = null)
+    protected function sendForgetMail(array $parameters = [], $column = null)
     {
         $username = isset($parameters['username']) ? $parameters['username']: '';
         $mailDriver = isset($parameters['mail_driver']) ? $parameters['mail_driver'] : 'default';
