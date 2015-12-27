@@ -84,7 +84,6 @@ return [
         \Anonym\Cookie\CookieServiceProvider::class,
         \Anonym\Session\SessionServiceProvider::class,
         \Anonym\Providers\SecurityProvider::class,
-        \Anonym\Database\Pagination\PaginationServiceProvider::class,
         \App\Services\ViewService::class,
         \App\Services\EventService::class,
         \App\Services\RouteService::class,
