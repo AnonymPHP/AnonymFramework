@@ -31,6 +31,7 @@ class Billing extends Migration implements MigrationInterface
         $table = Config::get('billing.table_name');
         Schema::create($table, function (Table $table) {
             return $table->primary('billing_id')
+                ->int('user_id')
                 ->int('subscription_started')
                 ->varchar('subscription_plan')
                 ->varchar('subscription_status')

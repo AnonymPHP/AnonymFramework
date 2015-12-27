@@ -11,7 +11,7 @@
 
 namespace App\Http\Middleware;
 
-use Anonym\HttpClient\Request;
+use Anonym\Http\Request;
 use Anonym\Route\MiddlewareInterface;
 use Anonym\Route\TerminateInterface;
 

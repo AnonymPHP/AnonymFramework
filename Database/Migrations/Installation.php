@@ -51,6 +51,8 @@ class Installation extends Migration implements MigrationInterface
      */
     public function down()
     {
-        //
+         Schema::down('sessions');
+         Schema::down('logins');
+         Schema::down('forgets');
     }
 }

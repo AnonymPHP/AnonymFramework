@@ -12,7 +12,7 @@
 namespace App\Models;
 
 
-use Anonym\Database\Database;
+use Anonym\Database\Element;
 
 /**
  * Class {{ name }}
