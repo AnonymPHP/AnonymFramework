@@ -18,6 +18,6 @@ use Anonym\Database\Element;
  * Class {{ name }}
  * @package App\Models
  */
-class {{ name }}  extends Database {
+class {{ name }}  extends Element {
         public $table = '{{ lower-name }}';
 }
