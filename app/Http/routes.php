@@ -10,7 +10,6 @@
  */
 
 
-
 Route::get(
     '/',
     function () {
